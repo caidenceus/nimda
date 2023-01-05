@@ -1,0 +1,103 @@
+/* ====== Start common path CSS ====== */
+
+.title {
+  margin-top: 0;
+  padding-top: 42px;
+  
+  font-weight: 700;
+  color: 1f1f1f;
+}
+
+.sub-title {
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid #1f1f1f;
+  color: 1f1f1f;
+  font-size: 14px;
+}
+
+/* Vertically and horizontally align text. This must be applied to a div. */
+.center-text {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== End common path CSS ====== */
+/* ====== Start learning path CSS ====== */
+
+.learning-path-container {
+  /* Prefer margin to padding so sub-elements can use 100% of div space */
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(245, 245, 245);
+}
+
+.learning-path-container h1 {
+  margin-left: 3%;
+}
+
+.learning-path {
+  display: inline-block;
+  overflow: hidden;
+
+  margin-top: 18px;
+  margin-bottom: 36px;
+  margin-left: 3%; 
+  margin-right: 3%;
+  width: 42%;
+  height: 150px;
+  
+  background-color: white;
+  border: 1px solid rgba(0 0 0 / 0.2);
+  border-radius: 6px;
+}
+
+.learning-path:hover {
+  color: white;
+  background-color: rgba(0 0 0 / 0.5);
+}
+
+.learning-path a {
+  text-decoration: none;
+  margin: 24px;
+}
+
+.learning-path h3 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.learning-path p {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 0;
+}
+
+/* ====== End learning path CSS ====== */
+/* ====== Start course section CSS ====== */
+
+.course {
+  display: inline-block;
+  
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+  
+  /* Responsive links, 5 per column */
+  width: 15%;
+  height: 100px;
+  margin: 2%;
+}
+
+.course:hover {
+  color: white;
+  background-color: rgba(0 0 0 / 0.5);
+}
+
+
+/* ====== End course section CSS ====== */

@@ -1,0 +1,101 @@
+/* ====== Start global CSS ====== */
+
+html {
+  font-family: "Soleil", Arial, sans-serif;
+}
+
+.share-container {
+  /* Prefer margin to padding so sub-elements can use 100% of div space */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* ====== End global CSS ====== */
+/* ====== Start page_header.php CSS ====== */
+
+.page-header {
+  background-color: white;
+}
+
+.page-header h3 {
+  display: inline-block;
+  width: 49%;
+  
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.header-links {
+  /* Remove default list style */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  display: inline-block;
+  width: 49%;
+
+  text-align: center;
+}
+
+.header-links li {
+  display: inline-block;
+  heigth: 100%;
+  width: 20%;
+}
+
+.header-links li a {
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.tutorial-header-link {
+  border: 2px solid black;
+  color: black;
+}
+
+.tutorial-header-link:hover {
+  background-color: black;
+  color: white;
+}
+
+.udemy-header-link {
+  border: 2px solid blue;
+  background-color: blue;
+  color: white;
+}
+
+.udemy-header-link:hover {
+  background-color: white;
+  color: blue;
+}
+
+/* ====== End page_header.php CSS ====== */
+/* ====== Start legal_disclaimer.php CSS ====== */
+
+.legal-disclaimer {
+  margin-top: 16px;
+
+  /* Top right bottom left */
+  padding: 18px 60px 18px 60px;
+
+  text-align: center; 
+  background-color: rgb(200, 200, 200);
+  border-radius: 3px;
+  font-size: 21px;
+}
+
+.legal-disclaimer-heading {
+  color: rgb(200 0 0);
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ====== End legal_disclaimer.php CSS ====== */
