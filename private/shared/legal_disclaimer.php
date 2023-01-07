@@ -1,4 +1,4 @@
-    <div class="legal-disclaimer share-container">
+    <div class="legal-disclaimer top-level-container">
       <h1 class="legal-disclaimer-heading">Legal Disclaimer</h3>
       <p>
         Hacking is illegal. Usage of hacking tools and or hacking techniques 

@@ -1,4 +1,5 @@
 <?php require_once '../private/init.php'; ?>
+<?php require_once PRIVATE_PATH . 'generatable.php'; ?>
 <?php require_once SHARED_PATH . 'head.php'; ?>
 
 <?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'index.css">'; ?>
@@ -6,7 +7,7 @@
 <?php require_once SHARED_PATH . 'page_header.php'; ?>
 <?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
 
-    <div class="learning-path-container">
+    <div class="learning-path-container top-level-container">
       <h1 class="title">Learning Paths</h1>
     
       <div class="learning-path">
@@ -35,83 +36,19 @@
       </div>
     </div> <!-- learning-path-container -->
     
-    <div class="course-container share-container">
+    <div class="course-container top-level-container">
       <h1 class="title">Courses</h1>
 
       <h3 class="sub-title">SQL injection</h3>
-      <div class="course">
-        <div class="center-text">
-          <a class="course-link random-color">
-            Time-based attack
-          </a>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'error_based_attack.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Error-based attack
-                  </a>';
-          ?>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'union_based_attack.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Union-based attack
-                  </a>';
-          ?>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'boolean_based_attack.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Boolean-based attack
-                  </a>';
-          ?>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'stacked_query_attack.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Stacked query attack
-                  </a>';
-          ?>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'out_of_band_attack.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Out-of-band attack
-                  </a>';
-          ?>
-        </div>
-      </div>
-      <div class="course">
-        <div class="center-text">
-          <?php 
-              $course_path = COURSE_PATH . "sqlInjection/" . 'sqlmap_basics.php';
-              echo '
-                  <a href="' . $course_path . '" class="course-link random-color">
-                    Sqlmap basics
-                  </a>';
-          ?>
-        </div>
-      </div>
+        <?php 
+            generate_course_link('SQL injection introduction', 'sql_injection');
+            generate_course_link('Time-based attack', 'sql_injection');
+            generate_course_link('Error-based attack', 'sql_injection');
+            generate_course_link('Union-based attack', 'sql_injection');
+            generate_course_link('Stacked query attack', 'sql_injection');
+            generate_course_link('Out-of-band attack', 'sql_injection');
+            generate_course_link('Sqlmap basics', 'sql_injection'); 
+        ?>
     </div> <!-- course-container -->
 
 <?php require_once SHARED_PATH . 'page_footer.php'; ?>

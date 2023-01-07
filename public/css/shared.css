@@ -4,7 +4,7 @@ html {
   font-family: "Soleil", Arial, sans-serif;
 }
 
-.share-container {
+.top-level-container {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 10%;
   margin-right: 10%;

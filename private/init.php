@@ -1,7 +1,7 @@
 <?php
     ob_start();  // Enable output buffering
 
-    define("PRIVATE_PATH", dirname(__FILE__));
+    define("PRIVATE_PATH", dirname(__FILE__) . "/");
     define("PROJECT_PATH", dirname(PRIVATE_PATH));
     define("PUBLIC_PATH", PROJECT_PATH . "/public/");
     define("SHARED_PATH", PRIVATE_PATH . "/shared/");
