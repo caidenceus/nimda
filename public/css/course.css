@@ -2,5 +2,4 @@
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 20%;
   margin-right: 20%;
-  border: 1px solid red;
 }

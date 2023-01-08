@@ -4,6 +4,16 @@ html {
   font-family: "Soleil", Arial, sans-serif;
 }
 
+p {
+  font-family: Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif;
+  font-size: calc(.35842vw + .95296em);
+  line-height: calc(1.5em + .2vw);;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #333;
+}
+
 .top-level-container {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 10%;
@@ -88,7 +98,6 @@ html {
   text-align: center; 
   background-color: rgb(200, 200, 200);
   border-radius: 3px;
-  font-size: 21px;
 }
 
 .legal-disclaimer-heading {
