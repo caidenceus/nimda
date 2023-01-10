@@ -38,12 +38,25 @@ function generate_course_link(string $name, string $path)
 /**
  *  @brief Generate a tutorial link as a button.
  *  
- *  @param name The name of the tutorial to generate a link for.
+ *  @param $name The name of the tutorial to generate a link for.
  */
 function tutorial_link(string $name)
 {
     $href = sterilize_link($name) . '.php';
-    echo '<a href="' . $href . '"><button>' . $name . '</button></a>';
+    echo '<a href="' . $href . '"><button class="tutorial-button waterfall-color">' . $name . '</button></a>';
+}
+
+
+/**
+ *  @brief Function to generate the color waterfall for tutorial links.
+ *
+ *  @param $tutorial_name_array Array of tutorial names to generate links for.
+ */
+function generate_tutorial_links(array $tutorial_name_array)
+{
+    foreach($tutorial_name_array as $tutorial) {
+        tutorial_link($tutorial, $inline_style);
+    }
 }
 
 ?>

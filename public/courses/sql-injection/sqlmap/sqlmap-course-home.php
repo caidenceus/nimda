@@ -2,6 +2,7 @@
 <?php require_once SHARED_PATH . 'head.php'; ?>
 
 <?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">'; ?>
+<?php echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'waterfallColors.js" defer></script>' ?>
 
 <?php require_once SHARED_PATH . 'page_header.php'; ?>
 <?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
@@ -26,8 +27,20 @@
 
       <div class="course-home-container course-home-container-right">
         <?php
-            // Tutorial must be in same directory as this file
-            tutorial_link('Install sqlmap');
+            $tutorials = array(
+                'Install sqlmap',
+                'Sqlmap basic commands',
+                'Detecting form parameters',
+                'Bypassing web application firewalls',
+                'Enumerating database usernames and passwords',
+                'Dumping database tables',
+                'Introduction to database takeover',
+                'File injection',
+                'Arbitrary command execution',
+                'Privilege escalation'
+            );
+
+            generate_tutorial_links($tutorials);
         ?>
       </div> <!-- Right half -->
     </div>

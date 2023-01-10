@@ -1,4 +1,4 @@
-/* ====== Start tutorial CSS ====== */
+/* ====== Start common CSS ====== */
 
 .course-top-level-container {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
@@ -11,8 +11,9 @@ pre {
   border-radius: 6px;
 }
 
-/* ====== End tutorial CSS ====== */
+/* ====== End common CSS ====== */
 /* ====== Start course home CSS ====== */
+
 .course-home-container {
   display: inline-block;
   
@@ -33,6 +34,24 @@ pre {
   background-color: white;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.tutorial-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 12px;
+
+  border-radius: 25px;
+  border: 1px solid white;
+  font-size: calc(.35842vw + .95296em);
+  font-weight: 700;
+  color: white;
+}
+
+.tutorial-button:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
 }
 
 /* ====== End course home CSS ====== */

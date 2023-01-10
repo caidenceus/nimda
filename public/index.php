@@ -3,6 +3,7 @@
 <?php require_once SHARED_PATH . 'head.php'; ?>
 
 <?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'index.css">'; ?>
+<?php echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'randomColors.js" defer></script>' ?>
 
 <?php require_once SHARED_PATH . 'page_header.php'; ?>
 <?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
