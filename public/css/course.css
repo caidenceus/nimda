@@ -1,3 +1,5 @@
+/* ====== Start tutorial CSS ====== */
+
 .course-top-level-container {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 20%;
@@ -8,3 +10,22 @@ pre {
   background-color: #f6f6f6;
   border-radius: 6px;
 }
+
+/* ====== End tutorial CSS ====== */
+/* ====== Start course home CSS ====== */
+
+.course-home-container {
+  display: inline-block;
+  
+  /* width + padding-left + padding-right = 50% of parent div */
+  width: 40%;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 6px;
+
+}
+
+/* ====== End course home CSS ====== */

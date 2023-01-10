@@ -14,6 +14,35 @@ p {
   color: #333;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.title {
+  margin-top: 0;
+  padding-top: 42px;
+  
+  font-weight: 200;
+  color: 1f1f1f;
+}
+
+.sub-title {
+  padding-bottom: 9px;
+
+  border-bottom: 1px solid #1f1f1f;
+  color: 1f1f1f;
+  font-size: 18px;
+  font-weight: 200;
+}
+
 .top-level-container {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 10%;
