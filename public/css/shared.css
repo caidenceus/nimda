@@ -7,7 +7,7 @@ html {
 p {
   font-family: Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif;
   font-size: calc(.35842vw + .95296em);
-  line-height: calc(1.5em + .2vw);;
+  line-height: calc(1.5em + .2vw);
 
   overflow-wrap: break-word;
   word-wrap: break-word;

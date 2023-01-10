@@ -3,3 +3,8 @@
   margin-left: 20%;
   margin-right: 20%;
 }
+
+pre {
+  background-color: #f6f6f6;
+  border-radius: 6px;
+}

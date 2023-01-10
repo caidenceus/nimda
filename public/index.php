@@ -47,7 +47,7 @@
             generate_course_link('Union-based attack', 'sql_injection');
             generate_course_link('Stacked query attack', 'sql_injection');
             generate_course_link('Out-of-band attack', 'sql_injection');
-            generate_course_link('Sqlmap basics', 'sql_injection'); 
+            generate_course_link('Install sqlmap', 'sql_injection'); 
         ?>
     </div> <!-- course-container -->
 

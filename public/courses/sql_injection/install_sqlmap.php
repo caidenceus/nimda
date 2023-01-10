@@ -70,8 +70,7 @@
         checkbox when it comes up.
       </p>
       <pre class="course-text">
-        <code>
-          <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></code>
+        <code><a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></code>
       </pre>
       <p class="course-text">
         To install Git, download the "standalone installer" for Windows from
@@ -79,8 +78,7 @@
         the install prompts.
       </p>
       <pre class="course-text">
-        <code>
-          <a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a></code>
+        <code><a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a></code>
       </pre>
       <p class="course-text">
         You can verify the installation of Python 3, Pip and Git with the 
@@ -101,28 +99,9 @@
       <p class="course-text">
         Sqlmap comes pre-installed on Kali-Linux. However, if you are running 
         Windows or a different Debian distribution of Linux, follow the steps
-        to install sqlmap. Because we installed Python 3, Pip3, and Git, the
-        steps to install Sqlmap in this section should work on both Windows and
-        Linux.
+        to install sqlmap.
       </p>
-      <p>
-        The reccomended way to install sqlmap is by cloning directly from the
-        github repository. To do this, run the following command in a terminal
-        window on Linux or a command prompt window if you are on Windows.
-      </p>
-      <pre>
-        <code>
-          git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev</code>
-      </pre>
-      <p class="course-text">
-        To verify the install, run the following commands (should work on Windows
-        and Linux).
-      </p>
-      <pre>
-        <code>
-          cd sqlmap
-          python3 sqlmap.py -h</code>
-      </pre>
+      <h3 class="sub-title">Debian Linux</h3>
       
     </div>
 
