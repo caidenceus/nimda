@@ -1,0 +1,1 @@
+<?php require_once '../relative_init.php'; ?>

@@ -11,8 +11,8 @@ require_once "init.php";
  */
 function sterilize_link(string $link_text)
 {
-    $sterilized = str_replace(" ", "_", $link_text);
-    $sterilized = str_replace("-", "_", $sterilized);
+    $sterilized = str_replace("_", "-", $link_text);
+    $sterilized = str_replace(" ", "-", $sterilized);
     $sterilized = strtolower($sterilized);
     return $sterilized;
 }

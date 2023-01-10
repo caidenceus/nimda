@@ -41,13 +41,13 @@
 
       <h3 class="sub-title">SQL injection</h3>
         <?php 
-            generate_course_link('SQL injection introduction', 'sql_injection');
-            generate_course_link('Time-based attack', 'sql_injection');
-            generate_course_link('Error-based attack', 'sql_injection');
-            generate_course_link('Union-based attack', 'sql_injection');
-            generate_course_link('Stacked query attack', 'sql_injection');
-            generate_course_link('Out-of-band attack', 'sql_injection');
-            generate_course_link('Install sqlmap', 'sql_injection'); 
+            generate_course_link('SQL injection introduction', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Time-based attack', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Error-based attack', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Union-based attack', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Stacked query attack', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Out-of-band attack', 'sql-injection/sql-injection-techniques');
+            generate_course_link('Install sqlmap', 'sql-injection/sqlmap'); 
         ?>
     </div> <!-- course-container -->
 
