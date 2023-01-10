@@ -9,7 +9,7 @@
 
     <div class="learning-path-container top-level-container">
       <h1 class="title">Learning Paths</h1>
-    
+
       <div class="learning-path">
         <a class="learning-path-link">
           <h3 class="random-color">Hacking Windows</h3>
@@ -35,7 +35,7 @@
         </a>
       </div>
     </div> <!-- learning-path-container -->
-    
+
     <div class="course-container top-level-container">
       <h1 class="title">Courses</h1>
 

@@ -7,7 +7,7 @@
 <?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
 
     <div class="top-level-container">
-      <div class="course-home-container">
+      <div class="course-home-container course-home-container-left">
         <h1 class="title">Sqlmap</h1>
         <p class="course-text">
           Sqlmap is an open source ethical hacking tool written in Python that is 
@@ -22,7 +22,14 @@
           out-of-band. Each of these techniques are covered in more depth on their
           respective tutorial pages.
         </p>
-      </div> <!-- Introduction -->
+      </div> <!-- Left half -->
+
+      <div class="course-home-container course-home-container-right">
+        <?php
+            // Tutorial must be in same directory as this file
+            tutorial_link('Install sqlmap');
+        ?>
+      </div> <!-- Right half -->
     </div>
 
 <?php require_once SHARED_PATH . 'page_footer.php'; ?>

@@ -13,19 +13,26 @@ pre {
 
 /* ====== End tutorial CSS ====== */
 /* ====== Start course home CSS ====== */
-
 .course-home-container {
   display: inline-block;
   
-  /* width + padding-left + padding-right = 50% of parent div */
-  width: 40%;
+  /* width + padding-left + padding-right = ~50% of parent div */
+  width: 39%;
   padding-left: 5%;
   padding-right: 5%;
-
-  text-align: center;
-  background-color: #f6f6f6;
+  
   border-radius: 6px;
+  text-align: center;
+}
 
+.course-home-container-left {
+  background-color: #f6f6f6;
+}
+
+.course-home-container-right {
+  background-color: white;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* ====== End course home CSS ====== */
