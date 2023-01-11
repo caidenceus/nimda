@@ -26,21 +26,17 @@ include SHARED_PATH . 'tutorial_navigation.php';
       <p>
         Copy and paste the commands into a terminal window.
       </p>
-      <pre>
-        <code>
-          sudo apt update
-          sudo apt install -y python3 python3-pip git</code>
-      </pre>
+      <pre class="prettyprint lang-bsh default-code-style">
+sudo apt update
+sudo apt install -y python3 python3-pip git</pre>
       <p>
         You can verify the installation of Python 3, Pip and Git with the 
         following respective commands:
       </p>
-      <pre>
-        <code>
-          python3 --version
-          pip3 --version
-          git --version</code>
-      </pre>
+<pre class="prettyprint lang-bsh default-code-style">
+python3 --version
+pip3 --version
+git --version</pre>
       <p>
         If each of the above commands returns some sort of software version,
         then the install was successful.
@@ -60,29 +56,24 @@ include SHARED_PATH . 'tutorial_navigation.php';
         the install wizard. Be sure to check the <i>"Add Python to PATH"</i>
         checkbox when it comes up.
       </p>
-      <pre>
-        <code>
-          <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></code>
-      </pre>
+<pre class="default-code-style">
+<a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></pre>
       <p>
         To install Git, download the "standalone installer" for Windows from
         the following website. Run the executable once downloaded and follow
         the install prompts.
       </p>
-      <pre>
-        <code>
-          <a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a></code>
-      </pre>
+<pre class="default-code-style">
+<a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a>
+</pre>
       <p>
         You can verify the installation of Python 3, Pip and Git with the 
         following respective commands:
       </p>
-      <pre>
-        <code>
-          python3 --version
-          pip3 --version
-          git --version</code>
-      </pre>
+<pre class="prettyprint lang-bsh default-code-style">
+python3 --version
+pip3 --version
+git --version</pre>
       <p>
         If each of the above commands returns some sort of software version,
         then the install was successful.
@@ -101,19 +92,15 @@ include SHARED_PATH . 'tutorial_navigation.php';
         github repository. To do this, run the following command in a terminal
         window on Linux or a command prompt window if you are on Windows.
       </p>
-      <pre>
-        <code>
-          git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev</code>
-      </pre>
+<pre class="prettyprint lang-bsh default-code-style">
+git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev</pre>
       <p>
         To verify the install, run the following commands (should work on Windows
         and Linux).
       </p>
-      <pre>
-        <code>
-          cd sqlmap
-          python3 sqlmap.py -h</code>
-      </pre>
+<pre class="prettyprint lang-bsh default-code-style">
+cd sqlmap
+python3 sqlmap.py -h</pre>
     </div>
 
 <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
