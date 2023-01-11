@@ -7,7 +7,7 @@
 <?php require_once SHARED_PATH . 'page_header.php'; ?>
 <?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
 
-    <div class="top-level-container">
+    <div class="top-level-container course-home-root-container">
       <div class="course-home-container course-home-container-left">
         <h1 class="title">Sqlmap</h1>
         <p class="course-text">

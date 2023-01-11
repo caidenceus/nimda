@@ -14,14 +14,15 @@ pre {
 /* ====== End common CSS ====== */
 /* ====== Start course home CSS ====== */
 
+.course-home-root-container {
+  display: flex;
+}
+
 .course-home-container {
-  display: inline-block;
-  
-  /* width + padding-left + padding-right = ~50% of parent div */
-  width: 39%;
+  width: calc(100%/2);
   padding-left: 5%;
   padding-right: 5%;
-  
+
   border-radius: 6px;
   text-align: center;
 }
@@ -32,8 +33,6 @@ pre {
 
 .course-home-container-right {
   background-color: white;
-  padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 .tutorial-button {
