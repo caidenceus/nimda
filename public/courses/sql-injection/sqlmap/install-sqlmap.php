@@ -1,10 +1,16 @@
-<?php require_once 'relative_init.php'; ?>
-<?php require_once SHARED_PATH . 'head.php'; ?>
+<?php
+require_once 'relative_init.php';
+require_once SHARED_PATH . 'head.php';
 
-<?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">'; ?>
+echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
 
-<?php require_once SHARED_PATH . 'page_header.php'; ?>
-<?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
+require_once SHARED_PATH . 'page_header.php';
+require_once SHARED_PATH . 'legal_disclaimer.php';
+
+$home = 'sqlmap-course-home.php';
+$next = 'sqlmap-basic-commands.php';
+include SHARED_PATH . 'tutorial_navigation.php';
+?>
 
     <div class="course-top-level-container">
       <h1 class="title">Sqlmap dependencies</h1>
@@ -108,9 +114,9 @@
           cd sqlmap
           python3 sqlmap.py -h</code>
       </pre>
-      
     </div>
 
+<?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
 <?php require_once SHARED_PATH . 'page_footer.php'; ?>
 
 <!-- References

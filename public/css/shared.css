@@ -14,6 +14,16 @@ p {
   color: #333;
 }
 
+.default-text {
+  font-family: Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif;
+  font-size: calc(.35842vw + .95296em);
+  line-height: calc(1.5em + .2vw);
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  color: #333;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -40,7 +50,7 @@ p {
   border-bottom: 1px solid #1f1f1f;
   color: 1f1f1f;
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 600;
 }
 
 .top-level-container {
@@ -137,3 +147,33 @@ p {
 }
 
 /* ====== End legal_disclaimer.php CSS ====== */
+/* Start tutorial_navigation.php CSS */
+
+.tutorial-navigation {
+  background-color: #333;
+  padding-bottom: 21px;
+  padding-top: 21px;
+  border-radius: 6px;
+}
+
+.tutorial-navigation-button {
+  /* width is [(100% - (2 * 3 * 5%)) / 3] to accomodate for margin */
+  width: calc(70% / 3);
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  
+  border-radius: 24px;
+  font-weight: 700;
+  background-color: white;
+}
+
+.tutorial-navigation-button:hover { 
+  background-color: #333;
+  border: 1px solid white;
+  color: white;
+}
+
+/* End tutorial_navigation.php CSS */

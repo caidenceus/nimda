@@ -1,11 +1,13 @@
-<?php require_once 'relative_init.php'; ?>
-<?php require_once SHARED_PATH . 'head.php'; ?>
+<?php 
+require_once 'relative_init.php';
+require_once SHARED_PATH . 'head.php';
 
-<?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">'; ?>
-<?php echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'waterfallColors.js" defer></script>' ?>
+echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
+echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'waterfallColors.js" defer></script>';
 
-<?php require_once SHARED_PATH . 'page_header.php'; ?>
-<?php require_once SHARED_PATH . 'legal_disclaimer.php'; ?>
+require_once SHARED_PATH . 'page_header.php';
+require_once SHARED_PATH . 'legal_disclaimer.php';
+?>
 
     <div class="top-level-container course-home-root-container">
       <div class="course-home-container course-home-container-left">
