@@ -19,6 +19,24 @@ function sterilize_link(string $link_text)
 
 
 /**
+ *  @brief Generate a learning path link as a button in two dynamic columns.
+ *  
+ *  @param title The title of the learning path to generate a link for.
+ *  @param tagline The tagline displayed underneath the course title.
+ *  @param landing_href The path of the learning path landing page.
+ */
+function generate_learning_path_link(string $title, string $tagline, string $landing_href)
+{
+    echo '<div class="learning-path">';
+    echo '<a href="' . $landing_href . '">';
+    echo '<h3 class="blue-text">' . $title . '</h3>';
+    echo '<p>' . $tagline . '</p>';
+    echo '</a>';
+    echo '</div>';
+}
+
+
+/**
  *  @brief Generate a course link as a button in five dynamic columns.
  *  
  *  @param name The name of the course to generate a link for.

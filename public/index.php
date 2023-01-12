@@ -1,43 +1,26 @@
 <?php 
-require_once '../private/init.php';
-include_once PRIVATE_PATH . 'generatable.php';
-include_once SHARED_PATH . 'head.php';
+    require_once '../private/init.php';
+    include_once PRIVATE_PATH . 'generatable.php';
+    include_once SHARED_PATH . 'head.php';
 
-echo '<link rel="stylesheet" href="' . CSS_PATH . 'index.css">';
-echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'randomColors.js" defer></script>';
+    echo '<link rel="stylesheet" href="' . CSS_PATH . 'index.css">';
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'randomColors.js" defer></script>';
 
-include_once SHARED_PATH . 'page_header.php';
-include SHARED_PATH . 'terminal_text.php';
-include_once SHARED_PATH . 'legal_disclaimer.php';
+    include_once SHARED_PATH . 'page_header.php';
+    include SHARED_PATH . 'terminal_text.php';
+    include_once SHARED_PATH . 'legal_disclaimer.php';
 
-$terminal_text = 'cd learning-paths';
-include SHARED_PATH . 'terminal_text.php';
+    $terminal_text = 'cd learning-paths';
+    include SHARED_PATH . 'terminal_text.php';
 ?>
+
     <div class="learning-path-container top-level-container">
-      <div class="learning-path yellow-border">
-        <a>
-          <h3 class="red-text">Hacking Windows</h3>
-          <p class="blue-text">Hack Windows and write Windows computer viruses</p>
-        </a>
-      </div>
-      <div class="learning-path yellow-border">
-        <a>
-          <h3 class="red-text">Hacking Rest APIs</h3>
-          <p class="blue-text">Exploit vulnerable Rest APIs</p>
-        </a>
-      </div>
-      <div class="learning-path yellow-border">
-        <a>
-          <h3 class="red-text">Hacking with Metasploit</h3>
-          <p class="blue-text">Hack like a pro with the Metasploit framework</p>
-        </a>
-      </div>
-      <div class="learning-path yellow-border">
-        <a>
-          <h3 class="red-text">Hacking databases</h3>
-          <p class="blue-text">Learn how to hack databases using SQL injection</p>
-        </a>
-      </div>
+    <?php
+        generate_learning_path_link('Hacking Windows', 'Hack Windows and write Windows computer viruses', '');
+        generate_learning_path_link('Hacking Rest APIs', 'Exploit vulnerable Rest APIs', '');
+        generate_learning_path_link('Metasploit and Meterpreter', 'Hack like a pro with the Metasploit framework', '');
+        generate_learning_path_link('Hacking databases', 'Learn how to hack databases using SQL injection', '');
+    ?>
     </div> <!-- learning-path-container -->
 
     <?php
