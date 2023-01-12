@@ -115,6 +115,7 @@ pre {
   color: white;
   font-weight: 700;
   border-radius: 6px;
+  border: 1px solid white;
   
   /* Top and bottom = 9px, bottom = 0px because we are fixing the width */
   padding: 9px 0;
@@ -123,36 +124,6 @@ pre {
 .header-tagline {
   font-family: monospace;
   margin-top: 0;
-}
-
-.red-button {
-  background-color: #eb4034;
-  border: 1px solid #eb4034;
-}
-
-.red-button:hover {
-  color: #eb4034;
-  background-color: white;
-}
-
-.yellow-button {
-  background-color: #ffbd03;
-  border: 1px solid #ffbd03;
-}
-
-.yellow-button:hover {
-  color: #ffbd03;
-  background-color: white;
-}
-
-.blue-button {
-  background-color: #2777ff;
-  border: 1px solid #2777ff;
-}
-
-.blue-button:hover {
-  color: #2777ff;
-  background-color: white;
 }
 
 /* ====== End page_header.php CSS ====== */
@@ -177,31 +148,27 @@ pre {
 /* Start tutorial_navigation.php CSS */
 
 .tutorial-navigation {
-  background-color: #333;
+  background-color: black;
   padding-bottom: 21px;
   padding-top: 21px;
-  border-radius: 6px;
+  border-radius: 15px;
 }
 
 .tutorial-navigation-button {
-  /* width is [(100% - (2 * 3 * 5%)) / 3] to accomodate for margin */
-  width: calc(70% / 3);
+  /* width is calculated to accomodate for margin left and right */
+  width: calc(40% / 3);
   display: inline-block;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  margin-left: calc(60% / 6);
+  margin-right: calc(60% / 6);
+  padding-top: 15px;
+  padding-bottom: 15px;
   
-  border-radius: 24px;
+  border-radius: 6px;
   font-weight: 700;
-  background-color: white;
-}
-
-.tutorial-navigation-button:hover { 
-  background-color: #333;
-  border: 1px solid white;
   color: white;
 }
+
+
 
 /* End tutorial_navigation.php CSS */
 /* Start terminal_text.php CSS */

@@ -6,7 +6,13 @@
   background-color: #2777ff;
 }
 
-blue-border {
+.blue-border {
+  border: 1px solid #2777ff;
+}
+
+.blue-button-hover-invert:hover {
+  color: #2777ff;
+  background-color: white;
   border: 1px solid #2777ff;
 }
 
@@ -19,7 +25,13 @@ blue-border {
 }
 
 .yellow-background {
+  background-color: #ffbd03;
+}
+
+.yellow-button-hover-invert:hover {
   color: #ffbd03;
+  background-color: white;
+  border: 1px solid #ffbd03;
 }
 
 .red-text {
@@ -31,5 +43,11 @@ blue-border {
 }
 
 .red-background {
+  background-color: #eb4034;
+}
+
+.red-button-hover-invert:hover {
   color: #eb4034;
+  background-color: white;
+  border: 1px solid #eb4034;
 }

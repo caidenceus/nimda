@@ -9,8 +9,6 @@ include_once SHARED_PATH . 'page_header.php';
 $terminal_text = 'sudo apt-get install -y python3';
 include SHARED_PATH . 'terminal_text.php';
 include_once SHARED_PATH . 'legal_disclaimer.php';
-$terminal_text = 'python3 --version';
-include SHARED_PATH . 'terminal_text.php';
 
 $home = 'sqlmap-course-home.php';
 $next = 'sqlmap-basic-commands.php';
@@ -31,14 +29,14 @@ include SHARED_PATH . 'tutorial_navigation.php';
       <p>
         Copy and paste the commands into a terminal window.
       </p>
-      <pre class="prettyprint lang-bsh default-code-style">
+<pre class="lang-bash default-code-style">
 sudo apt update
 sudo apt install -y python3 python3-pip git</pre>
       <p>
         You can verify the installation of Python 3, Pip and Git with the 
         following respective commands:
       </p>
-<pre class="prettyprint lang-bsh default-code-style">
+<pre class="lang-bash default-code-style">
 python3 --version
 pip3 --version
 git --version</pre>
@@ -61,21 +59,21 @@ git --version</pre>
         the install wizard. Be sure to check the <i>"Add Python to PATH"</i>
         checkbox when it comes up.
       </p>
-<pre class="default-code-style">
+<pre class="lang-bash default-code-style">
 <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></pre>
       <p>
         To install Git, download the "standalone installer" for Windows from
         the following website. Run the executable once downloaded and follow
         the install prompts.
       </p>
-<pre class="default-code-style">
+<pre class="lang-bash default-code-style">
 <a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a>
 </pre>
       <p>
         You can verify the installation of Python 3, Pip and Git with the 
         following respective commands:
       </p>
-<pre class="prettyprint lang-bsh default-code-style">
+<pre class="lang-bash default-code-style">
 python3 --version
 pip3 --version
 git --version</pre>
@@ -97,13 +95,13 @@ git --version</pre>
         github repository. To do this, run the following command in a terminal
         window on Linux or a command prompt window if you are on Windows.
       </p>
-<pre class="prettyprint lang-bsh default-code-style">
+<pre class="lang-bash default-code-style">
 git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev</pre>
       <p>
         To verify the install, run the following commands (should work on Windows
         and Linux).
       </p>
-<pre class="prettyprint lang-bsh default-code-style">
+<pre class="lang-bash default-code-style">
 cd sqlmap
 python3 sqlmap.py -h</pre>
     </div>
