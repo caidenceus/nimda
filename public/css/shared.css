@@ -148,24 +148,29 @@ pre {
 /* Start tutorial_navigation.php CSS */
 
 .tutorial-navigation {
-  background-color: black;
+  background-color: white;
   padding-bottom: 21px;
   padding-top: 21px;
-  border-radius: 15px;
+  border-radius: 0;
+  border-top: 2px solid rgb(0, 0, 0, 0.4);
+  border-bottom: 2px solid rgb(0, 0, 0, 0.4);
 }
 
 .tutorial-navigation-button {
   /* width is calculated to accomodate for margin left and right */
   width: calc(40% / 3);
   display: inline-block;
+  
   margin-left: calc(60% / 6);
   margin-right: calc(60% / 6);
   padding-top: 15px;
   padding-bottom: 15px;
   
   border-radius: 6px;
+  border: 1px solid white;
   font-weight: 700;
   color: white;
+  font-size: 18px;
 }
 
 
