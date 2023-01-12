@@ -58,6 +58,9 @@ pre {
   /* Prefer margin to padding so sub-elements can use 100% of div space */
   margin-left: 10%;
   margin-right: 10%;
+  
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 /* ====== End global CSS ====== */
@@ -71,8 +74,6 @@ pre {
 /* ====== Start legal_disclaimer.php CSS ====== */
 
 .legal-disclaimer {
-  margin-top: 16px;
-
   /* Top right bottom left */
   padding: 18px 60px 18px 60px;
 
