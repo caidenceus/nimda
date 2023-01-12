@@ -1,12 +1,19 @@
 <?php 
 require_once 'relative_init.php';
-require_once SHARED_PATH . 'head.php';
+include_once SHARED_PATH . 'head.php';
 
 echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
 echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'waterfallColors.js" defer></script>';
 
-require_once SHARED_PATH . 'page_header.php';
-require_once SHARED_PATH . 'legal_disclaimer.php';
+include_once SHARED_PATH . 'page_header.php';
+
+$terminal_text = 'cd sqlmap';
+include SHARED_PATH . 'terminal_text.php';
+
+include_once SHARED_PATH . 'legal_disclaimer.php';
+
+$terminal_text = 'python3 sqlmap.py -hh';
+include SHARED_PATH . 'terminal_text.php';
 ?>
 
     <div class="top-level-container course-home-root-container">

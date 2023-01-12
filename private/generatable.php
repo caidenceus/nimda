@@ -29,7 +29,8 @@ function generate_learning_path_link(string $title, string $tagline, string $lan
 {
     echo '<div class="learning-path">';
     echo '<a href="' . $landing_href . '">';
-    echo '<h3 class="blue-text">' . $title . '</h3>';
+    echo '<p class="learning-path-subtitle bold">Learning Path</p>';
+    echo '<h2 class="blue-text">' . $title . '</h2>';
     echo '<p>' . $tagline . '</p>';
     echo '</a>';
     echo '</div>';

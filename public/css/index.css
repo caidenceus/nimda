@@ -21,6 +21,7 @@
   
   background-color: white;
   border-radius: 6px;
+  border: 1px solid #333;
 }
 
 .learning-path:hover {
@@ -33,7 +34,7 @@
   margin: 24px;
 }
 
-.learning-path h3 {
+.learning-path h2 {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -42,6 +43,12 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 0;
+}
+
+.learning-path-subtitle {
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.4);
+  font-size: 12px;
 }
 
 /* ====== End learning path CSS ====== */
