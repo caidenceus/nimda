@@ -123,13 +123,19 @@ pre {
 
 .terminal-text-container {
   background-color: black;
+  border-radius: 6px;
 }
 
 .terminal-text,
 .terminal-prompt {
   display: inline-block;
+  overflow: hidden;
+}
+
+.terminal-prompt p {
   font-family: monospace;
-  color: white;
+  color: #2777ff;
+  padding-left: 18px;
 }
 
 /* Terminal typing animation */
