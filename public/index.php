@@ -9,12 +9,10 @@ echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'randomColors.js
 include_once SHARED_PATH . 'page_header.php';
 include SHARED_PATH . 'terminal_text.php';
 include_once SHARED_PATH . 'legal_disclaimer.php';
-?>
 
-    <?php
-        $terminal_text = 'cd learning-paths';
-        include SHARED_PATH . 'terminal_text.php';
-    ?>
+$terminal_text = 'cd learning-paths';
+include SHARED_PATH . 'terminal_text.php';
+?>
     <div class="learning-path-container top-level-container">
       <div class="learning-path">
         <a class="learning-path-link">

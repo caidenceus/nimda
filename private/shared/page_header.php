@@ -2,5 +2,5 @@
   <body>
     <div class="top-level-container">
       <h1 class="title">White hat hacking</h1>
-      <p>Ethical hacking tutorials, tools, and techniques.</p>
+      <p class="header-tagline">Ethical hacking | labs | techniques | tools</p>
     </div>

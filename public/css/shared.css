@@ -67,8 +67,8 @@ pre {
 /* ====== End global CSS ====== */
 /* ====== Start page_header.php CSS ====== */
 
-.page-header {
-  background-color: white;
+.header-tagline {
+  font-family: monospace;
 }
 
 /* ====== End page_header.php CSS ====== */
