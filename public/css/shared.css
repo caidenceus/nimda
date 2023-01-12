@@ -4,6 +4,14 @@ html {
   font-family: "Soleil", Arial, sans-serif;
 }
 
+a,
+button,
+h1,
+h2,
+h3 {
+  font-family: monospace;
+}
+
 p,
 pre {
   font-family: Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif;
@@ -96,6 +104,8 @@ pre {
 }
 
 .page-header-buttons > li > a > button {
+  width: 100px;
+  
   /* Top and bottom = 9px, bottom = 0px because we are fixing the width */
   padding: 9px 0;
   
