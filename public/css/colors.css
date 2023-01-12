@@ -6,8 +6,16 @@
   background-color: #2777ff;
 }
 
+blue-border {
+  border: 1px solid #2777ff;
+}
+
 .yellow-text {
   color: #ffbd03;
+}
+
+.yellow-border {
+  border: 1px solid #ffbd03;
 }
 
 .yellow-background {
@@ -16,6 +24,10 @@
 
 .red-text {
   color: #eb4034;
+}
+
+.red-border {
+  border: 1px solid #eb4034;
 }
 
 .red-background {

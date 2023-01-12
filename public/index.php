@@ -14,28 +14,28 @@ $terminal_text = 'cd learning-paths';
 include SHARED_PATH . 'terminal_text.php';
 ?>
     <div class="learning-path-container top-level-container">
-      <div class="learning-path">
-        <a class="learning-path-link">
-          <h3 class="random-color">Hacking Windows</h3>
-          <p>Hack Windows and write Windows computer viruses</p>
+      <div class="learning-path yellow-border">
+        <a>
+          <h3 class="red-text">Hacking Windows</h3>
+          <p class="blue-text">Hack Windows and write Windows computer viruses</p>
         </a>
       </div>
-      <div class="learning-path">
-        <a class="learning-path-link">
-          <h3 class="random-color">Hacking Rest APIs</h3>
-          <p>Exploit vulnerable Rest APIs</p>
+      <div class="learning-path yellow-border">
+        <a>
+          <h3 class="red-text">Hacking Rest APIs</h3>
+          <p class="blue-text">Exploit vulnerable Rest APIs</p>
         </a>
       </div>
-      <div class="learning-path">
-        <a class="learning-path-link">
-          <h3 class="random-color">Hacking with Metasploit</h3>
-          <p>Hack like a pro with the Metasploit framework</p>
+      <div class="learning-path yellow-border">
+        <a>
+          <h3 class="red-text">Hacking with Metasploit</h3>
+          <p class="blue-text">Hack like a pro with the Metasploit framework</p>
         </a>
       </div>
-      <div class="learning-path">
-        <a class="learning-path-link">
-          <h3 class="random-color">Hacking databases</h3>
-          <p>Learn how to hack databases using SQL injection</p>
+      <div class="learning-path yellow-border">
+        <a>
+          <h3 class="red-text">Hacking databases</h3>
+          <p class="blue-text">Learn how to hack databases using SQL injection</p>
         </a>
       </div>
     </div> <!-- learning-path-container -->
