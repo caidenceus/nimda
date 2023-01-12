@@ -11,9 +11,11 @@ include SHARED_PATH . 'terminal_text.php';
 include_once SHARED_PATH . 'legal_disclaimer.php';
 ?>
 
+    <?php
+        $terminal_text = 'cd learning-paths';
+        include SHARED_PATH . 'terminal_text.php';
+    ?>
     <div class="learning-path-container top-level-container">
-      <h1 class="title">Learning Paths</h1>
-
       <div class="learning-path">
         <a class="learning-path-link">
           <h3 class="random-color">Hacking Windows</h3>
@@ -40,9 +42,11 @@ include_once SHARED_PATH . 'legal_disclaimer.php';
       </div>
     </div> <!-- learning-path-container -->
 
+    <?php
+        $terminal_text = 'cd courses';
+        include SHARED_PATH . 'terminal_text.php';
+    ?>
     <div class="course-container top-level-container">
-      <h1 class="title">Courses</h1>
-
       <h3 class="sub-title">SQL injection</h3>
         <?php 
             generate_course_link('SQL injection techniques', 'sql-injection');
