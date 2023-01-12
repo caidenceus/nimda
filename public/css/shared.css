@@ -73,17 +73,34 @@ pre {
 .page-header-title {
   /* We want the buttons next to the title */
   display: inline-block;
-  width: calc(100% / 2);
+  
+  /*Make sure this is the same for .page-header-buttons */
+  padding-top: 42px;
 }
 
 .page-header-buttons {
   display: inline-block;
-  width: calc(100% / 2);
+  float: right;
+  padding: 0;
+  
+  /*Make sure this is the same for .page-header-title */
+  padding-top: 42px;
 }
 
 .page-header-buttons > li {
   display: inline-block;
-  width: calc(100% / 3);
+  width: 100px;
+  
+  /* Push buttons to right side of the page */
+  float: right;
+}
+
+.page-header-buttons > li > a > button {
+  /* Top and bottom = 9px, bottom = 0px because we are fixing the width */
+  padding: 9px 0;
+  
+  /* Space between the horizontal buttons */
+  margin-left: 9px;
 }
 
 .header-tagline {
