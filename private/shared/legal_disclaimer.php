@@ -1,5 +1,5 @@
     <div class="legal-disclaimer top-level-container">
-      <h1 class="legal-disclaimer-heading">Legal Disclaimer</h1>
+      <h1 class="legal-disclaimer-heading red-text">Legal Disclaimer</h1>
       <p class="justify-text">
         <span class="bold underline">Hacking is illegal.</span> Usage of hacking
         tools and or hacking techniques described on this website for attacking 

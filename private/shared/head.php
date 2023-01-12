@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'colors.css">'; ?>
     <?php echo '<link rel="stylesheet" href="' . CSS_PATH . 'shared.css">'; ?>
     <?php
         // Don't close the head tag here so that pages can link to additional
