@@ -1,20 +1,21 @@
 <?php
-require_once 'relative_init.php';
-include_once SHARED_PATH . 'head.php';
+    require_once 'relative_init.php';
+    include_once SHARED_PATH . 'head.php';
 
-echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
+    echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
 
-include_once SHARED_PATH . 'page_header.php';
+    include_once SHARED_PATH . 'page_header.php';
 
-$terminal_text = 'sudo apt-get install -y python3';
-include SHARED_PATH . 'terminal_text.php';
-include_once SHARED_PATH . 'legal_disclaimer.php';
-$terminal_text = 'python3 --version';
-include SHARED_PATH . 'terminal_text.php';
+    $terminal_text = 'sudo apt-get install -y python3';
+    include SHARED_PATH . 'terminal_text.php';
+    include_once SHARED_PATH . 'legal_disclaimer.php';
+    $terminal_text = 'python3 --version';
+    include SHARED_PATH . 'terminal_text.php';
 
-$home = 'sqlmap-course-home.php';
-$next = 'sqlmap-basic-commands.php';
-include SHARED_PATH . 'tutorial_navigation.php';
+    $home = 'sqlmap-course-home.php';
+    $next = 'sqlmap-basic-commands.php';
+    include SHARED_PATH . 'tutorial_navigation.php';
 ?>
 
     <div class="course-top-level-container">

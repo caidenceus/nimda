@@ -60,6 +60,7 @@
   background-color: #18191a;
   color: white;
   font-weight: 700;
+  overflow: scroll;
 }
 
 .dark-mode-background > a{
