@@ -43,6 +43,8 @@ pre {
   
   font-weight: 200;
   color: 1f1f1f;
+  font-size: 36px;
+  font-family: monospace;
 }
 
 .sub-title {
@@ -50,8 +52,9 @@ pre {
 
   border-bottom: 1px solid #1f1f1f;
   color: 1f1f1f;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
+  font-family: monospace;
 }
 
 .top-level-container {
@@ -66,6 +69,22 @@ pre {
 
 /* ====== End global CSS ====== */
 /* ====== Start page_header.php CSS ====== */
+
+.page-header-title {
+  /* We want the buttons next to the title */
+  display: inline-block;
+  width: calc(100% / 2);
+}
+
+.page-header-buttons {
+  display: inline-block;
+  width: calc(100% / 2);
+}
+
+.page-header-buttons > li {
+  display: inline-block;
+  width: calc(100% / 3);
+}
 
 .header-tagline {
   font-family: monospace;
