@@ -62,7 +62,7 @@ function generate_course_link(string $name, string $path)
 function tutorial_link(string $name)
 {
     $href = sterilize_link($name) . '.php';
-    echo '<a href="' . $href . '"><button class="tutorial-button waterfall-color">' . $name . '</button></a>';
+    echo '<a href="' . $href . '"><button class="todo-button-animation tutorial-button">[ ] ' . $name . '</button></a>';
 }
 
 

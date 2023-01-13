@@ -15,43 +15,26 @@ pre {
 /* ====== End common CSS ====== */
 /* ====== Start course home CSS ====== */
 
-.course-home-root-container {
+.education-content-container {
+  /* Direct children are .vertical column divs */
   display: flex;
+  justify-content: space-evenly;
 }
 
-.course-home-container {
-  width: calc(100%/2);
-  padding-left: 5%;
-  padding-right: 5%;
-
-  border-radius: 6px;
-  text-align: center;
+.vertical-column {
+  /* Direct children are .education-content */
+  display: inline-block;
 }
 
-.course-home-container-left {
-  background-color: #f6f6f6;
-}
-
-.course-home-container-right {
-  background-color: white;
+.education-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .tutorial-button {
   width: 100%;
   height: 50px;
   margin-top: 12px;
-
-  border-radius: 25px;
-  border: 1px solid white;
-  font-size: calc(.35842vw + .95296em);
-  font-weight: 700;
-  color: white;
-}
-
-.tutorial-button:hover {
-  border: 1px solid black;
-  background-color: white;
-  color: black;
 }
 
 /* ====== End course home CSS ====== */

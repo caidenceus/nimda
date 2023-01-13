@@ -50,7 +50,7 @@ git --version</pre>
 
       <h3 class="sub-title">Windows</h3>
       <p>
-        <span style="color: red">IMPORTANT!</span> When installing Python 3 on
+        <span class="bold red-text">IMPORTANT!</span> When installing Python 3 on
         Windows, on one of the pages of the install wizard there will be a
         checkbox "<i>Add Python to PATH</i>" make sure you check this box 
         to make your life easier!
