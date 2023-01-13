@@ -4,9 +4,9 @@ include_once PRIVATE_PATH . 'generatable.php';
 include_once SHARED_PATH . 'head.php';
 
 echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
+
+include_once SHARED_PATH . 'page_header.php';
 ?>
-  </head>
-  <body>
     <div class="page-heading top-level-container">
       <div class="profile-picture">
         <img src="profile_picture.jpg" alt="Caiden">
