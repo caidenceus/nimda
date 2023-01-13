@@ -3,7 +3,7 @@ require_once 'relative_init.php';
 include_once SHARED_PATH . 'head.php';
 
 echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
-echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_button_animation.js" defer></script>';
+echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_md_animation.js" defer></script>';
 
 include_once SHARED_PATH . 'page_header.php';
 
@@ -36,7 +36,7 @@ include SHARED_PATH . 'terminal_text.php';
     <div class="course-top-level-container education-content-container">
       <div class="vertical-column">
         <div class="education-content">
-          <h1 class="title">Tutorials</h1>
+          <h1 class="title education-title">Tutorials.md</h1>
           <?php
               $tutorials = array(
                   'Install sqlmap',
@@ -59,7 +59,7 @@ include SHARED_PATH . 'terminal_text.php';
       <div class="course-top-level-container education-content-container">
         <div class="vertical-column">
           <div class="education-content">
-            <h1 class="title">Labs</h1>
+            <h1 class="title education-title">Labs.md</h1>
           </div>
         </div>
       </div>

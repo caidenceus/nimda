@@ -15,6 +15,10 @@ pre {
 /* ====== End common CSS ====== */
 /* ====== Start course home CSS ====== */
 
+.education-title {
+  border-bottom: 2px solid #333;
+}
+
 .education-content-container {
   /* Direct children are .vertical column divs */
   display: flex;
@@ -24,6 +28,7 @@ pre {
 .vertical-column {
   /* Direct children are .education-content */
   display: inline-block;
+  width: 45%;
 }
 
 .education-content {
@@ -33,8 +38,13 @@ pre {
 
 .tutorial-button {
   width: 100%;
-  height: 50px;
   margin-top: 12px;
+  
+  font-size: 18px;
+  text-align: left;
+  background-color: white;
+  font-weight: 500;
+  border: 1px solid white;
 }
 
 /* ====== End course home CSS ====== */
