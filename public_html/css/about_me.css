@@ -13,3 +13,8 @@ img {
 .current-info {
   margin-left: 5%;
 }
+
+.expertise-area {
+  border: 1px solid #333;
+  display: inline-block;
+}
