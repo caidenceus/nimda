@@ -6,8 +6,10 @@
     define("PUBLIC_PATH", PROJECT_PATH . "/public_html/");
     define("SHARED_PATH", PRIVATE_PATH . "/shared/");
 
-    // Page links
-    define("HTTP_PUBLIC", "http://192.168.1.75/public_html/"); // dev location
+    // Page links:
+    //     Production: https://usg.ezp.mybluehost.me/
+    //     Dev:        http://192.168.1.75/public_html/
+    define("HTTP_PUBLIC", "http://192.168.1.75/public_html/");
     define("TUTORIAL_LINK", HTTP_PUBLIC . "index.php#tutorials");
     define("UDEMY_LINK", "https://www.udemy.com/");
     define("BUY_ME_A_COFFEE_LINK", "https://www.buymeacoffee.com/");
@@ -16,4 +18,5 @@
     define("CSS_PATH", HTTP_PUBLIC . "css/");
     define("JAVASCRIPT_PATH", HTTP_PUBLIC . "javascript/");
     define("COURSE_PATH", HTTP_PUBLIC . "courses/");
+    define("IMAGE_PATH", HTTP_PUBLIC . "image/")
 ?>

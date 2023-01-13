@@ -1,0 +1,20 @@
+<?php 
+require_once '../private/init.php';
+include_once PRIVATE_PATH . 'generatable.php';
+include_once SHARED_PATH . 'head.php';
+
+echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
+?>
+  </head>
+  <body>
+    <div class="page-heading">
+      <div class="profile-picture">
+        <?php echo '<img src="' . IMAGE_PATH 'profile_picture.png" ald="Caiden">'; ?>
+      </div>
+      <div class="current-info">
+        <h1>Caiden Pyle - Vulnerability Analysis \ Quality Assurance.</h1>
+      </div>
+    </div>
+
+
+<?php include_once SHARED_PATH . 'page_footer.php'; ?>
