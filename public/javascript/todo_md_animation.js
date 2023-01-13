@@ -1,6 +1,6 @@
 var btn = document.querySelectorAll(".todo-button-animation");
 
-for (let i = 0; i < cbox.length; i++) {
+for (let i = 0; i < btn.length; i++) {
     btn[i].addEventListener("mouseover", function() {
         // Get element text without the "[ ]" at the beginning
         var currentText = this.textContent.substring(3);
