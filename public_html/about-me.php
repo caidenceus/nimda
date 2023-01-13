@@ -9,7 +9,7 @@ echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
   <body>
     <div class="page-heading">
       <div class="profile-picture">
-        <?php echo '<img src="' . IMAGE_PATH 'profile_picture.png" ald="Caiden">'; ?>
+        <img src="profile_picture.jpg" alt="Caiden">
       </div>
       <div class="current-info">
         <h1>Caiden Pyle - Vulnerability Analysis \ Quality Assurance.</h1>
