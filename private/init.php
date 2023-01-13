@@ -18,5 +18,4 @@
     define("CSS_PATH", HTTP_PUBLIC . "css/");
     define("JAVASCRIPT_PATH", HTTP_PUBLIC . "javascript/");
     define("COURSE_PATH", HTTP_PUBLIC . "courses/");
-    define("IMAGE_PATH", HTTP_PUBLIC . "image/")
 ?>
