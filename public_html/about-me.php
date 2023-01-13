@@ -43,5 +43,13 @@ include SHARED_PATH . 'terminal_text.php';
       ?>
       </div>
     </div>
+    <div class="top-level-container experience-flexbox-root">
+      <div class="work-experience">
+        <h1 class="title">Work Experience</h1>
+      </div>
+      <div class="personal-projects">
+        <h1 class="title">Personal Projects</h1>
+      </div>
+    </div>
 
 <?php include_once SHARED_PATH . 'page_footer.php'; ?>
