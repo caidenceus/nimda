@@ -81,7 +81,7 @@ include SHARED_PATH . 'terminal_text.php';
     </div>
     
     <div class="top-level-container technical-skills">
-      <h1 class="title blue-text">Areas of Expertise</h1>
+      <h1 class="title blue-text">Technical Skills</h1>
       <div class="technical-skills-container">
       <?php
       $skills = array(
