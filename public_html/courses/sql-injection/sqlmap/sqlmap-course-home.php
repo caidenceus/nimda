@@ -53,7 +53,7 @@ include SHARED_PATH . 'terminal_text.php';
       <div class="tutorial-container">
         <h1 class="title blue-text">Tutorials.md</h1>
         <?php
-            echo '<p><b>## Beginner</p></b>';
+            echo '<p class="tutorial-todo-level"><b>## Beginner</p></b>';
             $tutorials = array(
                 'Install sqlmap',
                 'Sqlmap basic commands',
