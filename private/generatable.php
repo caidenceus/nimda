@@ -49,7 +49,7 @@ function generate_course_link(string $name, string $path)
     $href = COURSE_PATH . "$path/$clean_name/$clean_name-course-home.php";
 
     echo '<div class="course">';
-    echo '<a href="' . $href . '" class="course-link"><button class="course-button random-color">' . $name . '</button></a>';
+    echo '<a href="' . $href . '" class="course-link"><button>' . $name . '</button></a>';
     echo '</div>';
 }
 

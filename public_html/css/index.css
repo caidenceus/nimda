@@ -1,7 +1,7 @@
 /* ====== Start learning path CSS ====== */
 
 .learning-path-container {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(51 51 51 / 0.4);
 }
 
 .learning-path-container h1 {
@@ -76,15 +76,15 @@
   display: inline-block;
   overflow: hidden;
 
-  /* Responsive course buttons, 5 per column */
-  width: 15%;
+  /* Responsive course buttons, 3 per column */
+  width: 30%;
   height: 100px;
-  margin: 2%;
+  margin: calc(10% / 6);
 }
 
 /* .course-button is a button tag inside an anchor tag so that the entire button
    is a clickable href. .course-button is the class of the button tag. */
-.course-button {
+.course-link > button {
   border: 1px solid #1f1f1f;
   background-color: white;
   border-radius: 6px;
@@ -97,7 +97,7 @@
 
 /* .course-button is a button tag inside an anchor tag so that the entire button
    is a clickable href. .course-button is the class of the button tag. */
-.course-button:hover {
+.course-link > button:hover {
   color: white;
   background-color: rgba(0 0 0 / 0.5);
 }
