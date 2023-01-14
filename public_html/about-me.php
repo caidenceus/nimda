@@ -75,8 +75,45 @@ include SHARED_PATH . 'terminal_text.php';
         <h4 class="work-dates">10/2017 - 01/2019</h4>
         <ul>
           <li class="job-task-bullet">Utilize PowerShell to manage active directory objects.</li>
-          <li class="job-task-bullet">Support Textron employees in person with configuring and fixing software and hardware.</li>
+          <li class="job-task-bullet">Support Textron employees in person by configuring and fixing software and hardware.</li>
         </ul>
+      </div>
+    </div>
+    
+    <div class="top-level-container technical-skills">
+      <h1 class="title blue-text">Areas of Expertise</h1>
+      <div class="technical-skills-container">
+      <?php
+      $skills = array(
+          'Python',
+          'C++',
+          'PHP',
+          'Debian Linux',
+          'HTML5',
+          'CSS3',
+          'MySQL',
+          'SQL',
+          'Git',
+          'GitHub',
+          'PowerShell',
+          'Pip',
+          'Nessus',
+          'REST APIs',
+          'Make',
+          'G++',
+          'Jenkins',
+          'Pytest',
+          'Selenium',
+          'Jira',
+          'Confluence',
+          'TCP/IP',
+          'HTTP'
+      );
+      
+      foreach ($skills as $skill) {
+          echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+      }
+      ?>
       </div>
     </div>
 

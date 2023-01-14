@@ -26,6 +26,10 @@ img {
   margin: 9px;
 }
 
+.work-experience {
+  margin-bottom: 
+}
+
 .job-title {
   font-weight: 900;
   font-size: 27px;
@@ -52,6 +56,20 @@ img {
 
 .job-task-bullet {
   margin-bottom: 12px;
+}
+
+
+.technical-skill {
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+
+.technical-skill > p {
+  color: white;
+  margin: 9px;
+  font-weight: 700;
 }
 
 .extra-experience {
