@@ -98,3 +98,7 @@ img {
   color: white;
   padding-left: 9px;
 }
+
+.volunteer-container {
+  border: 1px solid black;
+}

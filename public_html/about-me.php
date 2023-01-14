@@ -109,7 +109,7 @@ include SHARED_PATH . 'terminal_text.php';
           'TCP/IP',
           'HTTP'
       );
-      
+
       foreach ($skills as $skill) {
           echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
       }
@@ -119,8 +119,16 @@ include SHARED_PATH . 'terminal_text.php';
 
     <div class="top-level-container extra-experience">
       <div class="volunteer-work">
-        <h1 class="title">Volunteer Work</h1>
+        <h1 class="title blue-text">Volunteer Work</h1>
+
+        <div class="extra-experience-container volunteer-container">
+          <h2 class="volunteer-org">Microsoft TEALs</h2>
+          <h3 class="volunteer-title">Computer Science teaching assistant</h3>
+          <h4 class="volunteer-dates">08/2022 - present</h3>
+        </div>
+
       </div>
+
       <div class="personal-projects">
         <h1 class="title blue-text">Personal Projects</h1>
       </div>
