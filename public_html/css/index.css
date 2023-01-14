@@ -78,13 +78,31 @@
 
   /* Responsive course buttons, 3 per column */
   width: 30%;
-  height: 100px;
+  height: 150px;
   margin: calc(10% / 6);
+}
+
+.course-link {
+  text-decoration: none;
+}
+
+.course-link p,
+.course-link h2 {
+  padding-left: 15px;
+  padding-right: 15px;
+  
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 /* .course-button is a button tag inside an anchor tag so that the entire button
    is a clickable href. .course-button is the class of the button tag. */
 .course-link > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  
   border: 1px solid #1f1f1f;
   background-color: white;
   border-radius: 6px;

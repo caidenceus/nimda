@@ -34,6 +34,7 @@ include SHARED_PATH . 'terminal_text.php';
 <?php 
 generate_course_link('SQL injection techniques', 'sql-injection');
 generate_course_link('Sqlmap', 'sql-injection'); 
+generate_course_link('Metasploit SQL injection modules');
 ?>
     </div> <!-- course-container -->
 
