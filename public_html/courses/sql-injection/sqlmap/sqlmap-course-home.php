@@ -19,7 +19,7 @@ include SHARED_PATH . 'terminal_text.php';
 ?>
 
     <div class="course-top-level-container">
-      <h1 class="title">Sqlmap</h1>
+      <h1 class="title blue-text">Sqlmap</h1>
       <p>
         Sqlmap is an open source ethical hacking tool written in Python that is 
         used to help automate detecting and exploiting SQL vulnerabilities.

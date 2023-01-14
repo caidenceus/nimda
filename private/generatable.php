@@ -79,6 +79,7 @@ function generate_tutorial_links(array $tutorial_name_array)
 function generate_technology_tags(array $tags)
 {
     echo '<div class="technology-tag-container">';
+    echo '<h1 class="title">Technologies in this Course</h1>';
 
     foreach($tags as $tag) {
         echo '<div class="technology-tag"><h2 class="blue-background tag">' . $tag . '</h2></div>';
