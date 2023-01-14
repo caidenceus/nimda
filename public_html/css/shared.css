@@ -177,6 +177,7 @@ pre {
 .terminal-text-container {
   background-color: black;
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .terminal-text,

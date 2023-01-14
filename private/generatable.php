@@ -27,8 +27,8 @@ function sterilize_link(string $link_text)
  */
 function generate_learning_path_link(string $title, string $tagline, string $landing_href)
 {
-    echo '<div class="learning-path"><button>';
-    echo '<a href="' . $landing_href . '">';
+    echo '<div class="learning-path">';
+    echo '<a href="' . $landing_href . '"><button>';
     echo '<p class="learning-path-subtitle bold">Learning Path</p>';
     echo '<h2 class="blue-text">' . $title . '</h2>';
     echo '<p>' . $tagline . '</p>';

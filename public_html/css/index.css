@@ -26,9 +26,10 @@
 .learning-path > a {
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 
-.learning-path > button {
+.learning-path > a > button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,22 +47,19 @@
   
 }
 
-.learning-path > button:hover {
+.learning-path > a > button:hover {
   color: white;
   background-color: rgba(0 0 0 / 0.5);
 }
 
-.learning-path a {
-  text-decoration: none;
-  margin: 0;
-}
-
 .learning-path h2 {
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .learning-path p {
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .learning-path-subtitle {
