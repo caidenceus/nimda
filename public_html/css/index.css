@@ -10,6 +10,7 @@
 
 .learning-path {
   display: inline-block;
+
   overflow: hidden;
 
   margin-top: 18px;
@@ -18,31 +19,49 @@
   margin-right: 3%;
   width: 42%;
   height: 200px;
+}
+
+/* Button is inside of anchor tag. In order for button to fill entire div, we
+   the anchor tag to fill the entire div. */
+.learning-path > a {
+  width: 100%;
+  height: 100%;
+}
+
+.learning-path > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  
+  text-align: left;
   background-color: white;
   border-radius: 6px;
   border: 1px solid #333;
+  
 }
 
-.learning-path:hover {
+.learning-path > button:hover {
   color: white;
   background-color: rgba(0 0 0 / 0.5);
 }
 
 .learning-path a {
   text-decoration: none;
-  margin: 24px;
+  margin: 0;
 }
 
 .learning-path h2 {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0;
 }
 
 .learning-path p {
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .learning-path-subtitle {
