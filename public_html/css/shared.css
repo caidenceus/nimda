@@ -102,7 +102,7 @@ pre {
 
 .page-header-buttons > li {
   display: inline-block;
-  width: 100px;
+  width: 125px;
   
   /* Push buttons to right side of the page */
   float: right;
@@ -112,7 +112,7 @@ pre {
 }
 
 .page-header-buttons > li > a > button {
-  width: 100px;
+  width: 100%;
   color: white;
   font-weight: 700;
   border-radius: 6px;
