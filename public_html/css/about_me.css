@@ -27,10 +27,11 @@ img {
 }
 
 .work-experience {
-  margin-bottom: 
+  margin-bottom: 30px;
 }
 
-.job-title {
+.job-title,
+.volunteer-org {
   font-weight: 900;
   font-size: 27px;
   
@@ -38,7 +39,8 @@ img {
   margin-bottom: 12px;
 }
 
-.company {
+.company,
+.volunteer-title {
   font-weight: 500;
   font-size: 18px;
 
@@ -46,7 +48,8 @@ img {
   margin-bottom: 12px;
 }
 
-.work-dates {
+.work-dates,
+.volunteer-dates {
   font-weight: 300;
   font-size: 18px;
   
@@ -99,6 +102,22 @@ img {
   padding-left: 9px;
 }
 
+.extra-experience-container {
+  margin-right: 16px;
+  border-radius: 6px;
+  padding: 0 16px;
+  overflow: hidden;
+  height: 200px;
+}
+
 .volunteer-container {
   border: 1px solid black;
+}
+
+/* Child of class="extra-experience-container volunteer-container" */
+.volunteer-experience-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }

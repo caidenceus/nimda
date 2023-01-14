@@ -122,9 +122,11 @@ include SHARED_PATH . 'terminal_text.php';
         <h1 class="title blue-text">Volunteer Work</h1>
 
         <div class="extra-experience-container volunteer-container">
-          <h2 class="volunteer-org">Microsoft TEALs</h2>
-          <h3 class="volunteer-title">Computer Science teaching assistant</h3>
-          <h4 class="volunteer-dates">08/2022 - present</h3>
+          <div class="volunteer-experience-flex">
+            <h2 class="volunteer-org">Microsoft TEALs</h2>
+            <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
+            <h4 class="volunteer-dates">08/2022 - present</h3>
+          </div>
         </div>
 
       </div>
