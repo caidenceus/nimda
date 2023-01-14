@@ -19,12 +19,6 @@ pre {
   border-bottom: 2px solid #333;
 }
 
-.education-content-container {
-  /* Direct children are .vertical column divs */
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .vertical-column {
   /* Direct children are .education-content */
   display: inline-block;
