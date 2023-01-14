@@ -23,6 +23,7 @@ img {
 }
 
 .expertise-area > p {
+  font-family: monospace;
   margin: 9px;
 }
 
@@ -73,6 +74,7 @@ img {
 }
 
 .technical-skill > p {
+  font-family: monospace;
   color: white;
   margin: 9px;
   font-weight: 700;
@@ -87,6 +89,7 @@ img {
 }
 
 .technical-skill-all > p {
+  font-family: monospace;
   color: #333;
   margin: 9px;
   font-weight: 700;
@@ -147,6 +150,13 @@ img {
   margin-right: 12px;
 }
 
+.github-project-container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
 .github-skill {
   border-radius: 6px;
   display: inline-block;
@@ -155,8 +165,21 @@ img {
 }
 
 .technical-skill > p {
+  font-family: monospace;
   font-size: 12px;
   color: white;
   margin: 6px;
   font-weight: 700;
+}
+
+.github-repo-name {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.github-repo-description,
+.github-link {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 9px;
 }

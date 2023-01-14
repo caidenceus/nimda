@@ -205,22 +205,24 @@ include SHARED_PATH . 'terminal_text.php';
         <h1 class="title blue-text">Personal Projects</h1>
 
         <div class="extra-experience-container github-project">
-          <h2 class="github-repo-name">nimda</h2>
-          <p class="github-repo-description">Source code for this website</p>
-          <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
-          <div class="github-skils-used">
-          <?php
-          $skills = array(
-              'PHP',
-              'HTML5',
-              'CSS3',
-              'JavaScript'
-          );
+          <div class="github-project-container-flex">
+            <h2 class="github-repo-name">nimda</h2>
+            <p class="github-repo-description">Source code for this website</p>
+            <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
+            <div class="technical-skills-container">
+            <?php
+            $skills = array(
+                'PHP',
+                'HTML5',
+                'CSS3',
+                'JavaScript'
+            );
 
-          foreach ($skills as $skill) {
-              echo '<div class="github-skill blue-background"><p>' . $skill . '</p></div>';
-          }
-          ?>
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
+            ?>
+            </div>
           </div>
         </div>
       </div>
