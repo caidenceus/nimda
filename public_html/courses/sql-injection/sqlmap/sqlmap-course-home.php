@@ -1,4 +1,5 @@
 <?php 
+
 require_once 'relative_init.php';
 include_once SHARED_PATH . 'head.php';
 
@@ -14,6 +15,7 @@ include_once SHARED_PATH . 'legal_disclaimer.php';
 
 $terminal_text = 'python3 sqlmap.py -hh';
 include SHARED_PATH . 'terminal_text.php';
+
 ?>
 
     <div class="course-top-level-container">
@@ -31,6 +33,20 @@ include SHARED_PATH . 'terminal_text.php';
         out-of-band. Each of these techniques are covered in more depth on their
         respective tutorial pages.
       </p>
+    </div>
+    
+    <div class="course-top-level-container">
+      <?php
+          $tags = array(
+              'sqlmap',
+              'Python',
+              'Git',
+              'Debian Linux',
+              'Bash'
+          );
+          
+          generate_technology_tags($tags);
+      ?>
     </div>
 
     <div class="course-top-level-container education-content-container">

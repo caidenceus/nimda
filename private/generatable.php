@@ -58,18 +58,6 @@ function generate_course_link(string $name, string $path)
 
 
 /**
- *  @brief Generate a tutorial link as a button.
- *  
- *  @param $name The name of the tutorial to generate a link for.
- */
-function tutorial_link(string $name)
-{
-    $href = sterilize_link($name) . '.php';
-    echo '<a href="' . $href . '"><button class="todo-button-animation tutorial-button">[ ] ' . $name . '</button></a>';
-}
-
-
-/**
  *  @brief Function to generate the color waterfall for tutorial links.
  *
  *  @param $tutorial_name_array Array of tutorial names to generate links for.
@@ -77,8 +65,26 @@ function tutorial_link(string $name)
 function generate_tutorial_links(array $tutorial_name_array)
 {
     foreach($tutorial_name_array as $tutorial) {
-        tutorial_link($tutorial, $inline_style);
+        $href = sterilize_link($tutorial) . '.php';
+        echo '<a href="' . $href . '"><button class="todo-button-animation tutorial-button">[ ] ' . $tutorial . '</button></a>';
     }
+}
+
+
+/**
+ *  @brief Function to generate technology tags on course and tutorial pages.
+ *
+ *  @param $tags Array of tutorial names to generate links for.
+ */
+function generate_technology_tags(array $tags)
+{
+    echo '<div class="technology-tag-container">';
+
+    foreach($tags as $tag) {
+        echo '<div class="technology-tag"><h2 class="blue-background tag">' . $tag . '</h2></div>';
+    }
+
+    echo '</div>';
 }
 
 ?>

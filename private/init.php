@@ -7,7 +7,7 @@
     define("SHARED_PATH", PRIVATE_PATH . "/shared/");
 
     // Page links:
-    //     Production: https://usg.ezp.mybluehost.me/
+    //     Production: http://usg.ezp.mybluehost.me/
     //     Dev:        http://192.168.1.75/public_html/
     define("HTTP_PUBLIC", "http://192.168.1.75/public_html/");
     define("TUTORIAL_LINK", HTTP_PUBLIC . "index.php#tutorials");

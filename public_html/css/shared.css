@@ -224,3 +224,21 @@ pre {
 }
 
 /* End terminal_text.php CSS */
+/* Start generatable.css */
+
+.technology-tag {
+  display: inline-block;
+  margin-right: 9px;
+  margin-bottom: 9px;
+}
+
+.tag {
+  font-family: monospace;
+  color: white;
+  font-size: 21px;
+  padding: 9px;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+/* End generatable.css */
