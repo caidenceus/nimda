@@ -51,6 +51,30 @@ include SHARED_PATH . 'terminal_text.php';
         <h2 class="job-title">Vulnerability Analysis / Quality Assurance</h2>
         <h3 class="company">NetApp E-Series</h3>
         <h4 class="work-dates">04/2020 - present</h4>
+        <div class="technical-skills-container">
+        <?php
+        $skills = array(
+            'Python',
+            'C++',
+            'Scrum & Agile methodologies',
+            'Debian Linux',
+            'Git',
+            'Pip',
+            'Nessus',
+            'REST APIs',
+            'Jenkins',
+            'Pytest',
+            'Selenium',
+            'Jira',
+            'Confluence',
+            'HTTP'
+        );
+
+        foreach ($skills as $skill) {
+            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+        }
+        ?>
+        </div>
         <ul>
           <li class="job-task-bullet">Created Python testing framework to reach near 100% code test coverage across all our REST APIs.</li>
           <li class="job-task-bullet">Created Python library to add Nessus and Invicti vulnerability scanning to several continuous integration pipelines including firmware builds, REST API definitions, and web proxy builds.</li>
@@ -62,6 +86,32 @@ include SHARED_PATH . 'terminal_text.php';
         <h2 class="job-title">Software Engineer in Test</h2>
         <h3 class="company">NetApp SolidFire</h3>
         <h4 class="work-dates">01/2019 - 04/2020</h4>
+        <div class="technical-skills-container">
+        <?php
+        $skills = array(
+            'Python',
+            'PHP',
+            'Scrum & Agile methodologies',
+            'Debian Linux',
+            'HTML5',
+            'CSS3',
+            'MySQL',
+            'VMware',
+            'Git',
+            'Pip',
+            'PowerShell',
+            'REST APIs',
+            'Pytest',
+            'Jira',
+            'Confluence',
+            'HTTP'
+        );
+
+        foreach ($skills as $skill) {
+            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+        }
+        ?>
+        </div>
         <ul>
           <li class="job-task-bullet">Created Python library that 100% automated managing vCenter servers and virtual machines for testing new releases of software through consuming the vCenter REST API.</li>
           <li class="job-task-bullet">Created and maintained internal websites with PHP, HTML, MySQL, and CSS.</li>
@@ -73,6 +123,24 @@ include SHARED_PATH . 'terminal_text.php';
         <h2 class="job-title">Information Technology</h2>
         <h3 class="company">Textron Aviation</h3>
         <h4 class="work-dates">10/2017 - 01/2019</h4>
+        <div class="technical-skills-container">
+        <?php
+        $skills = array(
+            'PowerShell',
+            'Windows Administration',
+            'HTML5',
+            'CSS3',
+            'Git',
+            'Pip',
+            'TCP/IP',
+            'HTTP'
+        );
+
+        foreach ($skills as $skill) {
+            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+        }
+        ?>
+        </div>
         <ul>
           <li class="job-task-bullet">Utilize PowerShell to manage active directory objects.</li>
           <li class="job-task-bullet">Support Textron employees in person by configuring and fixing software and hardware.</li>
@@ -81,11 +149,12 @@ include SHARED_PATH . 'terminal_text.php';
     </div>
     
     <div class="top-level-container technical-skills">
-      <h1 class="title blue-text">Technical Skills</h1>
-      <div class="technical-skills-container">
+      <h1 class="title blue-text">All Technical Skills</h1>
+      <div class="all-technical-skills-container">
       <?php
       $skills = array(
           'Python',
+          'Scrum & Agile methodologies',
           'C++',
           'PHP',
           'Debian Linux',
@@ -107,11 +176,12 @@ include SHARED_PATH . 'terminal_text.php';
           'Jira',
           'Confluence',
           'TCP/IP',
-          'HTTP'
+          'HTTP',
+          'Windows Administration'
       );
 
       foreach ($skills as $skill) {
-          echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+          echo '<div class="technical-skill-all"><p>' . $skill . '</p></div>';
       }
       ?>
       </div>
@@ -133,6 +203,26 @@ include SHARED_PATH . 'terminal_text.php';
 
       <div class="personal-projects">
         <h1 class="title blue-text">Personal Projects</h1>
+
+        <div class="extra-experience-container github-project">
+          <h2 class="github-repo-name">nimda</h2>
+          <p class="github-repo-description">Source code for this website</p>
+          <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
+          <div class="github-skils-used">
+          <?php
+          $skills = array(
+              'PHP',
+              'HTML5',
+              'CSS3',
+              'JavaScript'
+          );
+
+          foreach ($skills as $skill) {
+              echo '<div class="github-skill blue-background"><p>' . $skill . '</p></div>';
+          }
+          ?>
+          </div>
+        </div>
       </div>
     </div>
 

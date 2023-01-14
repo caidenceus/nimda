@@ -78,6 +78,20 @@ img {
   font-weight: 700;
 }
 
+.technical-skill-all {
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  border: 1px solid #333;
+}
+
+.technical-skill-all > p {
+  color: #333;
+  margin: 9px;
+  font-weight: 700;
+}
+
 .extra-experience {
   display: flex;
 }
@@ -99,11 +113,12 @@ img {
 
 .personal-projects > h1 {
   color: white;
-  padding-left: 9px;
+  
+  /* Same as the margin of .github-project */
+  padding-left: 12px;
 }
 
 .extra-experience-container {
-  margin-right: 16px;
   border-radius: 6px;
   padding: 0 16px;
   overflow: hidden;
@@ -112,6 +127,7 @@ img {
 
 .volunteer-container {
   border: 1px solid black;
+  margin-right: 16px;
 }
 
 /* Child of class="extra-experience-container volunteer-container" */
@@ -120,4 +136,27 @@ img {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+.github-project {
+  background-color: white;
+  
+  /* We want this to be the same width as .volunteer-container which has total
+     horizontal margin of 24px */
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.github-skill {
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.technical-skill > p {
+  font-size: 12px;
+  color: white;
+  margin: 6px;
+  font-weight: 700;
 }
