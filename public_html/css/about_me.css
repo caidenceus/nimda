@@ -28,20 +28,23 @@ img {
 
 .job-title {
   font-weight: 900;
+  font-size: 27px;
   
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .company {
-  font-weight: 600;
-  
+  font-weight: 500;
+  font-size: 18px;
+
   margin-top: 0;
   margin-bottom: 12px;
 }
 
 .work-dates {
   font-weight: 300;
+  font-size: 18px;
   
   margin-top: 0;
   margin-bottom: 12px;

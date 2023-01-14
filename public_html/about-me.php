@@ -46,6 +46,7 @@ include SHARED_PATH . 'terminal_text.php';
     
     <div class="top-level-container work-experience">
       <h1 class="title blue-text">Work Experience</h1>
+
       <div class="job">
         <h2 class="job-title">Vulnerability Analysis / Quality Assurance</h2>
         <h3 class="company">NetApp E-Series</h3>
@@ -56,6 +57,27 @@ include SHARED_PATH . 'terminal_text.php';
           <li class="job-task-bullet">Design, develop, and deploy testing techniques for new features and defect patches.</li>
         </ul>
       </div>
+
+      <div class="job">
+        <h2 class="job-title">Software Engineer in Test</h2>
+        <h3 class="company">NetApp SolidFire</h3>
+        <h4 class="work-dates">01/2019 - 04/2020</h4>
+        <ul>
+          <li class="job-task-bullet">Created Python library that 100% automated managing vCenter servers and virtual machines for testing new releases of software through consuming the vCenter REST API.</li>
+          <li class="job-task-bullet">Created and maintained internal websites with PHP, HTML, MySQL, and CSS.</li>
+          <li class="job-task-bullet">Design, develop, and deploy testing techniques for new features and defect patches.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h2 class="job-title">Information Technology</h2>
+        <h3 class="company">Textron Aviation</h3>
+        <h4 class="work-dates">10/2017 - 01/2019</h4>
+        <ul>
+          <li class="job-task-bullet">Utilize PowerShell to manage active directory objects.</li>
+          <li class="job-task-bullet">Support Textron employees in person with configuring and fixing software and hardware.</li>
+        </ul>
+      </div>
     </div>
 
     <div class="top-level-container extra-experience">
@@ -63,7 +85,7 @@ include SHARED_PATH . 'terminal_text.php';
         <h1 class="title">Volunteer Work</h1>
       </div>
       <div class="personal-projects">
-        <h1 class="title">Personal Projects</h1>
+        <h1 class="title blue-text">Personal Projects</h1>
       </div>
     </div>
 
