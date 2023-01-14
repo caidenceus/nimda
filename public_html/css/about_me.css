@@ -126,6 +126,7 @@ img {
   padding: 0 16px;
   overflow: hidden;
   height: 200px;
+  margin-bottom: 16px;
 }
 
 .volunteer-container {
@@ -166,7 +167,7 @@ img {
 
 .technical-skill > p {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
   margin: 6px;
   font-weight: 700;
@@ -177,9 +178,16 @@ img {
   margin-bottom: 9px;
 }
 
-.github-repo-description,
-.github-link {
+.github-repo-description {
   font-size: 18px;
   margin: 0;
   margin-bottom: 9px;
+}
+
+.github-link{
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 9px;
+  font-weight: 700;
+  color: purple;
 }

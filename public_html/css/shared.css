@@ -120,6 +120,7 @@ pre {
   
   /* Top and bottom = 9px, bottom = 0px because we are fixing the width */
   padding: 9px 0;
+  font-size: 21px;
 }
 
 .header-tagline {

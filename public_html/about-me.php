@@ -50,7 +50,7 @@ include SHARED_PATH . 'terminal_text.php';
       <div class="job">
         <h2 class="job-title">Vulnerability Analysis / Quality Assurance</h2>
         <h3 class="company">NetApp E-Series</h3>
-        <h4 class="work-dates">04/2020 - present</h4>
+        <h4 class="work-dates">04/2020&nbsp;&ndash;&nbsp;present</h4>
         <div class="technical-skills-container">
         <?php
         $skills = array(
@@ -85,7 +85,7 @@ include SHARED_PATH . 'terminal_text.php';
       <div class="job">
         <h2 class="job-title">Software Engineer in Test</h2>
         <h3 class="company">NetApp SolidFire</h3>
-        <h4 class="work-dates">01/2019 - 04/2020</h4>
+        <h4 class="work-dates">01/2019&nbsp;&ndash;&nbsp;04/2020</h4>
         <div class="technical-skills-container">
         <?php
         $skills = array(
@@ -122,7 +122,7 @@ include SHARED_PATH . 'terminal_text.php';
       <div class="job">
         <h2 class="job-title">Information Technology</h2>
         <h3 class="company">Textron Aviation</h3>
-        <h4 class="work-dates">10/2017 - 01/2019</h4>
+        <h4 class="work-dates">10/2017&nbsp;&ndash;&nbsp;/2019</h4>
         <div class="technical-skills-container">
         <?php
         $skills = array(
@@ -195,7 +195,7 @@ include SHARED_PATH . 'terminal_text.php';
           <div class="volunteer-experience-flex">
             <h2 class="volunteer-org">Microsoft TEALs</h2>
             <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
-            <h4 class="volunteer-dates">08/2022 - present</h3>
+            <h4 class="volunteer-dates">08/2022&nbsp;&ndash;&nbsp;present</h3>
           </div>
         </div>
 
@@ -215,7 +215,9 @@ include SHARED_PATH . 'terminal_text.php';
                 'PHP',
                 'HTML5',
                 'CSS3',
-                'JavaScript'
+                'JavaScript',
+                'MySQL',
+                'Apache server II'
             );
 
             foreach ($skills as $skill) {
@@ -225,6 +227,53 @@ include SHARED_PATH . 'terminal_text.php';
             </div>
           </div>
         </div>
+        
+        <div class="extra-experience-container github-project">
+          <div class="github-project-container-flex">
+            <h2 class="github-repo-name">cpprequest</h2>
+            <p class="github-repo-description">Cross-platform HTTP request library</p>
+            <a href="https://github.com/caidenceus/cpprequest" target="_blank" class="github-link">GitHub</a>
+            <div class="technical-skills-container">
+            <?php
+            $skills = array(
+                'C++',
+                'Make',
+                'TCP/IP',
+                'HTTP',
+                'Socket Programming',
+                'Visual Studio'
+            );
+
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
+            ?>
+            </div>
+          </div>
+        </div>
+        
+        <div class="extra-experience-container github-project">
+          <div class="github-project-container-flex">
+            <h2 class="github-repo-name">dspy</h2>
+            <p class="github-repo-description">Well documented data structures</p>
+            <a href="https://github.com/caidenceus/dspy" target="_blank" class="github-link">GitHub</a>
+            <div class="technical-skills-container">
+            <?php
+            $skills = array(
+                'Python',
+                'PyCharm',
+                'Pytest',
+                'Data Structures'
+            );
+
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
+            ?>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
 
