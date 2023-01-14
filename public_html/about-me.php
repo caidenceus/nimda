@@ -43,9 +43,14 @@ include SHARED_PATH . 'terminal_text.php';
       ?>
       </div>
     </div>
-    <div class="top-level-container experience-flexbox-root">
-      <div class="work-experience">
-        <h1 class="title">Work Experience</h1>
+    
+    <div class="top-level-container work-experience">
+      <h1 class="title">Work Experience</h1>
+    </div>
+
+    <div class="top-level-container extra-experience">
+      <div class="volunteer-work">
+        <h1 class="title">Volunteer Work</h1>
       </div>
       <div class="personal-projects">
         <h1 class="title">Personal Projects</h1>

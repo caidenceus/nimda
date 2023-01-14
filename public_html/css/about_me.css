@@ -26,16 +26,16 @@ img {
   margin: 9px;
 }
 
-.experience-flexbox-root {
+.extra-experience {
   display: flex;
 }
 
-/* Direct child of .experience-flexbox-root */
-.work-experience {
+/* Direct child of .extra-experience */
+.volunteer-work {
   width: calc(100% / 2);
 }
 
-/* Direct child of .experience-flexbox-root */
+/* Direct child of .extra-experience */
 .personal-projects {
   width: calc(100% / 2);
   
