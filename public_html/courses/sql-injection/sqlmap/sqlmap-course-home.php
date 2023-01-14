@@ -18,15 +18,15 @@ include SHARED_PATH . 'terminal_text.php';
 
 ?>
 
-    <div class="course-top-level-container">
-      <h1 class="title blue-text">Sqlmap</h1>
-      <p>
+    <div class="course-top-level-container dark-purple-background-color preface">
+      <h1 class="title white-text">Sqlmap</h1>
+      <p class="course-preface-text white-text">
         Sqlmap is an open source ethical hacking tool written in Python that is 
         used to help automate detecting and exploiting SQL vulnerabilities.
         Its features range from detecting vulnerable HTML form parameters, to 
         enumerating database users, to completely taking over a database server.      
       </p>
-      <p>
+      <p class="course-preface-text white-text">
         At the time of this writing, sqlmap fully supports six different 
         injection techniques, which are Boolean-based blind, 
         time-based blind, error-based, UNION query-based, stacked queries and 
@@ -34,24 +34,10 @@ include SHARED_PATH . 'terminal_text.php';
         respective tutorial pages.
       </p>
     </div>
-    
-    <div class="course-top-level-container">
-      <?php
-          $tags = array(
-              'Sqlmap',
-              'Python',
-              'Git',
-              'Debian Linux',
-              'Bash'
-          );
-          
-          generate_technology_tags($tags);
-      ?>
-    </div>
 
     <div class="course-top-level-container">
       <div class="tutorial-container">
-        <h1 class="title blue-text">Tutorials.md</h1>
+        <h1 class="title blue-text file-name-header">Tutorials.md</h1>
         <?php
             echo '<p class="tutorial-todo-level"><b>## Beginner</p></b>';
             $tutorials = array(
@@ -69,13 +55,26 @@ include SHARED_PATH . 'terminal_text.php';
             generate_tutorial_links($tutorials);
         ?>
       </div>
-      
-      <div class="course-top-level-container education-content-container">
-        <div class="vertical-column">
-          <div class="education-content">
-            <h1 class="title education-title">Labs.md</h1>
-          </div>
-        </div>
+    </div>
+
+    <div class="course-top-level-container">
+      <div class="lab-container">
+        <h1 class="title blue-text file-name-header">Labs.md</h1>
       </div>
+    </div>
+    
+    <div class="course-top-level-container">
+    <?php
+        $tags = array(
+            'Sqlmap',
+            'Python',
+            'Git',
+            'Debian Linux',
+            'Bash'
+        );
+        
+        generate_technology_tags($tags);
+    ?>
+  </div>
 
 <?php require_once SHARED_PATH . 'page_footer.php'; ?>

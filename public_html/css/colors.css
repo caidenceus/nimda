@@ -1,4 +1,12 @@
 /* Start button and text colors */
+.white-text {
+  color: white;
+}
+
+.white-background-color {
+  background-color: white;
+}
+
 .blue-text { 
   color: #2777ff;
 }
@@ -51,6 +59,14 @@
   color: #eb4034;
   background-color: white;
   border: 1px solid #eb4034;
+}
+
+.dark-purple-text {
+   color: #190a24;
+}
+
+.dark-purple-background-color {
+  background-color: #190a24;
 }
 
 /* End button and text colors */

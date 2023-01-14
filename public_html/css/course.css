@@ -15,6 +15,16 @@ pre {
 /* ====== End common CSS ====== */
 /* ====== Start course home CSS ====== */
 
+.preface {
+  padding: 30px;
+  border-radius: 6px;
+}
+
+.file-name-header {
+  border-bottom: 2px solid rgba(51 51 51 /0.4);
+  padding-bottom: 6px;
+}
+
 .tutorial-todo-level {
   margin: 0;
   font-size: 27px;

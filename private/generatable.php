@@ -66,7 +66,7 @@ function generate_tutorial_links(array $tutorial_name_array)
 {
     foreach($tutorial_name_array as $tutorial) {
         $href = sterilize_link($tutorial) . '.php';
-        echo '<a href="' . $href . '"><button class="todo-button-animation tutorial-button">&nbsp;&nbsp;[ ] ' . $tutorial . '</button></a>';
+        echo '<a href="' . $href . '"><button class="todo-button-animation tutorial-button">[ ] ' . $tutorial . '</button></a>';
     }
 }
 
