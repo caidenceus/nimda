@@ -76,6 +76,7 @@ img {
 .technical-skill > p {
   font-family: monospace;
   color: white;
+  font-size: 15px;
   margin: 9px;
   font-weight: 700;
 }
