@@ -24,7 +24,7 @@ include SHARED_PATH . 'terminal_text.php';
     ?>
 
     <div class="top-level-container">
-      <h1 class="title">Areas of Expertise</h1>
+      <h1 class="title blue-text">Areas of Expertise</h1>
       <div class="expertise-container">
       <?php
       $areas = array(
@@ -45,7 +45,17 @@ include SHARED_PATH . 'terminal_text.php';
     </div>
     
     <div class="top-level-container work-experience">
-      <h1 class="title">Work Experience</h1>
+      <h1 class="title blue-text">Work Experience</h1>
+      <div class="job">
+        <h2 class="job-title">Vulnerability Analysis / Quality Assurance</h2>
+        <h3 class="company">NetApp E-Series</h3>
+        <h4 class="work-dates">04/2020 - present</h4>
+        <ul>
+          <li class="job-task-bullet">Created Python testing framework to reach near 100% code test coverage across all our REST APIs.</li>
+          <li class="job-task-bullet">Created Python library to add Nessus and Invicti vulnerability scanning to several continuous integration pipelines including firmware builds, REST API definitions, and web proxy builds.</li>
+          <li class="job-task-bullet">Design, develop, and deploy testing techniques for new features and defect patches.</li>
+        </ul>
+      </div>
     </div>
 
     <div class="top-level-container extra-experience">

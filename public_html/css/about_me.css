@@ -26,6 +26,31 @@ img {
   margin: 9px;
 }
 
+.job-title {
+  font-weight: 900;
+  
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.company {
+  font-weight: 600;
+  
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.work-dates {
+  font-weight: 300;
+  
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.job-task-bullet {
+  margin-bottom: 12px;
+}
+
 .extra-experience {
   display: flex;
 }
