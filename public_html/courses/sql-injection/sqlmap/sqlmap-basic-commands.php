@@ -15,7 +15,7 @@
 
     $previous = 'install-sqlmap.php';
     $home = 'sqlmap-course-home.php';
-    $next = 'sqlmap-basic-commands.php';
+    $next = 'finding-sql-injection-vulnerabilities.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 ?>
 
@@ -87,66 +87,6 @@ current user is DBA: False</pre>
         and finally that the user <span class="inline-code">sql_inject</span> is not
         a database administrator (<span class="inline-code">current user is DBA: False</span>).
       </p>
-      
-      <h1 class="title">Sqlmap interactive mode</h1>
-      <p>
-        The default behavior of all Sqlmap commands is to run in <i>interactive mode</i>.
-        This means that throughout execution Sqlmap will prompt you with questions
-        about how the program should run as you will see below.
-      </p>
-      <p>
-        The simplest interactive Sqlmap command to run is <span class="inline-code">python3 sqlmap.py -u target_url?target_parameter=value</span>,
-        where <span class="inline-code">target_url</span> is the full URL of
-        website to attack, <span class="inline-code">target_parameter</span>
-        is the parameter to test for SQL vulnerabilities, and <span class="inline-code">value</span>
-        is the parameter value to initially pass to <span class="inline-code">target_parameter</span>.
-        Below we use the <span class="inline-code">&ndash;&ndash;forms</span> command line flag.
-        This tells Sqlmap to scrape the website for forms for us.
-      </p>
-
-<pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:-$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms
-
-        ___
-       __H__
- ___ ___[,]_____ ___ ___  {1.7.1.4#dev}
-|_ -| . [,]     | .'| . |
-|___|_  [.]_|_|_|__,|  _|
-      |_|V...       |_|   https://sqlmap.org
-
-[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
-
-[*] starting @ 21:37:27 /2023-01-14/
-
-[21:37:27] [INFO] testing connection to the target URL
-[21:37:28] [INFO] searching for forms
-[1/1] Form:
-POST http://127.0.0.1/index.php
-POST data: filter=
-do you want to test this form? [Y/n/q]
->
-
-Edit POST data [default: filter=] (Warning: blank fields detected):
-
-do you want to fill blank fields with random values? [Y/n]</pre>
-
-      <p>
-        In the above example, we are using SQL map to test the website
-        <span class="inline-code">http://127.0.0.1/index.php</span>. Again, the
-        <span class="inline-code">&ndash;&ndash;forms</span> command line flag tells Sqlmap
-        to scrape the URL HTML for forms for us, so we don't have to specify
-        a target parameter.
-      </p>
-
-      <h1 class="title">Sqlmap batch mode</h1>
-      <p>
-        If run in batch mode, Sqlmap will not prompt you and assume default behavior
-        for all prompts. Batch mode is activated with the <span class="inline-code">&ndash;&ndash;batch</span>
-        command line flag.
-      </p>
-
-<pre class="lang-bash default-code-style dark-mode-background">
-python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch</pre>
     </div>
 
 <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>

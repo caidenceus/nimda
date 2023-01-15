@@ -21,17 +21,22 @@ include SHARED_PATH . 'terminal_text.php';
     <div class="course-top-level-container dark-purple-background-color preface">
       <h1 class="title white-text">Sqlmap</h1>
       <p class="course-preface-text white-text">
-        Sqlmap is an open source ethical hacking tool written in Python that is 
-        used to help automate detecting and exploiting SQL vulnerabilities.
-        Its features range from detecting vulnerable HTML form parameters, to 
-        enumerating database users, to completely taking over a database server.      
+        SQL Injection is one of the most common attack vectors against web-based
+        targets, and arguably one of the most important. With modern day computing
+        and the move to hosting businesses online, there is a goldmine of vulnerable
+        websites and web applications hosted on the internet today. Common among
+        vulnerable websites is a vulnerability called <i>SQL injection</i>, a
+        method of purposefully sending malformed input data to an application in
+        order to steal database information and or compromise the underling system.      
       </p>
       <p class="course-preface-text white-text">
-        At the time of this writing, sqlmap fully supports six different 
-        injection techniques, which are Boolean-based blind, 
-        time-based blind, error-based, UNION query-based, stacked queries and 
-        out-of-band. Each of these techniques are covered in more depth on their
-        respective tutorial pages.
+        In this course we will be using Sqlmap, a popular SQL injection tool, in
+        order to compromise vulnerable websites and steal data from vulnerable web
+        applications and databases. The vulnerable websites will be websites that
+        I wrote myself for the purpose of this tutorial, so it is completely legal
+        to exploit these applications. In the labs section I will walk you through
+        how to setup your own home SQL injection lab and install a LAMP server to
+        run vulnerable websites on, as well as how to use Sqlmap to exploit them.
       </p>
     </div>
 
@@ -43,9 +48,9 @@ include SHARED_PATH . 'terminal_text.php';
             $tutorials = array(
                 'Install sqlmap',
                 'Sqlmap basic commands',
-                'Detecting form parameters',
+                'Finding SQL injection vulnerabilities',
                 'Bypassing web application firewalls',
-                'Enumerating database usernames and passwords',
+                'Enumerating databases',
                 'Dumping database tables',
                 'Introduction to database takeover',
                 'File injection',
