@@ -83,44 +83,36 @@ pre {
 .page-header-title {
   /* We want the buttons next to the title */
   display: inline-block;
+  width: 50%;
   
   /*Make sure this is the same for .page-header-buttons */
   padding-top: 42px;
 }
 
 .page-header-buttons {
-  display: inline-block;
   float: right;
-  
-  /* Remove default list styles for top and left */
   padding-left: 0;
   margin-top: 0;
-  
-  /*Make sure this is the same for .page-header-title */
   padding-top: 42px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
 
-.page-header-buttons > li {
-  display: inline-block;
-  width: 125px;
-  
-  /* Push buttons to right side of the page */
+.page-header-buttons  > li {
+  width: 150px;
   float: right;
-  
-  /* Space between each button */
-  margin-left: 9px;
 }
 
 .page-header-buttons > li > a > button {
-  width: 100%;
   color: white;
   font-weight: 700;
   border-radius: 6px;
   border: 1px solid white;
-  
-  /* Top and bottom = 9px, bottom = 0px because we are fixing the width */
   padding: 9px 0;
-  font-size: 21px;
+  font-size: 24px;
+  width: 100%;
 }
 
 .header-tagline {
