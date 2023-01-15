@@ -27,7 +27,7 @@ include SHARED_PATH . 'terminal_text.php';
         websites and web applications hosted on the internet today. Common among
         vulnerable websites is a vulnerability called <i>SQL injection</i>, a
         method of purposefully sending malformed input data to an application in
-        order to steal database information and or compromise the underling system.      
+        order to steal database information and or compromise the underlying system.      
       </p>
       <p class="course-preface-text white-text">
         In this course we will be using Sqlmap, a popular SQL injection tool, in

@@ -175,21 +175,31 @@ pre {
 /* Start terminal_text.php CSS */
 
 .terminal-text-container {
+  display: flex;
   background-color: black;
   border-radius: 6px;
   overflow: hidden;
 }
 
-.terminal-text,
+.terminal-text {
+  display: inline-block;
+  
+  /* Do not hide the terminal prompt if the page width is too small, hide the command instead. */
+  overflow: hidden;
+}
+
 .terminal-prompt {
   display: inline-block;
-  overflow: hidden;
+  
+  /* Do not hide the terminal prompt if the page width is too small, hide the command instead. */
+  overflow: visible;
 }
 
 .terminal-prompt p {
   font-family: monospace;
   color: #2777ff;
   padding-left: 18px;
+  word-wrap: normal;
 }
 
 /* Terminal typing animation */
