@@ -78,7 +78,7 @@ include SHARED_PATH . 'terminal_text.php';
         <ul>
           <li class="job-task-bullet">Created Python testing framework to reach near 100% code test coverage across all our REST APIs.</li>
           <li class="job-task-bullet">Created Python library to add Nessus and Invicti vulnerability scanning to several continuous integration pipelines including firmware builds, REST API definitions, and web proxy builds.</li>
-          <li class="job-task-bullet">Design, develop, and deploy testing techniques for new features and defect patches.</li>
+          <li class="job-task-bullet">Designed, developed, and deployed testing techniques for new features and defect patches.</li>
         </ul>
       </div>
 
@@ -115,7 +115,7 @@ include SHARED_PATH . 'terminal_text.php';
         <ul>
           <li class="job-task-bullet">Created Python library that 100% automated managing vCenter servers and virtual machines for testing new releases of software through consuming the vCenter REST API.</li>
           <li class="job-task-bullet">Created and maintained internal websites with PHP, HTML, MySQL, and CSS.</li>
-          <li class="job-task-bullet">Design, develop, and deploy testing techniques for new features and defect patches.</li>
+          <li class="job-task-bullet">Designed, developed, and deployed testing techniques for new features and defect patches.</li>
         </ul>
       </div>
 
@@ -142,8 +142,8 @@ include SHARED_PATH . 'terminal_text.php';
         ?>
         </div>
         <ul>
-          <li class="job-task-bullet">Utilize PowerShell to manage active directory objects.</li>
-          <li class="job-task-bullet">Support Textron employees in person by configuring and fixing software and hardware.</li>
+          <li class="job-task-bullet">Utilized PowerShell to manage active directory objects.</li>
+          <li class="job-task-bullet">Supported Textron employees in person by configuring and fixing software and hardware.</li>
         </ul>
       </div>
     </div>

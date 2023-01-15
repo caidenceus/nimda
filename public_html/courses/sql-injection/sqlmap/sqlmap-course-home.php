@@ -8,7 +8,7 @@ echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_md_animati
 
 include_once SHARED_PATH . 'page_header.php';
 
-$terminal_text = 'cd sqlmap';
+$terminal_text = 'cd sqlmap-dev';
 include SHARED_PATH . 'terminal_text.php';
 
 include_once SHARED_PATH . 'legal_disclaimer.php';
@@ -67,7 +67,7 @@ include SHARED_PATH . 'terminal_text.php';
     <?php
         $tags = array(
             'Sqlmap',
-            'Python',
+            'Python3',
             'Git',
             'Debian Linux',
             'Bash'
@@ -75,6 +75,6 @@ include SHARED_PATH . 'terminal_text.php';
         
         generate_technology_tags($tags);
     ?>
-  </div>
+    </div>
 
 <?php require_once SHARED_PATH . 'page_footer.php'; ?>
