@@ -10,7 +10,7 @@
     include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
-    $home = 'sqlmap-course-home.php';
+    $home = 'sqlmap-course-home.php#tutorials';
     $next = 'sqlmap-basic-commands.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 

@@ -39,7 +39,7 @@
     </div>
 
     <div class="course-top-level-container">
-      <div class="tutorial-container">
+      <div class="tutorial-container" id="tutorials">
         <h1 class="title blue-text file-name-header">Tutorials.md</h1>
         <?php
             echo '<p class="tutorial-todo-level"><b>## Beginner</p></b>';
