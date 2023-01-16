@@ -1,28 +1,28 @@
 <?php
     require_once 'relative_init.php';
-    include_once SHARED_PATH . 'head.php';
+    require_once SHARED_PATH . 'course_header.php';
 
-    echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
-    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
-
-    include_once SHARED_PATH . 'page_header.php';
-
+    // Legal disclaimer and terminal animations
     $terminal_text = 'sudo apt-get install -y python3';
     include SHARED_PATH . 'terminal_text.php';
     include_once SHARED_PATH . 'legal_disclaimer.php';
     $terminal_text = 'python3 --version';
     include SHARED_PATH . 'terminal_text.php';
 
+    // Tutorial navigation buttons
     $home = 'sqlmap-course-home.php';
     $next = 'sqlmap-basic-commands.php';
     include SHARED_PATH . 'tutorial_navigation.php';
+
+    // Table of contents
+    include SHARED_PATH . 'table_of_contents.php';
 ?>
 
     <div class="course-top-level-container table-of-contents hidden">
     </div>
 
     <div class="course-top-level-container">
-      <h1 class="title toc-link">Sqlmap dependencies</h1>
+      <h1 class="title toc">Sqlmap dependencies</h1>
       <p>
         The only sqlmap dependcy is Python 3.x. As long as you have Python 
         installed, sqlmap should work out of the box after installation. See the
@@ -101,7 +101,7 @@ git --version</pre>
         then the install was successful.
       </p> <!-- Sqlmap dependencies -->
 
-      <h1 class="title toc-link">Installing sqlmap</h1>
+      <h1 class="title toc">Installing sqlmap</h1>
       <p>
         Sqlmap comes pre-installed on Kali-Linux. However, if you are running 
         Windows or a different Debian distribution of Linux, follow the steps
@@ -129,14 +129,12 @@ python3 sqlmap.py -h</pre>
 
     </div>
 
-<?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
-
+    <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
     <div class="course-top-level-container">
     <?php
         $tags = array(
             'Sqlmap',
             'Python3',
-            'Git',
             'Debian Linux',
             'Bash'
         );

@@ -1,26 +1,26 @@
 <?php
     require_once 'relative_init.php';
-    include_once SHARED_PATH . 'head.php';
+    require_once SHARED_PATH . 'course_header.php';
 
-    echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
-    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
-
-    include_once SHARED_PATH . 'page_header.php';
-
+    // Legal disclaimer and terminal animations
     $terminal_text = 'sudo apt-get install -y python3';
     include SHARED_PATH . 'terminal_text.php';
     include_once SHARED_PATH . 'legal_disclaimer.php';
     $terminal_text = 'python3 --version';
     include SHARED_PATH . 'terminal_text.php';
 
+    // Tutorial navigation buttons
     $previous = 'install-sqlmap.php';
     $home = 'sqlmap-course-home.php';
     $next = 'finding-sql-injection-vulnerabilities.php';
     include SHARED_PATH . 'tutorial_navigation.php';
+
+    // Table of contents
+    include SHARED_PATH . 'table_of_contents.php';
 ?>
 
     <div class="course-top-level-container">
-      <h1 class="title">Sqlmap command line help</h1>
+      <h1 class="title toc">Sqlmap command line help</h1>
       <p>
         Sqlmap provides two separate types of command line help. The first is
         the short version, which is found by providing the <span class="inline-code">&ndash;h</span>.
@@ -36,7 +36,7 @@ python3 sqlmap.py -h
 # Advanced help message
 python3 sqlmap.py -hh</pre>
 
-      <h1 class="title">Sqlmap wizard</h1>
+      <h1 class="title toc">Sqlmap wizard</h1>
       <p>
         The Sqlmap wizard is an interactive command line interface that will
         walk you through some of the most basic Sqlmap command line parameters.
@@ -89,8 +89,7 @@ current user is DBA: False</pre>
       </p>
     </div>
 
-<?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
-
+    <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
     <div class="course-top-level-container">
     <?php
         $tags = array(
