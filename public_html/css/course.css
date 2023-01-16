@@ -1,3 +1,17 @@
+/* ====== Start table of contents CSS ====== */
+
+.table-of-contents {
+  background-color: green;
+  display: hidden;
+}
+
+.toc-link {
+  display: block;
+  font-size: 21px;
+}
+
+/* ====== End table of contents CSS ====== */
+
 /* ====== Start common CSS ====== */
 
 .course-top-level-container {

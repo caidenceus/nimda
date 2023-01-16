@@ -18,8 +18,11 @@
     include SHARED_PATH . 'tutorial_navigation.php';
 ?>
 
+    <div class="course-top-level-container table-of-contents hidden">
+    </div>
+
     <div class="course-top-level-container">
-      <h1 class="title">Sqlmap dependencies</h1>
+      <h1 class="title toc-link">Sqlmap dependencies</h1>
       <p>
         The only sqlmap dependcy is Python 3.x. As long as you have Python 
         installed, sqlmap should work out of the box after installation. See the
@@ -98,7 +101,7 @@ git --version</pre>
         then the install was successful.
       </p> <!-- Sqlmap dependencies -->
 
-      <h1 class="title">Installing sqlmap</h1>
+      <h1 class="title toc-link">Installing sqlmap</h1>
       <p>
         Sqlmap comes pre-installed on Kali-Linux. However, if you are running 
         Windows or a different Debian distribution of Linux, follow the steps

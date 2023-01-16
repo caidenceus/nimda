@@ -1,26 +1,26 @@
 <?php
     require_once 'relative_init.php';
-    include_once SHARED_PATH . 'head.php';
+    require_once SHARED_PATH . 'course_header.php';
 
-    echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
-    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
-
-    include_once SHARED_PATH . 'page_header.php';
-
+    // Legal disclaimer and terminal animations
     $terminal_text = 'sudo apt-get install -y python3';
     include SHARED_PATH . 'terminal_text.php';
     include_once SHARED_PATH . 'legal_disclaimer.php';
     $terminal_text = 'python3 --version';
     include SHARED_PATH . 'terminal_text.php';
 
+    // Tutorial navigation buttons
     $previous = 'sqlmap-basic-commands.php';
     $home = 'sqlmap-course-home.php';
     $next = 'finding-sql-injection-vulnerabilities.php';
     include SHARED_PATH . 'tutorial_navigation.php';
+
+    // Table of contents
+    include_once SHARED_PATH . 'table_of_contents.php';
 ?>
 
     <div class="course-top-level-container">
-      <h1 class="title">SQL vulnerability</h1>
+      <h1 class="title toc">SQL vulnerability</h1>
       <p>
         The first step to exploiting an SQL injectible website is finding an
         entry point for our SQL injection attacks. Many of the most basic Sqlmap
@@ -34,7 +34,7 @@
         and website in question.
       </p>
       
-      <h1 class="title">Sqlmap interactive mode</h1>
+      <h1 class="title toc">Sqlmap interactive mode</h1>
       <p>
         The default behavior of all Sqlmap commands is to run in <i>interactive mode</i>.
         This means that throughout execution Sqlmap will prompt you with questions
@@ -91,7 +91,7 @@ do you want to fill blank fields with random values? [Y/n]</pre>
         a target parameter.
       </p>
 
-      <h1 class="title">Sqlmap batch mode</h1>
+      <h1 class="title toc">Sqlmap batch mode</h1>
       <p>
         If run in batch mode, Sqlmap will not prompt you with questions as to how
         the script should proceed, and it will assume default behavior for all prompts.
@@ -102,3 +102,20 @@ do you want to fill blank fields with random values? [Y/n]</pre>
 <pre class="lang-bash default-code-style dark-mode-background">
 python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch</pre>
     </div>
+
+    <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
+
+    <div class="course-top-level-container">
+    <?php
+        $tags = array(
+            'Sqlmap',
+            'Python3',
+            'Debian Linux',
+            'Bash'
+        );
+        
+        generate_technology_tags($tags);
+    ?>
+    </div>
+
+<?php require_once SHARED_PATH . 'page_footer.php'; ?>

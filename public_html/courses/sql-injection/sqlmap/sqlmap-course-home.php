@@ -1,21 +1,19 @@
 <?php 
+    require_once 'relative_init.php';
+    include_once SHARED_PATH . 'head.php';
 
-require_once 'relative_init.php';
-include_once SHARED_PATH . 'head.php';
+    echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_md_animation.js" defer></script>';
 
-echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
-echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_md_animation.js" defer></script>';
+    include_once SHARED_PATH . 'page_header.php';
 
-include_once SHARED_PATH . 'page_header.php';
+    $terminal_text = 'cd sqlmap-dev';
+    include SHARED_PATH . 'terminal_text.php';
 
-$terminal_text = 'cd sqlmap-dev';
-include SHARED_PATH . 'terminal_text.php';
+    include_once SHARED_PATH . 'legal_disclaimer.php';
 
-include_once SHARED_PATH . 'legal_disclaimer.php';
-
-$terminal_text = 'python3 sqlmap.py -hh';
-include SHARED_PATH . 'terminal_text.php';
-
+    $terminal_text = 'python3 sqlmap.py -hh';
+    include SHARED_PATH . 'terminal_text.php';
 ?>
 
     <div class="course-top-level-container dark-purple-background-color preface">
