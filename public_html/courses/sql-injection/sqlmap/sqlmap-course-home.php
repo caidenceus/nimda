@@ -47,7 +47,7 @@
                 'Install sqlmap',
                 'Sqlmap basic commands',
                 'Finding SQL injection vulnerabilities',
-                'Bypassing web application firewalls',
+                'Change the HTTP user agent',
                 'Enumerating databases',
                 'Dumping database tables',
                 'Introduction to database takeover',

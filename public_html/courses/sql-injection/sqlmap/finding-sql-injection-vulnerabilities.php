@@ -12,7 +12,7 @@
     // Tutorial navigation buttons
     $previous = 'sqlmap-basic-commands.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'finding-sql-injection-vulnerabilities.php';
+    $next = 'change-the-http-user-agent.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
