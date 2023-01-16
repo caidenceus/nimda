@@ -16,7 +16,7 @@
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
-    include_once SHARED_PATH . 'table_of_contents.php';
+    include SHARED_PATH . 'table_of_contents.php';
 ?>
 
     <div class="course-top-level-container">
@@ -104,7 +104,6 @@ python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch</pre>
     </div>
 
     <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
-
     <div class="course-top-level-container">
     <?php
         $tags = array(

@@ -1,6 +1,6 @@
 var titles = document.getElementsByClassName('toc');
 var table_of_contents = document.getElementById('table-of-contents');
-var tocHTML = '';
+var tocHTML = '<h1 class="title">Table of Contents</h1>';
 
 
 function replaceAll(string, search, replace)
