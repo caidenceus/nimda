@@ -82,9 +82,10 @@ User-Agent: sqlmap/1.3.11#stable (http://sqlmap.org)</pre>
         The command line argument to randomize user agents sent in HTTP requests
         from Sqlmap is <span class="inline-code">&ndash;&ndash;random-agent</span>.
         When this flag is passed to Sqlmap, the program will select a random user
-        agent from the file <span class="inline-text">\txt\user-agents.txt</span>
+        agent from the file <span class="inline-code">\txt\user-agents.txt</span>
         and use that user agent for every request for the rest of the Sqlmap run.
       </p>
+
 <pre class="lang-bash default-code-style dark-mode-background">
 kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch --random-agent
         ___
@@ -101,6 +102,11 @@ kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch --r
 [21:02:27] [INFO] fetched random HTTP User-Agent header value
            'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.8) Gecko/20100214 Ubuntu/9.10 (karmic) Firefox/3.5.8'
            from file 'C:\Users\Owner\Desktop\sqlmap-dev\data\txt\user-agents.txt'</pre>
+      
+      <p>
+        In the above output, we see that Sqlmap will send HTTP requests using a
+        user agent that looks like a Firefox web browser running on Ubuntu Linux.
+      </p>
 
 
     </div>
