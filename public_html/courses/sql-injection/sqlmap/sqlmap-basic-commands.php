@@ -54,7 +54,7 @@ python3 sqlmap.py -hh</pre>
 python3 sqlmap.py --wizard</pre>
 
       <p>
-        The default behavior of runing the Sqlmap wizard using the default options
+        The default behavior of running the Sqlmap wizard using the default options
         is to find SQL injection points and attempt to exploit the injection points
         to retrieve information about the database such as the DBMS, DBMS version,
         current database user, and current database name. Here is some of the output

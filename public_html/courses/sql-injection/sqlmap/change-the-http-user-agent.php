@@ -51,8 +51,8 @@
         request on behalf of the user.
       </p>
       <p>
-        A "normal" HTTP GET request with a "nomral" user agent header sent from
-        a real user using a web browser might look something likst this.
+        A "normal" HTTP GET request with a "normal" user agent header sent from
+        a real user using a web browser might look something like this.
       </p>
 <pre class="lang-bash default-code-style dark-mode-background">
 GET / HTTP/1.1
@@ -82,7 +82,7 @@ User-Agent: sqlmap/1.3.11#stable (http://sqlmap.org)</pre>
         The command line argument to randomize user agents sent in HTTP requests
         from Sqlmap is <span class="inline-code">&ndash;&ndash;random-agent</span>.
         When this flag is passed to Sqlmap, the program will select a random user
-        agent from the file <span class="inline-code">\txt\user-agents.txt</span>
+        agent from the file <span class="inline-code">.\txt\user-agents.txt</span>
         and use that user agent for every request for the rest of the Sqlmap run.
       </p>
 

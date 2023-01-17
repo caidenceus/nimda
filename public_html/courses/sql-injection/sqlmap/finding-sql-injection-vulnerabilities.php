@@ -27,10 +27,10 @@
     <div class="course-top-level-container">
       <h1 class="title toc">SQL vulnerability</h1>
       <p>
-        The first step to exploiting an SQL injectible website is finding an
+        The first step to exploiting an SQL injectable website is finding an
         entry point for our SQL injection attacks. Many of the most basic Sqlmap
         commands default to finding SQL injection vulnerabilities. We will
-        specifically be looking at how to find SQL injection entrypoints interactivly,
+        specifically be looking at how to find SQL injection entry points interactively,
         and how to tell Sqlmap to find vulnerabilities for us.
       </p>
       <p>

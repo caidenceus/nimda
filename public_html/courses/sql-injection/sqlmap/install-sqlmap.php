@@ -29,8 +29,8 @@
     <div class="course-top-level-container">
       <h1 class="title toc">Sqlmap dependencies</h1>
       <p>
-        The only sqlmap dependcy is Python 3.x. As long as you have Python 
-        installed, sqlmap should work out of the box after installation. See the
+        The only Sqlmap dependency is Python 3.x. As long as you have Python 
+        installed, Sqlmap should work out of the box after installation. See the
         corresponding section for installing Python 3 for your operating system.
         However, we will also be utilizing git, which is installed
         as described below.
@@ -106,17 +106,17 @@ git --version</pre>
         then the install was successful.
       </p> <!-- Sqlmap dependencies -->
 
-      <h1 class="title toc">Installing sqlmap</h1>
+      <h1 class="title toc">Installing Sqlmap</h1>
       <p>
         Sqlmap comes pre-installed on Kali-Linux. However, if you are running 
         Windows or a different Debian distribution of Linux, follow the steps
-        to install sqlmap. Because we installed Python 3 and Git, the
+        to install Sqlmap. Because we installed Python 3 and Git, the
         steps to install Sqlmap in this section should work on both Windows and
         Linux.
       </p>
       <p>
-        The reccomended way to install sqlmap is by cloning directly from the
-        github repository. To do this, run the following command in a terminal
+        The recommended way to install Sqlmap is by cloning directly from the
+        GitHub repository. To do this, run the following command in a terminal
         window on Linux or a command prompt window if you are on Windows.
       </p>
 
