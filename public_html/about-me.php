@@ -5,6 +5,8 @@ include_once SHARED_PATH . 'head.php';
 
 echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
 
+// Title is set in page_header.php
+$title = "About Caiden Pyle";
 include_once SHARED_PATH . 'page_header.php';
 $terminal_text = 'git checkout about-me';
 include SHARED_PATH . 'terminal_text.php';

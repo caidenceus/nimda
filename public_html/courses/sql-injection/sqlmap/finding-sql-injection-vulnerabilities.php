@@ -1,6 +1,10 @@
 <?php
     require_once 'relative_init.php';
-    require_once SHARED_PATH . 'course_header.php';
+    include_once SHARED_PATH . 'course_header.php';
+    
+    // Title is set in page_header.php
+    $title = "Finding SQL vulnerabilities";
+    include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations
     $terminal_text = 'sudo apt-get install -y python3';

@@ -5,6 +5,8 @@
     echo '<link rel="stylesheet" href="' . CSS_PATH . 'course.css">';
     echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'todo_md_animation.js" defer></script>';
 
+    // Title is set in page_header.php
+    $title = "Sqlmap course";
     include_once SHARED_PATH . 'page_header.php';
 
     $terminal_text = 'cd sqlmap-dev';

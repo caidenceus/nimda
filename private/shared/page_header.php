@@ -1,3 +1,7 @@
+    <?php
+        if (! isset($title)) { $title = "White Hat Hacking"; }
+        echo "<title>$title</title>";
+    ?>
   </head>  <!-- Head is opened in head.php -->
   <body>
     <div class="top-level-container">

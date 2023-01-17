@@ -1,6 +1,10 @@
 <?php
     require_once 'relative_init.php';
-    require_once SHARED_PATH . 'course_header.php';
+    include_once SHARED_PATH . 'course_header.php';
+
+    // Title is set in page_header.php
+    $title = "Bypass Web Firewalls";
+    include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations
     $terminal_text = 'sudo apt-get install -y python3';
@@ -28,6 +32,7 @@
         randomizing the user agent headers sent by Sqlmap.
       </p>
       <p>
+        Feel free to skip this section.
         Before we discuss how to change the default Sqlmap user agent, it is
         important to understand what a user agent is and why we would want to
         change it.
