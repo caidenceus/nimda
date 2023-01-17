@@ -10,5 +10,5 @@
         // Don't close the head tag here so that pages can link to additional
         // stylesheets before page_header.php, where the head tag is closed.
         // Aditionally, we want to be alble to dynamically set the contents
-        // of the <title> tag.
+        // of the <title> tag and the description meta tag.
     ?>

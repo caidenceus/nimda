@@ -2,8 +2,9 @@
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
     
-    // Title is set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Install Sqlmap";
+    $description = "How to install Sqlmap on Windows and Debian Linux.";
     include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations

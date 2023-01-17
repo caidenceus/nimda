@@ -1,15 +1,15 @@
 <?php 
-require_once '../private/init.php';
-include_once PRIVATE_PATH . 'generatable.php';
-include_once SHARED_PATH . 'head.php';
+    require_once '../private/init.php';
+    include_once PRIVATE_PATH . 'generatable.php';
+    include_once SHARED_PATH . 'head.php';
 
-echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
+    echo '<link rel="stylesheet" href="' . CSS_PATH . 'about_me.css">';
 
-// Title is set in page_header.php
-$title = "About Caiden Pyle";
-include_once SHARED_PATH . 'page_header.php';
-$terminal_text = 'git checkout about-me';
-include SHARED_PATH . 'terminal_text.php';
+    // Title is set in page_header.php
+    $title = "About Caiden Pyle";
+    include_once SHARED_PATH . 'page_header.php';
+    $terminal_text = 'git checkout about-me';
+    include SHARED_PATH . 'terminal_text.php';
 ?>
     <div class="page-heading top-level-container">
       <div class="profile-picture">
@@ -21,27 +21,27 @@ include SHARED_PATH . 'terminal_text.php';
     </div>
 
     <?php 
-    $terminal_text = 'sudo apt-get install -y kali-root-login';
-    include SHARED_PATH . 'terminal_text.php';
+        $terminal_text = 'sudo apt-get install -y kali-root-login';
+        include SHARED_PATH . 'terminal_text.php';
     ?>
 
     <div class="top-level-container">
       <h1 class="title blue-text">Areas of Expertise</h1>
       <div class="expertise-container">
       <?php
-      $areas = array(
-          'Agile Software Development',
-          'Scrum & Agile Methodologies',
-          'Consuming REST APIs',
-          'Software Development Lifecycle',
-          'Web Application Design & Development',
-          'Software Testing',
-          'Socket Programming'
-      );
-      
-      foreach ($areas as $area) {
-          echo '<div class="expertise-area"><p>' . $area . '</p></div>';
-      }
+          $areas = array(
+              'Agile Software Development',
+              'Scrum & Agile Methodologies',
+              'Consuming REST APIs',
+              'Software Development Lifecycle',
+              'Web Application Design & Development',
+              'Software Testing',
+              'Socket Programming'
+          );
+          
+          foreach ($areas as $area) {
+              echo '<div class="expertise-area"><p>' . $area . '</p></div>';
+          }
       ?>
       </div>
     </div>
@@ -55,26 +55,26 @@ include SHARED_PATH . 'terminal_text.php';
         <h4 class="work-dates">04/2020&nbsp;&ndash;&nbsp;present</h4>
         <div class="technical-skills-container">
         <?php
-        $skills = array(
-            'Python',
-            'C++',
-            'Scrum & Agile methodologies',
-            'Debian Linux',
-            'Git',
-            'Pip',
-            'Nessus',
-            'REST APIs',
-            'Jenkins',
-            'Pytest',
-            'Selenium',
-            'Jira',
-            'Confluence',
-            'HTTP'
-        );
+            $skills = array(
+                'Python',
+                'C++',
+                'Scrum & Agile methodologies',
+                'Debian Linux',
+                'Git',
+                'Pip',
+                'Nessus',
+                'REST APIs',
+                'Jenkins',
+                'Pytest',
+                'Selenium',
+                'Jira',
+                'Confluence',
+                'HTTP'
+            );
 
-        foreach ($skills as $skill) {
-            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-        }
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
         ?>
         </div>
         <ul>
@@ -90,28 +90,28 @@ include SHARED_PATH . 'terminal_text.php';
         <h4 class="work-dates">01/2019&nbsp;&ndash;&nbsp;04/2020</h4>
         <div class="technical-skills-container">
         <?php
-        $skills = array(
-            'Python',
-            'PHP',
-            'Scrum & Agile methodologies',
-            'Debian Linux',
-            'HTML5',
-            'CSS3',
-            'MySQL',
-            'VMware',
-            'Git',
-            'Pip',
-            'PowerShell',
-            'REST APIs',
-            'Pytest',
-            'Jira',
-            'Confluence',
-            'HTTP'
-        );
+            $skills = array(
+                'Python',
+                'PHP',
+                'Scrum & Agile methodologies',
+                'Debian Linux',
+                'HTML5',
+                'CSS3',
+                'MySQL',
+                'VMware',
+                'Git',
+                'Pip',
+                'PowerShell',
+                'REST APIs',
+                'Pytest',
+                'Jira',
+                'Confluence',
+                'HTTP'
+            );
 
-        foreach ($skills as $skill) {
-            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-        }
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
         ?>
         </div>
         <ul>
@@ -127,20 +127,20 @@ include SHARED_PATH . 'terminal_text.php';
         <h4 class="work-dates">10/2017&nbsp;&ndash;&nbsp;/2019</h4>
         <div class="technical-skills-container">
         <?php
-        $skills = array(
-            'PowerShell',
-            'Windows Administration',
-            'HTML5',
-            'CSS3',
-            'Git',
-            'Pip',
-            'TCP/IP',
-            'HTTP'
-        );
+            $skills = array(
+                'PowerShell',
+                'Windows Administration',
+                'HTML5',
+                'CSS3',
+                'Git',
+                'Pip',
+                'TCP/IP',
+                'HTTP'
+            );
 
-        foreach ($skills as $skill) {
-            echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-        }
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
         ?>
         </div>
         <ul>
@@ -154,37 +154,37 @@ include SHARED_PATH . 'terminal_text.php';
       <h1 class="title blue-text">All Technical Skills</h1>
       <div class="all-technical-skills-container">
       <?php
-      $skills = array(
-          'Python',
-          'Scrum & Agile methodologies',
-          'C++',
-          'PHP',
-          'Debian Linux',
-          'HTML5',
-          'CSS3',
-          'MySQL',
-          'SQL',
-          'Git',
-          'GitHub',
-          'PowerShell',
-          'Pip',
-          'Nessus',
-          'REST APIs',
-          'Make',
-          'G++',
-          'Jenkins',
-          'Pytest',
-          'Selenium',
-          'Jira',
-          'Confluence',
-          'TCP/IP',
-          'HTTP',
-          'Windows Administration'
-      );
+          $skills = array(
+              'Python',
+              'Scrum & Agile methodologies',
+              'C++',
+              'PHP',
+              'Debian Linux',
+              'HTML5',
+              'CSS3',
+              'MySQL',
+              'SQL',
+              'Git',
+              'GitHub',
+              'PowerShell',
+              'Pip',
+              'Nessus',
+              'REST APIs',
+              'Make',
+              'G++',
+              'Jenkins',
+              'Pytest',
+              'Selenium',
+              'Jira',
+              'Confluence',
+              'TCP/IP',
+              'HTTP',
+              'Windows Administration'
+          );
 
-      foreach ($skills as $skill) {
-          echo '<div class="technical-skill-all"><p>' . $skill . '</p></div>';
-      }
+          foreach ($skills as $skill) {
+              echo '<div class="technical-skill-all"><p>' . $skill . '</p></div>';
+          }
       ?>
       </div>
     </div>
@@ -213,18 +213,18 @@ include SHARED_PATH . 'terminal_text.php';
             <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
             <div class="technical-skills-container">
             <?php
-            $skills = array(
-                'PHP',
-                'HTML5',
-                'CSS3',
-                'JavaScript',
-                'MySQL',
-                'Apache server II'
-            );
+                $skills = array(
+                    'PHP',
+                    'HTML5',
+                    'CSS3',
+                    'JavaScript',
+                    'MySQL',
+                    'Apache server II'
+                );
 
-            foreach ($skills as $skill) {
-                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-            }
+                foreach ($skills as $skill) {
+                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+                }
             ?>
             </div>
           </div>
@@ -237,18 +237,18 @@ include SHARED_PATH . 'terminal_text.php';
             <a href="https://github.com/caidenceus/cpprequest" target="_blank" class="github-link">GitHub</a>
             <div class="technical-skills-container">
             <?php
-            $skills = array(
-                'C++',
-                'Make',
-                'TCP/IP',
-                'HTTP',
-                'Socket Programming',
-                'Visual Studio'
-            );
+                $skills = array(
+                    'C++',
+                    'Make',
+                    'TCP/IP',
+                    'HTTP',
+                    'Socket Programming',
+                    'Visual Studio'
+                );
 
-            foreach ($skills as $skill) {
-                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-            }
+                foreach ($skills as $skill) {
+                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+                }
             ?>
             </div>
           </div>
@@ -261,16 +261,16 @@ include SHARED_PATH . 'terminal_text.php';
             <a href="https://github.com/caidenceus/dspy" target="_blank" class="github-link">GitHub</a>
             <div class="technical-skills-container">
             <?php
-            $skills = array(
-                'Python',
-                'PyCharm',
-                'Pytest',
-                'Data Structures'
-            );
+                $skills = array(
+                    'Python',
+                    'PyCharm',
+                    'Pytest',
+                    'Data Structures'
+                );
 
-            foreach ($skills as $skill) {
-                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-            }
+                foreach ($skills as $skill) {
+                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+                }
             ?>
             </div>
           </div>

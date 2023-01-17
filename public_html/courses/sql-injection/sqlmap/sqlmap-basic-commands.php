@@ -2,8 +2,9 @@
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
     
-    // Title is set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Sqlmap Basic Commands";
+    $description = "How to get help in Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations

@@ -1,5 +1,8 @@
     <?php
         if (! isset($title)) { $title = "White Hat Hacking"; }
+        if (! isset($description)) { $description = "Ethical hacking tutorials, labs, tools, and techniques."; }
+        
+        echo '<meta name="description" content="' . $description . '">';
         echo "<title>$title</title>";
     ?>
   </head>  <!-- Head is opened in head.php -->

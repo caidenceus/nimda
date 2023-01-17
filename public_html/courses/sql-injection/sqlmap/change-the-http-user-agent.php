@@ -2,8 +2,9 @@
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
 
-    // Title is set in page_header.php
+     // Title and description are set in page_header.php
     $title = "Bypass Web Firewalls";
+    $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations
@@ -32,10 +33,9 @@
         randomizing the user agent headers sent by Sqlmap.
       </p>
       <p>
-        Feel free to skip this section.
-        Before we discuss how to change the default Sqlmap user agent, it is
-        important to understand what a user agent is and why we would want to
-        change it.
+        Feel free to skip this section. Before we discuss how to change the default 
+        Sqlmap user agent, we will first discuss what a user agent is and 
+        why we would want to change it.
       </p>
       <p>
         From the MDN "The User-Agent request header is a characteristic string
@@ -59,8 +59,8 @@ GET / HTTP/1.1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36</pre>
 
       <p>
-        Note that I excluded all headers except for the user agent header. As you
-        can see, this HTTP request was sent from a Windows computer running Google
+        Note that there are many more headers, they are just excluded. As you
+        can see this HTTP request was sent from a Windows computer running Google
         Chrome version 108. Web application firewalls that filter requests based
         on user agents will allow the above request through the firewall because
         it is being sent from a real user using a web browser.
@@ -72,10 +72,35 @@ User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
 <pre class="lang-bash default-code-style dark-mode-background">
 User-Agent: sqlmap/1.3.11#stable (http://sqlmap.org)</pre>
       <p>
-        Which makes it easy for firewalls to disallow traffic from Sqlmap by
+        This user agent format makes it easy for firewalls to disallow traffic from Sqlmap by
         parsing the HTTP user agent header for the string <span class="inline-code">
-        sqlmap</span>.
+        sqlmap</span>. This is why Sqlmap has an argument to randomize the user agent.
       </p>
+      
+      <h1 class="title toc">Randomizing the user agent header</h1>
+      <p>
+        The command line argument to randomize user agents sent in HTTP requests
+        from Sqlmap is <span class="inline-code">&ndash;&ndash;random-agent</span>.
+        When this flag is passed to Sqlmap, the program will select a random user
+        agent from the file <span class="inline-text">\txt\user-agents.txt</span>
+        and use that user agent for every request for the rest of the Sqlmap run.
+      </p>
+<pre class="lang-bash default-code-style dark-mode-background">
+kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch --random-agent
+        ___
+       __H__
+ ___ ___[']_____ ___ ___  {1.7.1.4#dev}
+|_ -| . [)]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 21:02:27 /2023-01-16/
+
+[21:02:27] [INFO] fetched random HTTP User-Agent header value
+           'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.8) Gecko/20100214 Ubuntu/9.10 (karmic) Firefox/3.5.8'
+           from file 'C:\Users\Owner\Desktop\sqlmap-dev\data\txt\user-agents.txt'</pre>
 
 
     </div>
