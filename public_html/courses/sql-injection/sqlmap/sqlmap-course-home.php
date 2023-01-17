@@ -51,7 +51,7 @@
                 'Sqlmap basic commands',
                 'Finding SQL injection vulnerabilities',
                 'Change the HTTP user agent',
-                'Enumerating databases',
+                'Stealing DBMS usernames and passwords',
                 'Dumping database tables',
                 'Introduction to database takeover',
                 'File injection',

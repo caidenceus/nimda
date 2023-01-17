@@ -17,7 +17,7 @@
     // Tutorial navigation buttons
     $previous = 'finding-sql-injection-vulnerabilities.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'change-the-http-user-agent.php';
+    $next = 'stealing-dbms-usernames-and-passwords.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents

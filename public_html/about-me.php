@@ -116,7 +116,7 @@
         </div>
         <ul>
           <li class="job-task-bullet">Created Python library that 100% automated managing vCenter servers and virtual machines for testing new releases of software through consuming the vCenter REST API.</li>
-          <li class="job-task-bullet">Created and maintained internal websites with PHP, HTML, MySQL, and CSS.</li>
+          <li class="job-task-bullet">Created and maintained internal websites with PHP, JavaScript, MySQL, HTML, and CSS.</li>
           <li class="job-task-bullet">Designed, developed, and deployed testing techniques for new features and defect patches.</li>
         </ul>
       </div>
