@@ -133,7 +133,7 @@ pre {
 
   text-align: center; 
   background-color: rgb(200, 200, 200);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 .legal-disclaimer-heading {
@@ -251,7 +251,15 @@ pre {
 
 /* ====== Mobile CSS ====== */
 @media only screen and (max-width: 480px) {
+  
+/* ====== Start golobal CSS ====== */
 
+.top-level-container {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+/* ====== End golobal CSS ====== */
 /* ====== Start page_header.php CSS ====== */
 
 .page-header-title {
@@ -260,10 +268,39 @@ pre {
 
 .page-header-buttons {
   width: 100%;
+  padding-top: 15px;
+}
+
+.page-header-buttons > li > a > button {
+  font-size: 18px;
 }
 
 /* ====== End page_header.php CSS ====== */
+/* ====== Start legal_disclaimer.php CSS ====== */
 
+.legal-disclaimer {
+  /* Top right bottom left */
+  padding: 1% 5%;
+}
 
+.legal-disclaimer-heading {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* ====== End legal_disclaimer.php CSS ====== */
+/* ====== Start terminal text CSS ====== */
+
+.terminal-prompt p {
+  font-size: 10px;
+}
+
+/* Terminal typing animation */
+.terminal-text p {
+  font-size: 10px;
+}
+
+/* ====== Start terminal text CSS ====== */
 
 }
