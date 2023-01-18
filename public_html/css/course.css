@@ -101,4 +101,12 @@ pre {
 
 /* ====== End course home CSS ====== */
 
+.tutorial-navigation {
+  display: block;
+}
+
+.tutorial-navigation-button {
+  width: 100%;
+}
+
 }
