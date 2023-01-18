@@ -247,4 +247,23 @@ pre {
   border-radius: 6px;
 }
 
-/* End generatable.css */
+/* ====== End generatable.css ====== */
+
+/* ====== Mobile CSS ====== */
+@media only screen and (max-width: 480px) {
+
+/* ====== Start page_header.php CSS ====== */
+
+.page-header-title {
+  width: 100%;
+}
+
+.page-header-buttons {
+  width: 100%;
+}
+
+/* ====== End page_header.php CSS ====== */
+
+
+
+}
