@@ -8,7 +8,7 @@
     // CSS is found in course.css and depends on table_of_contents.js
 
     echo '<div class="course-top-level-container">';
-    echo '<h1 class="title">' . $title . '</h1>';
+    echo '<h1 class="title blue-text">' . $title . '</h1>';
     echo '<div id="table-of-contents"></div>';
     echo '</div>';
 ?>
