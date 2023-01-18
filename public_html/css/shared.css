@@ -259,6 +259,10 @@ pre {
   margin-right: 1%;
 }
 
+.title { 
+  padding-top: 12px;
+}
+
 /* ====== End golobal CSS ====== */
 /* ====== Start page_header.php CSS ====== */
 
@@ -268,7 +272,7 @@ pre {
 
 .page-header-buttons {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 0;
 }
 
 .page-header-buttons > li > a > button {

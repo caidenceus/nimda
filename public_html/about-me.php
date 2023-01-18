@@ -16,7 +16,7 @@
         <img src="profile_picture.jpg" alt="Caiden">
       </div>
       <div class="current-info">
-        <h1>Caiden Pyle - Vulnerability Analysis \ Quality Assurance.</h1>
+        <h1 id="current-title">Caiden Pyle - Vulnerability Analysis \ Quality Assurance.</h1>
       </div>
     </div>
 
