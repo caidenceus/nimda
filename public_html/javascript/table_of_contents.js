@@ -1,6 +1,9 @@
 var titles = document.getElementsByClassName('toc');
 var table_of_contents = document.getElementById('table-of-contents');
-var tocHTML = '<h1 class="title">Table of Contents</h1>';
+
+// Allows us to set the page title using the PHP $title variable and append
+// anchor tags to that
+var tocHTML = table_of_contents.innerHTML;
 
 
 function replaceAll(string, search, replace)

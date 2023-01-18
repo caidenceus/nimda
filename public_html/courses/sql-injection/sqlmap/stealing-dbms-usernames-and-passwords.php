@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
     
     // Title and description are set in page_header.php
-    $title = "Sqlmap Basic Commands";
+    $title = "Stealing DBMS Usernames and Passwords";
     $description = "How to get help in Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
@@ -20,7 +20,7 @@
     $next = 'stealing-dbms-usernames-and-passwords.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
-    // Table of contents
+    // Table of contents. Page title is set by setting the $title variable
     include SHARED_PATH . 'table_of_contents.php';
 ?>
 
