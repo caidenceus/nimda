@@ -1,23 +1,3 @@
-/* ====== Start table of contents CSS ====== */
-
-#table-of-contents {
-  border-radius: 6px;
-  background-color: #f2f1f1;
-  display: hidden;
-  
-  padding: 3% 5%;
-  /* Same as terminal-container */
-  margin-top: 12px;
-}
-
-.toc-link {
-  display: block;
-  font-size: 21px;
-  padding-bottom: 15px;
-}
-
-/* ====== End table of contents CSS ====== */
-
 /* ====== Start common CSS ====== */
 
 .course-top-level-container {
@@ -41,6 +21,25 @@ pre {
 }
 
 /* ====== End common CSS ====== */
+/* ====== Start table of contents CSS ====== */
+
+#table-of-contents {
+  border-radius: 6px;
+  background-color: #f2f1f1;
+  display: hidden;
+  
+  padding: 3% 5%;
+  /* Same as terminal-container */
+  margin-top: 12px;
+}
+
+.toc-link {
+  display: block;
+  font-size: 21px;
+  padding-bottom: 15px;
+}
+
+/* ====== End table of contents CSS ====== */
 /* ====== Start course home CSS ====== */
 
 .preface {
@@ -70,3 +69,36 @@ pre {
 }
 
 /* ====== End course home CSS ====== */
+
+/* ====== Mobile CSS ====== */
+@media only screen and (max-width: 480px) {
+
+/* ====== Start common CSS ====== */
+
+.course-top-level-container {
+  /* Prefer margin to padding so sub-elements can use 100% of div space */
+  margin: 0;
+}
+
+/* ====== End common CSS ====== */
+/* ====== Start table of contents CSS ====== */
+
+/* ====== End table of contents CSS ====== */
+/* ====== Start course home CSS ====== */
+
+.preface {
+  padding: 1% 3%;
+  text-align: justify;
+}
+
+.tutorial-todo-level {
+  font-size: 18px;
+}
+
+.tutorial-button {
+  font-size: 18px;
+}
+
+/* ====== End course home CSS ====== */
+
+}
