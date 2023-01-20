@@ -65,7 +65,7 @@ kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dbs</mark> --forms -
 
       <p>
         From the output we see that Sqlmap was able to find six databases running
-        on the DBMS that is hosting the vulnerable applcation. Take note that the
+        on the DBMS that is hosting the vulnerable application. Take note that the
         vulnerable application only interacts with the <span class="inline-code">
         sql_injection_labs</span>, the other five databases are MySQL specific or
         belong to other applications that use the DBMS.
@@ -198,7 +198,7 @@ Table: user
         every database.
       </p>
       <p>
-        The output is ommited because this command will output hundreds of lines
+        The output is ommitted because this command will output hundreds of lines
         to the console.
       </p>
 
