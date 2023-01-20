@@ -52,7 +52,7 @@
                 'Finding SQL injection vulnerabilities',
                 'Change the HTTP user agent',
                 'Stealing DBMS usernames and passwords',
-                'Dumping database tables',
+                'Get database structure information',
                 'Introduction to database takeover',
                 'File injection',
                 'Arbitrary command execution',
