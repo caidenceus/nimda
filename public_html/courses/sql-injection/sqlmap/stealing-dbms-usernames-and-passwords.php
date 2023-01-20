@@ -17,7 +17,7 @@
     // Tutorial navigation buttons
     $previous = 'change-the-http-user-agent.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'stealing-dbms-usernames-and-passwords.php';
+    $next = 'get-database-structure-information.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents. Page title is set by setting the $title variable

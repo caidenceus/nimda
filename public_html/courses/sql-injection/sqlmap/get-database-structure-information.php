@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
 
      // Title and description are set in page_header.php
-    $title = "Bypass Web Firewalls";
+    $title = "Get Database Structure Information";
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
@@ -36,6 +36,7 @@
         database names, database table names, table column names, and the
         database schema respectively.
       </p>
+
 <pre class="lang-bash default-code-style dark-mode-background">
     --dbs               Enumerate DBMS databases
     --tables            Enumerate DBMS database tables
@@ -157,6 +158,7 @@ kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--tables</mark> --form
         data types for each column of each table. To do this, we use the
         <span class="inline-code">&ndash;&ndash;columns</span>.
       </p>
+
 <pre class="lang-bash default-code-style dark-mode-background">
 kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--columns</mark> --forms --batch --random-agent
 
