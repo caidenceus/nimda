@@ -1,4 +1,0 @@
-index.php
-  - Learning path style
-    [ ] Fix learning path buttons becomming unaligned when any one of the paragraph texts has to wrap to a second line.
-    [ ] Fix learning paths becoming a single column when the page becomes too narrow.

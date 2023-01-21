@@ -1,8 +1,0 @@
-Blue 
-color: #2777ff;
-
-Yellow
-color: #ffbd03
-
-Red
-color: #eb4034;
