@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
 
      // Title and description are set in page_header.php
-    $title = "Bypass Web Firewalls";
+    $title = "Change the HTTP user agent";
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 

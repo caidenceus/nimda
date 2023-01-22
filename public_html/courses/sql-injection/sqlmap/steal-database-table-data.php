@@ -44,7 +44,7 @@
       <p>
         The first argument in the list will dump all table entries of the database
         that is being used by the vulnerable application. If you want all data from
-        all databases on the userver, use <span class="inline-code">
+        all databases on the server, use <span class="inline-code">
         &ndash;&ndash;dump&ndash;all</span>.
       </p>
 
@@ -95,7 +95,7 @@ Database: sql_injection_labs
       
       <h1 class="title toc">Dump the table entries of all databases</h1>
       <p>
-        Often it is desierable to obtain as much information as possible, if this
+        Often it is desirable  to obtain as much information as possible, if this
         is the case then you may want to dump the table entries for all databases
         running on the server. To do this, we simply change the <span class="inline-code">
         &ndash;&ndash;dump</span> flag to <span class="inline-code">&ndash;&ndash;dump&ndash;all</span>.
@@ -106,7 +106,7 @@ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dump-all</mark> --random-agent --
 </pre>
       
       <p>
-        This command will output thousands of lines to the console, so we ommit them here.
+        This command will output thousands of lines to the console, so we omit them here.
         The output is similar to the output from the previous section, but all
         tables from all databases are included.
       </p>
@@ -121,9 +121,9 @@ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dump-all</mark> --random-agent --
       </p>
       <p>
         To specify the database to enumerate, we use the <span class="inline-code">
-        &nbsp;D &lt;database name&gt;</span> command line parameter.
+        &ndash;D &lt;database name&gt;</span> command line parameter.
         To enumerate all tables of the <span class="inline-code">mysql</span> database,
-        we would use the command line arguments <span class="inline-code">&nbsp;D mysql &nbsp;&nbsp;tables</span>.
+        we would use the command line arguments <span class="inline-code">&ndash;D mysql &ndash;&ndash;tables</span>.
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
@@ -168,8 +168,8 @@ Database: mysql
       <p>
         The output lists all tables that belong to the mysql database. If we want
         to view the contents of a specific table, we can remove the <span class="inline-code">
-        &nbsp;&nbsp;tables</span> from the previous command and add the arguments
-        <span class="inline-code">&nbsp;T &lt;table name&gt; &nbsp;&nbsp;dump</span>.
+        &ndash;&ndash;tables</span> from the previous command and add the arguments
+        <span class="inline-code">&ndash;T &lt;table name&gt; &ndash;&ndash;dump</span>.
       </p>
       <p>
         For instance, suppose we wanted to get all data from the table <span class="inline-code">

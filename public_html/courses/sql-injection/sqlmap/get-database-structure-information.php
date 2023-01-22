@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
 
      // Title and description are set in page_header.php
-    $title = "Get Database Structure Information";
+    $title = "Get database schema information";
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 

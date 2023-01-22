@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
     
     // Title and description are set in page_header.php
-    $title = "Finding SQL vulnerabilities";
+    $title = "Find SQL vulnerabilities";
     $description = "How to find vulnerable SQL injection points with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 

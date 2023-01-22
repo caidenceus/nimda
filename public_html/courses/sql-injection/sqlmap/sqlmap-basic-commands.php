@@ -3,7 +3,7 @@
     include_once SHARED_PATH . 'course_header.php';
     
     // Title and description are set in page_header.php
-    $title = "Sqlmap Basic Commands";
+    $title = "Sqlmap basic commands";
     $description = "How to get help in Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
