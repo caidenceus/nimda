@@ -15,9 +15,9 @@
     include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
-    $previous = 'finding-sql-injection-vulnerabilities.php';
+    $previous = 'find-sql-injection-vulnerabilities.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'stealing-dbms-usernames-and-passwords.php';
+    $next = 'steal-dbms-usernames-and-passwords.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents

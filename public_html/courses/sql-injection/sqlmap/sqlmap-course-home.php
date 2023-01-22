@@ -12,9 +12,7 @@
 
     $terminal_text = 'cd sqlmap-dev';
     include SHARED_PATH . 'terminal_text.php';
-
     include_once SHARED_PATH . 'legal_disclaimer.php';
-
     $terminal_text = 'python3 sqlmap.py -hh';
     include SHARED_PATH . 'terminal_text.php';
 ?>
@@ -49,11 +47,11 @@
             $tutorials = array(
                 'Install sqlmap',
                 'Sqlmap basic commands',
-                'Finding SQL injection vulnerabilities',
+                'Find SQL injection vulnerabilities',
                 'Change the HTTP user agent',
-                'Stealing DBMS usernames and passwords',
+                'Steal DBMS usernames and passwords',
                 'Get database structure information',
-                'Introduction to database takeover',
+                'Steal database table data',
                 'File injection',
                 'Arbitrary command execution',
                 'Privilege escalation'
