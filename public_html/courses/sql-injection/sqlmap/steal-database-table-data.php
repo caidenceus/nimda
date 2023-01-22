@@ -49,7 +49,7 @@
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--dump</mark>--random-agent --forms --batch
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--dump</mark> --random-agent --forms --batch
 
 Database: sql_injection_labs
 <mark>Table: product</mark>

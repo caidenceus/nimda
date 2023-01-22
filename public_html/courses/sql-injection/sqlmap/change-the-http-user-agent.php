@@ -87,17 +87,7 @@ User-Agent: sqlmap/1.3.11#stable (http://sqlmap.org)</pre>
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch --random-agent
-        ___
-       __H__
- ___ ___[']_____ ___ ___  {1.7.1.4#dev}
-|_ -| . [)]     | .'| . |
-|___|_  [,]_|_|_|__,|  _|
-      |_|V...       |_|   https://sqlmap.org
-
-[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
-
-[*] starting @ 21:02:27 /2023-01-16/
+python3 sqlmap.py -u http://127.0.0.1/index.php --forms --batch --random-agent
 
 [21:02:27] [INFO] fetched random HTTP User-Agent header value
            'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.1.8) Gecko/20100214 Ubuntu/9.10 (karmic) Firefox/3.5.8'

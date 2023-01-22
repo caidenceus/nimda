@@ -63,7 +63,7 @@
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-kali@kali:-$ python3 sqlmap.py -u http://127.0.0.1/index.php --forms
+python3 sqlmap.py -u http://127.0.0.1/index.php --forms
 
         ___
        __H__
