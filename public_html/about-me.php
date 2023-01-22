@@ -36,7 +36,7 @@
               'Software Development Lifecycle',
               'Web Application Design & Development',
               'Software Testing',
-              'Socket Programming'
+              'Continuous Integration'
           );
           
           foreach ($areas as $area) {
@@ -57,11 +57,11 @@
         <?php
             $skills = array(
                 'Python',
-                'C++',
+                'Docker',
                 'Scrum & Agile methodologies',
                 'Debian Linux',
                 'Git',
-                'Pip',
+                'Continuous Integration',
                 'Nessus',
                 'REST APIs',
                 'Jenkins',
@@ -94,11 +94,11 @@
                 'Python',
                 'PHP',
                 'Scrum & Agile methodologies',
+                'Continuous Integration',
                 'Debian Linux',
                 'HTML5',
                 'CSS3',
                 'MySQL',
-                'VMware',
                 'Git',
                 'Pip',
                 'PowerShell',
@@ -156,10 +156,14 @@
       <?php
           $skills = array(
               'Python',
+              'Continuous Integration',
+              'Docker',
               'Scrum & Agile methodologies',
+              'GitHub Actions',
               'C++',
               'PHP',
               'Debian Linux',
+              'Software Development Lifecycle',
               'HTML5',
               'CSS3',
               'MySQL',
@@ -219,7 +223,8 @@
                     'CSS3',
                     'JavaScript',
                     'MySQL',
-                    'Apache server II'
+                    'Docker',
+                    'GitHub Actions'
                 );
 
                 foreach ($skills as $skill) {
@@ -263,9 +268,10 @@
             <?php
                 $skills = array(
                     'Python',
-                    'PyCharm',
+                    'Unittest',
                     'Pytest',
-                    'Data Structures'
+                    'Data Structures',
+                    'GitHub Actions'
                 );
 
                 foreach ($skills as $skill) {
