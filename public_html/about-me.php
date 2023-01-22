@@ -58,7 +58,7 @@
             $skills = array(
                 'Python',
                 'Docker',
-                'Scrum & Agile methodologies',
+                'Scrum & Agile Methodologies',
                 'Debian Linux',
                 'Git',
                 'Continuous Integration',
@@ -93,7 +93,7 @@
             $skills = array(
                 'Python',
                 'PHP',
-                'Scrum & Agile methodologies',
+                'Scrum & Agile Methodologies',
                 'Continuous Integration',
                 'Debian Linux',
                 'HTML5',
@@ -158,7 +158,7 @@
               'Python',
               'Continuous Integration',
               'Docker',
-              'Scrum & Agile methodologies',
+              'Scrum & Agile Methodologies',
               'GitHub Actions',
               'C++',
               'PHP',
@@ -209,31 +209,6 @@
 
       <div class="personal-projects">
         <h1 class="title blue-text">Personal Projects</h1>
-
-        <div class="extra-experience-container github-project">
-          <div class="github-project-container-flex">
-            <h2 class="github-repo-name">nimda</h2>
-            <p class="github-repo-description">Source code for this website</p>
-            <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
-            <div class="technical-skills-container">
-            <?php
-                $skills = array(
-                    'PHP',
-                    'HTML5',
-                    'CSS3',
-                    'JavaScript',
-                    'MySQL',
-                    'Docker',
-                    'GitHub Actions'
-                );
-
-                foreach ($skills as $skill) {
-                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-                }
-            ?>
-            </div>
-          </div>
-        </div>
         
         <div class="extra-experience-container github-project">
           <div class="github-project-container-flex">
@@ -262,7 +237,7 @@
         <div class="extra-experience-container github-project">
           <div class="github-project-container-flex">
             <h2 class="github-repo-name">dspy</h2>
-            <p class="github-repo-description">Well documented data structures</p>
+            <p class="github-repo-description">Python data scructures with CI/CD pipeline</p>
             <a href="https://github.com/caidenceus/dspy" target="_blank" class="github-link">GitHub</a>
             <div class="technical-skills-container">
             <?php
@@ -271,6 +246,31 @@
                     'Unittest',
                     'Pytest',
                     'Data Structures',
+                    'GitHub Actions'
+                );
+
+                foreach ($skills as $skill) {
+                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+                }
+            ?>
+            </div>
+          </div>
+        </div>
+        
+        <div class="extra-experience-container github-project">
+          <div class="github-project-container-flex">
+            <h2 class="github-repo-name">nimda</h2>
+            <p class="github-repo-description">Source code for this website</p>
+            <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
+            <div class="technical-skills-container">
+            <?php
+                $skills = array(
+                    'PHP',
+                    'HTML5',
+                    'CSS3',
+                    'JavaScript',
+                    'MySQL',
+                    'Docker',
                     'GitHub Actions'
                 );
 
