@@ -51,10 +51,13 @@
                 'Change the HTTP user agent',
                 'Steal DBMS usernames and passwords',
                 'Get database structure information',
-                'Steal database table data',
-                'File injection',
-                'Arbitrary command execution',
-                'Privilege escalation'
+                'Steal database table data'
+            );
+            generate_tutorial_links($tutorials);
+            
+            echo '<p class="tutorial-todo-level"><b>## Intermediate</p></b>';
+            $tutorials = array(
+                'Payload prefixes and suffixes'
             );
             generate_tutorial_links($tutorials);
         ?>
