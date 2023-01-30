@@ -51,7 +51,7 @@
 
       <h1 class="title toc">Injection point prefixes</h1>
       <p>
-        If a SQL injection vulberable application checks that data is in a
+        If a SQL injection vulnerable application checks that data is in a
         particular format before executing database transactions, Sqlmap may miss
         the vulnerability. In the below example, Sqlmap is run against a vulnerable
         website with the highest payload and risk and levels, but misses the vulnerability
@@ -93,7 +93,7 @@ if (preg_match('/SIL-/', $id)){
         Although this is not explicitly a way to avoid SQL injection attacks, it
         does hinder our ability to find and exploit SQL vulnerabilities. If you
         know the prefix that the application code is expecting, you can use that
-        prefix in Sqlmap's payloads by adding it to the URL paramter inside of
+        prefix in Sqlmap's payloads by adding it to the URL parameter inside of
         Sqlmap's <span class="inline-code">-u</span> parameter. In the code above,
         we can bypass the <span class="inline-code">preg_match</span> conditional
         statement by using the Sqlmap URL<span class="inline-code">-u 
@@ -128,7 +128,7 @@ Parameter: id (GET)
         the data in the form of a GET request.
       </p>
 
-      <h1 class="title toc">The --prefix and --sufix arguments</h1>
+      <h1 class="title toc">The --prefix and --suffix arguments</h1>
       <p>
         Suppose we wanted to exploit the below PHP code.
       </p>
@@ -138,15 +138,14 @@ $query = "SELECT * FROM users WHERE id=('" . $_GET['id'] . "')";</pre>
 
       <p>
         For this example, Sqlmap would probably be able to detect the boundaries
-        without us explicitally passing the <span class="inline-code">--prefix</span>
+        without us explicitly passing the <span class="inline-code">--prefix</span>
         and <span class="inline-code">--suffix</span> arguments. But for the sake
         of demonstration, we are going to exploit this code using prefixes and
         suffixes. Consider the following command.
       </p>
 
 <pre class="lang-bash default-code-style dark-mode-background">
-python sqlmap.py -u "http://127.0.0.1/index.php?id=1" <mark>--prefix "')" --suffix "AND (1 = 1"
-<pre>
+python sqlmap.py -u "http://127.0.0.1/index.php?id=1" <mark>--prefix "')" --suffix "AND (1 = 1"</pre>
 
       <p>
         Using the previous query code, this command will result in the following query.
@@ -158,16 +157,16 @@ $query = "SELECT * FROM users WHERE id=('1<mark>')</mark> &lt;PAYLOAD&gt; <mark>
       <p>
         The highlighted parts of the query are the prefix and suffix that we are
         using respectively before and after every Sqlmap payload. <i>PAYLOAD</i>
-        is the payload used by Sqlmap to detect and exploit Sqlinjection
+        is the payload used by Sqlmap to detect and exploit SQL injection
         vulnerabilities.
       </p>
       <p>
         Using the prefix and suffix arguments for this simple of an example is
-        usually unneccessary because Sqlmap can detect boundaries in cases like
+        usually unnecessary because Sqlmap can detect boundaries in cases like
         this. But there are instances where Sqlmap will not be able to detect
-        injection points becaues of how the SQL query is formatted in the code.
+        injection points because of how the SQL query is formatted in the code.
         In these cases, you may have to come up with creative prefixes and
-        suffexes on your own.
+        suffixes on your own.
       </p>
 
     </div>
