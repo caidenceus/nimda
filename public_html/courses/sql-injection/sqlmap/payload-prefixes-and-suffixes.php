@@ -7,8 +7,12 @@
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
-    // Legal disclaimer
+    // Legal disclaimer and terminal animations
+    $terminal_text = 'sudo apt-get install -y python3';
+    include SHARED_PATH . 'terminal_text.php';
     include_once SHARED_PATH . 'legal_disclaimer.php';
+    $terminal_text = 'python3 --version';
+    include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
     $previous = 'steal-database-table-data.php';
@@ -28,7 +32,7 @@
         validate the data, and or avoid detection from SQL injection tools.
       </p>
       <p>  
-        For example, let's say we found a website passes around an id as an URL 
+        For example, let's say we found a website passes that around an id as an URL 
         parameter. Let's suppose that at some point the website URL looks
         something like this <span class="inline-code">
         http://127.0.0.1/index.php?id=HTS-1234567890</span>. Now, after a few

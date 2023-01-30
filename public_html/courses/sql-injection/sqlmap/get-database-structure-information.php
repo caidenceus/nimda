@@ -17,7 +17,7 @@
     // Tutorial navigation buttons
     $previous = 'steal-dbms-usernames-and-passwords.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'steal-dbms-usernames-and-passwords.php';
+    $next = 'steal-database-table-data.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
