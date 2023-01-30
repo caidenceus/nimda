@@ -7,8 +7,12 @@
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';
 
-    // Legal disclaimer
+    // Legal disclaimer and terminal animations
+    $terminal_text = 'sudo apt-get install -y python3';
+    include SHARED_PATH . 'terminal_text.php';
     include_once SHARED_PATH . 'legal_disclaimer.php';
+    $terminal_text = 'python3 --version';
+    include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
     $previous = 'get-database-structure-information.php';
