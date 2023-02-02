@@ -57,7 +57,8 @@
             
             echo '<p class="tutorial-todo-level"><b>## Intermediate</p></b>';
             $tutorials = array(
-                'Payload prefixes and suffixes'
+                'Payload prefixes and suffixes',
+                'Specify injection techniques'
             );
             generate_tutorial_links($tutorials);
         ?>

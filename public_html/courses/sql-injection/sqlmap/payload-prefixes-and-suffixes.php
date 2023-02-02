@@ -4,7 +4,7 @@
 
      // Title and description are set in page_header.php
     $title = "Payload prefixes and suffixes";
-    $description = "Learn how to bypass web application firewalls with Sqlmap.";
+    $description = "Learn how to customize SQL injection payloads in Sqlmap using prefixes and suffixes.";
     include_once SHARED_PATH . 'page_header.php';
 
     // Legal disclaimer and terminal animations
@@ -17,7 +17,7 @@
     // Tutorial navigation buttons
     $previous = 'steal-database-table-data.php';
     $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'payload-prefixes-and-suffixes.php';
+    $next = 'specify-injection-techniques.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
