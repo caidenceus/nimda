@@ -18,7 +18,7 @@
 ?>
 
     <div class="course-top-level-container dark-purple-background-color preface">
-      <h1 class="title white-text">Sqlmap</h1>
+      <h1 class="title white-text">SQL injection techniques</h1>
       <p class="course-preface-text white-text">
         SQL Injection is one of the most common attack vectors against web-based
         targets, and arguably one of the most important. With modern day computing
