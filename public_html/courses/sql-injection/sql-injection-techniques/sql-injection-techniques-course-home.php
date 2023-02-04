@@ -44,7 +44,8 @@
         <?php
             echo '<p class="tutorial-todo-level"><b>## Beginner</p></b>';
             $tutorials = array(
-                'Stacked queries'
+                'Stacked queries',
+                'Union based'
             );
             generate_tutorial_links($tutorials);
             

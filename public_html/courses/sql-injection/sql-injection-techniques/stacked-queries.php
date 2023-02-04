@@ -15,9 +15,9 @@
     include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
-    $previous = 'payload-prefixes-and-suffixes.php';
-    $home = 'sqlmap-course-home.php#tutorials';
-    $next = 'specify-injection-techniques.php';
+    $previous = 'stacked-queries.php';
+    $home = 'sql-injection-techniques-course-home.php#tutorials';
+    $next = 'union-based.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents
