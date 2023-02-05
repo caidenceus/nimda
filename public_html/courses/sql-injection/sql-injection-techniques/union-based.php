@@ -34,14 +34,14 @@
         of the SQL queries in the response.
       </p>
       <p>
-        Aditionally, there are two more requirements for a successful union attack.
+        Additionally, there are two more requirements for a successful union attack.
       </p>
       <ol>
         <li>The UNION statement must contain the same number of columns as the original SELECT statement</li>
         <li>The data types in the UNION statement must be compatible with those in the SELECT statement</li>
       </ol>
       <p>
-        This means, for example, that if the select statemtn we are injecting to
+        This means, for example, that if the select statement we are injecting to
         returns three columns of data of type <span class="inline-code">VARCHAR(20)
         </span>, then we can only extract three columns at a time that are data
         types that are compatible with <span class="inline-code">VARCHAR(20)</span>;
@@ -53,13 +53,13 @@
         There are two well-known methods for finding the number of columns of 
         the original SELECT statement that we want to union attack. This first method
         takes advantage of the fact that you can order columns by index rather than
-        column name in SQL statements. The second is a clever way of exploting
+        column name in SQL statements. The second is a clever way of exploiting
         the UNION keyword and taking advantage of the fact that most SQL data types
         can cast to NULL.
       </p>
       <p>
         As mentioned, method one involves injecting a series of payloads where the
-        index is incremented in each ORDER BY payload until there is a noticable response
+        index is incremented in each ORDER BY payload until there is a noticeable response
         indicating that the index is out of range.
       </p>
 
@@ -89,17 +89,17 @@ SELECT first_name, last_name FROM EMPLOYEE_TBL ORDER BY 2;</pre>
         generate an error which may be visible in the HTML response. Other times,
         you will be able to tell the index is out of range because the SELECT query
         will return no results. In the above example, the payload <span class="inline-code">
-        ' ORDER BY 3 --</span> would idealy generate some sort of noticable error
+        ' ORDER BY 3 --</span> would ideally generate some sort of noticeable error
         response in the HTML because there is no third column being selected in
         the statement.
       </p>
       <p>
         The second common method for figuring out the number of columns in the
         original select is by using the <span class="inline-code">UNION</span>
-        keyword combined with selecing NULL values. The idea for this method
+        keyword combined with selecting NULL values. The idea for this method
         is the inverse of the <span class="inline-code">ORDER BY</span> in the 
         sense that you are looking to detect errors for every payload except
-        when you specify the proper number of NULL values that mateches the 
+        when you specify the proper number of NULL values that matches the 
         number of columns in the original SELECT statement.
       </p>
       <p>
@@ -116,7 +116,7 @@ SELECT first_name, last_name FROM EMPLOYEE_TBL ORDER BY 2;</pre>
         We expect errors with each payload unless the number of columns matches
         the number of NULLs in the payload. In the below example, every payload
         will return an error except for the last because the number of columns 
-        in the SELECT statement mateches the number of NULLs in the last payload.
+        in the SELECT statement matches the number of NULLs in the last payload.
       </p>
 
 <pre class="lang-sql default-code-style dark-mode-background">
@@ -168,7 +168,7 @@ UNION SELECT NULL, NULL, NULL --</pre>
       <p>
         In the above example, we are individually testing if each column in the
         original select statement is compatible with string data types. If the
-        column that corresponds th the <span class="inline-code">'hack'</span>
+        column that corresponds to the <span class="inline-code">'hack'</span>
         string in the injection payload is not compatible with string data types,
         we would expect to see some sort of error response in the HTML or no
         response from the select statement.
