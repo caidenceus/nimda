@@ -1,8 +1,11 @@
 <?php
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
+    
+    // Syntax highlighting
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
 
-     // Title and description are set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Get database schema information";
     $description = "Learn how to bypass web application firewalls with Sqlmap.";
     include_once SHARED_PATH . 'page_header.php';

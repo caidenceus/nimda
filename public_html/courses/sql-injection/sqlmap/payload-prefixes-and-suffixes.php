@@ -1,8 +1,12 @@
 <?php
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
+    
+    // Syntax highlighting
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'php_highlighting.js" defer></script>';
 
-     // Title and description are set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Payload prefixes and suffixes";
     $description = "Learn how to customize SQL injection payloads in Sqlmap using prefixes and suffixes.";
     include_once SHARED_PATH . 'page_header.php';

@@ -1,8 +1,12 @@
 <?php
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
+    
+    // Syntax highlighting
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'php_highlighting.js" defer></script>';
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'sql_highlighting.js" defer></script>';
 
-     // Title and description are set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Stacked queries";
     $description = "Learn how to manually exploit SQL vulnerabilities using stacked queries.";
     include_once SHARED_PATH . 'page_header.php';

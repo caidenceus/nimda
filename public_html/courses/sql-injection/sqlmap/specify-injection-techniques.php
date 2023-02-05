@@ -1,8 +1,11 @@
 <?php
     require_once 'relative_init.php';
     include_once SHARED_PATH . 'course_header.php';
+    
+    // Syntax highlighting
+    echo '<script type="text/javascript" src="' . JAVASCRIPT_PATH . 'bash_highlighting.js" defer></script>';
 
-     // Title and description are set in page_header.php
+    // Title and description are set in page_header.php
     $title = "Spqcify injection techniques";
     $description = "Learn how to manually specify the SQL injection technique that Sqlmap should use.";
     include_once SHARED_PATH . 'page_header.php';
