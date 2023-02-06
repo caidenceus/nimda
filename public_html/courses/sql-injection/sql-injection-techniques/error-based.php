@@ -28,25 +28,25 @@
 ?>
 
     <div class="course-top-level-container">
-      <h1 class="title toc">Errpr based attack overview</h1>
+      <h1 class="title toc">Error based attack overview</h1>
       <p>
         Error-based injection is an SQL injection technique that relies on error
         messages thrown by the database server to extract data or obtain information
         about the database. In some cases, attackers are able to enumerate an
-        entire database useing error-based injection alone.
+        entire database using error-based injection alone.
       </p>
       <p>
         Usually, an error-based vulnerability allows an attacker to see errors thrown
-        by the database in place of the data that an application is desigend  display
+        by the database in place of the data that an application is designed to display
         when a valid SQL query is made.
       </p>
       
-      <h1 class="title toc">Find error based SQL vulnerabilities</h1>
+      <h1 class="title toc">Find error-based SQL vulnerabilities</h1>
       <p>
         A web application is vulnerable to error-based SQL injection if the
         application displays SQL errors in the HTML response. To check if
         an application is vulnerable to error-based injection, we try to trigger
-        an SQL error to see if it is visable in the HTML response. To do this, 
+        an SQL error to see if it is visible in the HTML response. To do this, 
         we can use the following common payloads.
       </p>
 
@@ -97,7 +97,7 @@ MariaDB server version for the right syntax to use near ''''' at line 1</pre>
       </p>
 
 <pre class="lang-sql default-code-style dark-mode-background">
-Unknown column '3' in 'order clause'</span>
+Unknown column '3' in 'order clause'</pre>
 
       <p>
         This error indicates that there are only two columns being selected in 
