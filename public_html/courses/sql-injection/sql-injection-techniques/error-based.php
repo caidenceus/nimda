@@ -18,7 +18,7 @@
     include SHARED_PATH . 'terminal_text.php';
 
     // Tutorial navigation buttons
-    $previous = 'stacked-queries.php';
+    $previous = 'union-based.php';
     $home = 'sql-injection-techniques-course-home.php#tutorials';
     $next = 'inline-queries.php';
     include SHARED_PATH . 'tutorial_navigation.php';

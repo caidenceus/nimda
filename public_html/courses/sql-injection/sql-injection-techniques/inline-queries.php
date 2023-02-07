@@ -30,7 +30,7 @@
     <div class="course-top-level-container">
       <h1 class="title toc">Inline query overview</h1>
       <p>
-        In the context of SQL injection, an inline query vulnerablity is a 
+        In the context of SQL injection, an inline query vulnerability is a 
         scenario where you can inject pure SQL without a prefix (such as 
         <span class="inline-code">'</span>) or a suffix (such as 
         <span class="inline-code">--</span>) and the injected query executes.
@@ -83,18 +83,18 @@ mysqli_query("SELECT * FROM users WHERE id=(" . $_GET['id'] . ")")</pre>
         unpopular individually. First, it does not take a cybersecurity expert
         to know that the code <span class="inline-code">mysqli_query($_GET['sql'])</span>
         is obviously a bad idea in production. Letting anyone in the world execute
-        any SQL statement against your database will probably result in a databreach
-        within a matter of hours.
+        any SQL statement against your database will probably result in a data
+        breach within a matter of hours. Because this code is such a bad
+        practice, it is rarely encountered in the wild. 
       </p>
       <p>
-        Because this code is such a bad practice, it is rarely encountered in the
-        wild. Second, while <span class="inline-code">
+        Second, while <span class="inline-code">
         mysqli_query("SELECT * FROM users WHERE id=(" . $_GET['id'] . ")")</span>
         is much more common to see in production, attackers are limited to 
         injecting SELECT statements only. On top of this limitation, SELECT statements
         are only useful if we can see errors and or results in the HTML response.
-        Because the SELECT statements that will work on an inline query vulnerability
-        are further limited by column data types and the parent SQL stement, even
+        Because the SELECT statements that will work in an inline query vulnerability
+        are further limited by column data types and the parent SQL statement, even
         if errors or table data are visible in the HTML response, these restrictions
         limit what we can actually do with the vulnerability.
       </p>
