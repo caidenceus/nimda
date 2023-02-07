@@ -20,7 +20,7 @@
     // Tutorial navigation buttons
     $previous = 'stacked-queries.php';
     $home = 'sql-injection-techniques-course-home.php#tutorials';
-    $next = 'union-based.php';
+    $next = 'inline-queries.php';
     include SHARED_PATH . 'tutorial_navigation.php';
 
     // Table of contents

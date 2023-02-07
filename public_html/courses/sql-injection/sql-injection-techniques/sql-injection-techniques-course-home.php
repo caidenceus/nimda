@@ -46,10 +46,11 @@
             $tutorials = array(
                 'Stacked queries',
                 'Union based',
-                'Error based'
+                'Error based',
+                'Inline queries'
             );
             generate_tutorial_links($tutorials);
-            
+
         ?>
       </div>
     </div>
@@ -59,7 +60,7 @@
         <h1 class="title blue-text file-name-header">Labs.md</h1>
       </div>
     </div>
-    
+
     <div class="course-top-level-container">
     <?php
         $tags = array(
@@ -69,7 +70,7 @@
             'Debian Linux',
             'Bash'
         );
-        
+
         generate_technology_tags($tags);
     ?>
     </div>
