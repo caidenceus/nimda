@@ -1,3 +1,9 @@
+/* ====== Start general CSS ====== */
+.left-padding-30px {
+  padding-left: 30px;
+}
+/* ====== End general CSS ====== */
+
 .page-heading {
   display: flex;
   align-items: center;
@@ -110,7 +116,7 @@ img {
   justify-content: space-between;
 }
 
-.cert-img {
+.icon-img {
   width: 75px;
   display: inline-block;
   height: 75px;
@@ -135,7 +141,7 @@ img {
   align-items: center;
 }
 
-.cert-flex-child {
+.flex-child {
   display: inline-block;
 }
 
@@ -149,18 +155,15 @@ img {
 
 /* ====== Start Volunteer work section ====== */
 .volunteer-experience {
-  
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 21px;
 }
 /* ====== End Volunteer work section ====== */
 
 
-/* Child of class="extra-experience-container volunteer-container" */
-
 .github-project {
   background-color: white;
-  
-  /* We want this to be the same width as .volunteer-container which has total
-     horizontal margin of 24px */
   margin-left: 12px;
   margin-right: 12px;
 }

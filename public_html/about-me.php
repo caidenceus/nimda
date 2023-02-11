@@ -208,14 +208,15 @@
 
     <div class="top-level-container">
       <h1 class="title blue-text">Certifications</h1>
+
       <div class="cert-container">
         <div class="left-column">
           <div class="cert">
             <div class="flex-container">
-              <div class="cert-icon cert-flex-child">
-                <img src="awsccp.jpg" alt="AWS" class="cert-img">
+              <div class="cert-icon flex-child">
+                <img src="awsccp.jpg" alt="AWS" class="icon-img">
               </div>
-              <div class="cert-description cert-flex-child">
+              <div class="cert-description flex-child">
                 <h2 class="tile-title">AWS Certified Cloud Practitioner</h2>
                 <h3 class="tile-sub-title blue-text">Amazon</h3>
                 <h4 class="cert-date">02/28/2023</h4>
@@ -224,10 +225,10 @@
           </div>
           <div class="cert">
             <div class="flex-container">
-              <div class="cert-icon cert-flex-child">
-                <img src="awscsaa.jpg" alt="AWS" class="cert-img">
+              <div class="cert-icon flex-child">
+                <img src="awscsaa.jpg" alt="AWS" class="icon-img">
               </div>
-              <div class="cert-description cert-flex-child">
+              <div class="cert-description flex-child">
                 <h2 class="tile-title">AWS Certified Solutions Architect - Associate</h2>
                 <h3 class="tile-sub-title blue-text">Amazon</h3>
                 <h4 class="cert-date">04/28/2023</h4>
@@ -236,10 +237,10 @@
           </div>
           <div class="cert">
             <div class="flex-container">
-              <div class="cert-icon cert-flex-child">
-                <img src="awscd.jpg" alt="AWS" class="cert-img">
+              <div class="cert-icon flex-child">
+                <img src="awscd.jpg" alt="AWS" class="icon-img">
               </div>
-              <div class="cert-description cert-flex-child">
+              <div class="cert-description flex-child">
                 <h2 class="tile-title">AWS Certified Developer</h2>
                 <h3 class="tile-sub-title blue-text">Amazon</h3>
                 <h4 class="cert-date">05/28/2023</h4>
@@ -250,10 +251,10 @@
         <div class="right-column">
           <div class="cert">
             <div class="flex-container">
-              <div class="cert-icon cert-flex-child">
-                <img src="awscsa.jpg" alt="AWS" class="cert-img">
+              <div class="cert-icon flex-child">
+                <img src="awscsa.jpg" alt="AWS" class="icon-img">
               </div>
-              <div class="cert-description cert-flex-child">
+              <div class="cert-description flex-child">
                 <h2 class="tile-title">AWS Certified SysOps Administrator</h2>
                 <h3 class="tile-sub-title blue-text">Amazon</h3>
                 <h4 class="cert-date">06/28/2023</h4>
@@ -262,10 +263,10 @@
           </div>
           <div class="cert">
             <div class="flex-container">
-              <div class="cert-icon cert-flex-child">
-                <img src="cissp.jpg" alt="CISSP" class="cert-img">
+              <div class="cert-icon flex-child">
+                <img src="cissp.jpg" alt="CISSP" class="icon-img">
               </div>
-              <div class="cert-description cert-flex-child">
+              <div class="cert-description flex-child">
                 <h2 class="tile-title">CISSP</h2>
                 <h3 class="tile-sub-title blue-text">ISC</h3>
                 <h4 class="cert-date">12/28/2023</h4>
@@ -279,10 +280,15 @@
     <div class="top-level-container">
       <h1 class="title blue-text">Volunteer Work</h1>
 
-      <div class="volunteer-experience">
-        <h2 class="volunteer-org">Microsoft TEALs</h2>
-        <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
-        <h4 class="volunteer-dates">08/2022&nbsp;&ndash;&nbsp;present</h3>
+      <div class="volunteer-experience flex-container">
+        <div class="flex-child volunteer-icon">
+          <img src="microsoft.jpg" alt="TEALs" class="icon-img">
+        </div>
+        <div class="flex-child left-padding-30px">
+          <h2 class="volunteer-org">Microsoft TEALs</h2>
+          <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
+          <h4 class="volunteer-dates">08/2022&nbsp;&ndash;&nbsp;present</h3>
+        </div>
       </div>
 
     </div>
