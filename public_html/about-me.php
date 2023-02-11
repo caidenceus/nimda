@@ -177,14 +177,12 @@
       <?php
           $skills = array(
               'Python',
-              'Continuous Integration',
               'Docker',
-              'Scrum & Agile Methodologies',
+              'Go',
               'GitHub Actions',
               'C++',
               'PHP',
               'Debian Linux',
-              'Software Development Lifecycle',
               'HTML5',
               'CSS3',
               'MySQL',
@@ -193,18 +191,12 @@
               'GitHub',
               'PowerShell',
               'Pip',
-              'Nessus',
               'REST APIs',
-              'Make',
-              'G++',
               'Jenkins',
               'Pytest',
               'Selenium',
               'Jira',
-              'Confluence',
-              'TCP/IP',
-              'HTTP',
-              'Windows Administration'
+              'Confluence'
           );
 
           foreach ($skills as $skill) {
@@ -284,92 +276,84 @@
       </div>
     </div>
 
-    <div class="top-level-container extra-experience">
-      <div class="volunteer-work">
-        <h1 class="title blue-text">Volunteer Work</h1>
+    <div class="top-level-container">
+      <h1 class="title blue-text">Volunteer Work</h1>
 
-        <div class="extra-experience-container volunteer-container">
-          <div class="volunteer-experience-flex">
-            <h2 class="volunteer-org">Microsoft TEALs</h2>
-            <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
-            <h4 class="volunteer-dates">08/2022&nbsp;&ndash;&nbsp;present</h3>
-          </div>
-        </div>
-
+      <div class="volunteer-experience">
+        <h2 class="volunteer-org">Microsoft TEALs</h2>
+        <h3 class="volunteer-title blue-text">Computer Science teaching assistant</h3>
+        <h4 class="volunteer-dates">08/2022&nbsp;&ndash;&nbsp;present</h3>
       </div>
 
+    </div>
+
+    <div class="top-level-container">
       <div class="personal-projects">
         <h1 class="title blue-text">Personal Projects</h1>
-        
-        <div class="extra-experience-container github-project">
-          <div class="github-project-container-flex">
-            <h2 class="github-repo-name">cpprequest</h2>
-            <p class="github-repo-description">Cross-platform HTTP request library</p>
-            <a href="https://github.com/caidenceus/cpprequest" target="_blank" class="github-link">GitHub</a>
-            <div class="technical-skills-container">
-            <?php
-                $skills = array(
-                    'C++',
-                    'Make',
-                    'TCP/IP',
-                    'HTTP',
-                    'Socket Programming',
-                    'Visual Studio'
-                );
 
-                foreach ($skills as $skill) {
-                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-                }
-            ?>
-            </div>
+        <div class="github-project-container-flex">
+          <h2 class="github-repo-name">cpprequest</h2>
+          <p class="github-repo-description">Cross-platform HTTP request library</p>
+          <a href="https://github.com/caidenceus/cpprequest" target="_blank" class="github-link">GitHub</a>
+          <div class="technical-skills-container">
+          <?php
+              $skills = array(
+                  'C++',
+                  'Make',
+                  'TCP/IP',
+                  'HTTP',
+                  'Socket Programming',
+                  'Visual Studio'
+              );
+
+              foreach ($skills as $skill) {
+                  echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+              }
+          ?>
           </div>
         </div>
-        
-        <div class="extra-experience-container github-project">
-          <div class="github-project-container-flex">
-            <h2 class="github-repo-name">dspy</h2>
-            <p class="github-repo-description">Python data scructures with CI/CD pipeline</p>
-            <a href="https://github.com/caidenceus/dspy" target="_blank" class="github-link">GitHub</a>
-            <div class="technical-skills-container">
-            <?php
-                $skills = array(
-                    'Python',
-                    'Unittest',
-                    'Pytest',
-                    'Data Structures',
-                    'GitHub Actions'
-                );
 
-                foreach ($skills as $skill) {
-                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-                }
-            ?>
-            </div>
+        <div class="extra-experience-container github-project">
+          <h2 class="github-repo-name">dspy</h2>
+          <p class="github-repo-description">Python data scructures with CI/CD pipeline</p>
+          <a href="https://github.com/caidenceus/dspy" target="_blank" class="github-link">GitHub</a>
+          <div class="technical-skills-container">
+          <?php
+              $skills = array(
+                  'Python',
+                  'Unittest',
+                  'Pytest',
+                  'Data Structures',
+                  'GitHub Actions'
+              );
+
+              foreach ($skills as $skill) {
+                  echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+              }
+          ?>
           </div>
         </div>
-        
-        <div class="extra-experience-container github-project">
-          <div class="github-project-container-flex">
-            <h2 class="github-repo-name">nimda</h2>
-            <p class="github-repo-description">Source code for this website</p>
-            <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
-            <div class="technical-skills-container">
-            <?php
-                $skills = array(
-                    'PHP',
-                    'HTML5',
-                    'CSS3',
-                    'JavaScript',
-                    'MySQL',
-                    'Docker',
-                    'GitHub Actions'
-                );
 
-                foreach ($skills as $skill) {
-                    echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
-                }
-            ?>
-            </div>
+        <div class="extra-experience-container github-project">
+          <h2 class="github-repo-name">nimda</h2>
+          <p class="github-repo-description">Source code for this website</p>
+          <a href="https://github.com/caidenceus/nimda" target="_blank" class="github-link">GitHub</a>
+          <div class="technical-skills-container">
+          <?php
+              $skills = array(
+                  'PHP',
+                  'HTML5',
+                  'CSS3',
+                  'JavaScript',
+                  'MySQL',
+                  'Docker',
+                  'GitHub Actions'
+              );
+
+              foreach ($skills as $skill) {
+                  echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+              }
+          ?>
           </div>
         </div>
         

@@ -147,52 +147,14 @@ img {
   width: 80%;
 }
 
-.extra-experience {
-  display: flex;
-}
-
-/* Direct child of .extra-experience */
-.volunteer-work {
-  width: calc(100% / 2);
-}
-
-/* Direct child of .extra-experience */
-.personal-projects {
-  width: calc(100% / 2);
+/* ====== Start Volunteer work section ====== */
+.volunteer-experience {
   
-  /* #333 with opacity */
-  background-color: rgba(51 51 51 / 0.4);
-  color: white;
-  border-radius: 6px;
 }
+/* ====== End Volunteer work section ====== */
 
-.personal-projects > h1 {
-  color: white;
-  
-  /* Same as the margin of .github-project */
-  padding-left: 12px;
-}
-
-.extra-experience-container {
-  border-radius: 6px;
-  padding: 0 16px;
-  overflow: hidden;
-  height: 200px;
-  margin-bottom: 16px;
-}
-
-.volunteer-container {
-  border: 1px solid black;
-  margin-right: 16px;
-}
 
 /* Child of class="extra-experience-container volunteer-container" */
-.volunteer-experience-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-}
 
 .github-project {
   background-color: white;
