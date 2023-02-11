@@ -269,8 +269,21 @@ img {
 
 }
 
+@media only screen and (max-width: 1200px) {
+
+.cert-icon {
+  width: 20%;
+}
+
+.cert-description {
+  width: 80%;
+  margin-right: 10%;
+}
+
+}
+
 /* ====== Mobile CSS ====== */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   
 .expertise-container {
   padding: 10px 10px 0px 10px;
@@ -297,6 +310,21 @@ img {
 .volunteer-work,
 .personal-projects {
   width: 100%;
+}
+
+.cert-icon {
+  width: 30%;
+}
+
+.cert-description {
+  width: 70%;
+  margin-right: 10%;
+}
+
+/* Hide all details except for cert name and icon */
+.tile-sub-title,
+.cert-date {
+  display: none;
 }
 
 }
