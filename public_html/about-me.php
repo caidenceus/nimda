@@ -16,9 +16,10 @@
       <div class="current-info">
         <h1 id="current-title">Caiden Pyle, CISSP, AWS Solutions Architect - Software Developer II.</h1>
         <p>Full-stack software engineer with 6+ years of experience developing 
-        high-performance applications and solutions. Highly experienced in all
-        aspects of the software development lifecycle, as well as designing and
-        implementing AWS cloud solutions.</p>
+        high-performance software applications and solutions. Highly experienced
+        in all aspects of the software development lifecycle, as well as designing
+        and implementing AWS cloud solutions.
+        </p>
       </div>
     </div>
 
@@ -212,9 +213,40 @@
       ?>
       </div>
     </div>
-    
+
     <div class="top-level-container">
       <h1 class="title blue-text">Certifications</h1>
+      <div class="cert-container">
+        <div class="left-column">
+          <div class="cert">
+            <h2 class="tile-title">AWS Certified Cloud Practitioner</h2>
+            <h3 class="tile-sub-title blue-text">Amazon</h3>
+            <h4 class="cert-date">02/28/2023</h4>
+          </div>
+          <div class="cert">
+            <h2 class="tile-title">AWS Certified Solutions Architect - Associate</h2>
+            <h3 class="tile-sub-title blue-text">Amazon</h3>
+            <h4 class="cert-date">04/28/2023</h4>
+          </div>
+          <div class="cert">
+            <h2 class="tile-title">AWS Certified Developer</h2>
+            <h3 class="tile-sub-title blue-text">Amazon</h3>
+            <h4 class="cert-date">05/28/2023</h4>
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="cert">
+            <h2 class="tile-title">AWS Certified SysOps Administrator</h2>
+            <h3 class="tile-sub-title blue-text">Amazon</h3>
+            <h4 class="cert-date">06/28/2023</h4>
+          </div>
+          <div class="cert">
+            <h2 class="tile-title">CISSP (12/28/2023)</h2>
+            <h3 class="tile-sub-title blue-text">ISC</h3>
+            <h4 class="cert-date">12/28/2023</h4>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="top-level-container extra-experience">

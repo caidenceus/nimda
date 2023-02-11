@@ -38,7 +38,8 @@ img {
 }
 
 .job-title,
-.volunteer-org {
+.volunteer-org,
+.tile-title {
   font-weight: 900;
   font-size: 27px;
   
@@ -47,7 +48,8 @@ img {
 }
 
 .company,
-.volunteer-title {
+.volunteer-title,
+.tile-sub-title {
   font-weight: 500;
   font-size: 18px;
 
@@ -56,7 +58,8 @@ img {
 }
 
 .work-dates,
-.volunteer-dates {
+.volunteer-dates,
+.cert-date {
   font-weight: 300;
   font-size: 18px;
   
@@ -100,6 +103,25 @@ img {
   color: #333;
   margin: 9px;
   font-weight: 700;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-column,
+.right-column {
+  display: inline-block;
+  width: calc(96% / 2);
+}
+
+.cert {
+  height: 150px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .extra-experience {
@@ -211,8 +233,7 @@ img {
 }
 
 img {
-  width: 100px;
-  height: 100px;
+  display: none;
 }
 
 .technical-skill > p,
