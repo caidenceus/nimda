@@ -271,7 +271,7 @@
           <div class="cert">
             <div class="flex-container">
               <div class="cert-icon cert-flex-child">
-                <img src="cissp.jpg" alt="AWS" class="cert-img">
+                <img src="cissp.jpg" alt="CISSP" class="cert-img">
               </div>
               <div class="cert-description cert-flex-child">
                 <h2 class="tile-title">CISSP</h2>
