@@ -14,6 +14,12 @@ img {
   margin-left: 5%;
 }
 
+.expertise-container {
+  background: rgba(51 51 51 / 0.1);
+  padding: 20px 20px 10px 20px;
+  border-radius: 6px;
+}
+
 .expertise-area {
   border: 1px solid #333;
   border-radius: 6px;
@@ -195,6 +201,10 @@ img {
 
 /* ====== Mobile CSS ====== */
 @media only screen and (max-width: 480px) {
+  
+.expertise-container {
+  padding: 10px 10px 0px 10px;
+}
   
 #current-title {
   font-size: 18px;

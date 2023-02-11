@@ -15,10 +15,14 @@
       </div>
       <div class="current-info">
         <h1 id="current-title">Caiden Pyle, CISSP, AWS Solutions Architect - Software Developer II.</h1>
+        <p>Full-stack software engineer with 6+ years of experience developing 
+        high-performance applications and solutions. Highly experienced in all
+        aspects of the software development lifecycle, as well as designing and
+        implementing AWS cloud solutions.</p>
       </div>
     </div>
 
-    <div class="top-level-container">
+    <div class="top-level-container expertise">
       <h1 class="title blue-text">Areas of Expertise</h1>
       <div class="expertise-container">
       <?php
