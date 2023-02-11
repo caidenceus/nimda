@@ -244,6 +244,31 @@ img {
   color: purple;
 }
 
+@media only screen and (max-width: 1200px) {
+
+/* Make side by side columns into single columns */
+.cert-container {
+  display: block;
+}
+
+/* Make side by side columns into single columns */
+.left-column,
+.right-column {
+  display: block;
+  width: 100%;
+}
+
+.cert-icon {
+  width: 10%;
+}
+
+.cert-description {
+  width: 80%;
+  margin-right: 10%;
+}
+
+}
+
 /* ====== Mobile CSS ====== */
 @media only screen and (max-width: 480px) {
   
