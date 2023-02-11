@@ -110,6 +110,12 @@ img {
   justify-content: space-between;
 }
 
+.cert-img {
+  width: 75px;
+  display: inline-block;
+  height: 75px;
+}
+
 .left-column,
 .right-column {
   display: inline-block;
@@ -126,6 +132,7 @@ img {
 
 .flex-container {
   display: flex;
+  align-items: center;
 }
 
 .cert-flex-child {
@@ -133,11 +140,11 @@ img {
 }
 
 .cert-icon {
-  width: 30%;
+  width: 20%;
 }
 
 .cert-description {
-  width: 70%;
+  width: 80%;
 }
 
 .extra-experience {
