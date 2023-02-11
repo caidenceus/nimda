@@ -8,8 +8,6 @@
     // Title is set in page_header.php
     $title = "About Caiden Pyle";
     include_once SHARED_PATH . 'page_header.php';
-    $terminal_text = 'git checkout about-me';
-    include SHARED_PATH . 'terminal_text.php';
 ?>
     <div class="page-heading top-level-container">
       <div class="profile-picture">
@@ -20,19 +18,13 @@
       </div>
     </div>
 
-    <?php 
-        $terminal_text = 'sudo apt-get install -y kali-root-login';
-        include SHARED_PATH . 'terminal_text.php';
-    ?>
-
     <div class="top-level-container">
-      <h1 class="title blue-text">Highlights</h1>
+      <h1 class="title blue-text">Areas of Expertise</h1>
       <div class="expertise-container">
       <?php
           $areas = array(
-              'AWS Certified Solutions Architect (Associate)',
-              'AWS Certified Developer',
-              'AWS Certified SysOps Administrator',
+              'Amazon Web Services (AWS)',
+              'Python',
               'Scrum & Agile Methodologies',
               'Software Development Lifecycle',
               'Continuous Integration'
@@ -44,7 +36,7 @@
       ?>
       </div>
     </div>
-    
+
     <div class="top-level-container work-experience">
       <h1 class="title blue-text">Work Experience</h1>
       
@@ -83,6 +75,7 @@
             $skills = array(
                 'Python',
                 'Docker',
+                'AWS (EC2, S3, EFS)',
                 'Scrum & Agile Methodologies',
                 'Debian Linux',
                 'Git',
@@ -92,9 +85,9 @@
                 'Jenkins',
                 'Pytest',
                 'Selenium',
+                'Playwright',
                 'Jira',
-                'Confluence',
-                'HTTP'
+                'Confluence'
             );
 
             foreach ($skills as $skill) {
@@ -125,13 +118,11 @@
                 'CSS3',
                 'MySQL',
                 'Git',
-                'Pip',
                 'PowerShell',
                 'REST APIs',
                 'Pytest',
                 'Jira',
-                'Confluence',
-                'HTTP'
+                'Confluence'
             );
 
             foreach ($skills as $skill) {
