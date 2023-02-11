@@ -231,26 +231,54 @@
             </div>
           </div>
           <div class="cert">
-            <h2 class="tile-title">AWS Certified Solutions Architect - Associate</h2>
-            <h3 class="tile-sub-title blue-text">Amazon</h3>
-            <h4 class="cert-date">04/28/2023</h4>
+            <div class="flex-container">
+              <div class="cert-icon cert-flex-child">
+                <img src="awscsaa.jpg" alt="AWS" class="cert-img">
+              </div>
+              <div class="cert-description cert-flex-child">
+                <h2 class="tile-title">AWS Certified Solutions Architect - Associate</h2>
+                <h3 class="tile-sub-title blue-text">Amazon</h3>
+                <h4 class="cert-date">04/28/2023</h4>
+              </div>
+            </div>
           </div>
           <div class="cert">
-            <h2 class="tile-title">AWS Certified Developer</h2>
-            <h3 class="tile-sub-title blue-text">Amazon</h3>
-            <h4 class="cert-date">05/28/2023</h4>
+            <div class="flex-container">
+              <div class="cert-icon cert-flex-child">
+                <img src="awscd.jpg" alt="AWS" class="cert-img">
+              </div>
+              <div class="cert-description cert-flex-child">
+                <h2 class="tile-title">AWS Certified Developer</h2>
+                <h3 class="tile-sub-title blue-text">Amazon</h3>
+                <h4 class="cert-date">05/28/2023</h4>
+              </div>
+            </div>
           </div>
         </div>
         <div class="right-column">
           <div class="cert">
-            <h2 class="tile-title">AWS Certified SysOps Administrator</h2>
-            <h3 class="tile-sub-title blue-text">Amazon</h3>
-            <h4 class="cert-date">06/28/2023</h4>
+            <div class="flex-container">
+              <div class="cert-icon cert-flex-child">
+                <img src="awscsa.jpg" alt="AWS" class="cert-img">
+              </div>
+              <div class="cert-description cert-flex-child">
+                <h2 class="tile-title">AWS Certified SysOps Administrator</h2>
+                <h3 class="tile-sub-title blue-text">Amazon</h3>
+                <h4 class="cert-date">06/28/2023</h4>
+              </div>
+            </div>
           </div>
           <div class="cert">
-            <h2 class="tile-title">CISSP (12/28/2023)</h2>
-            <h3 class="tile-sub-title blue-text">ISC</h3>
-            <h4 class="cert-date">12/28/2023</h4>
+            <div class="flex-container">
+              <div class="cert-icon cert-flex-child">
+                <img src="cissp.jpg" alt="AWS" class="cert-img">
+              </div>
+              <div class="cert-description cert-flex-child">
+                <h2 class="tile-title">CISSP</h2>
+                <h3 class="tile-sub-title blue-text">ISC</h3>
+                <h4 class="cert-date">12/28/2023</h4>
+              </div>
+            </div>
           </div>
         </div>
       </div>
