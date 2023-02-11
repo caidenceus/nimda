@@ -124,6 +124,22 @@ img {
   margin-bottom: 10px;
 }
 
+.flex-container {
+  display: flex;
+}
+
+.cert-flex-child {
+  display: inline-block;
+}
+
+.cert-icon {
+  width: 30%;
+}
+
+.cert-description {
+  width: 70%;
+}
+
 .extra-experience {
   display: flex;
 }

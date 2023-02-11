@@ -219,9 +219,16 @@
       <div class="cert-container">
         <div class="left-column">
           <div class="cert">
-            <h2 class="tile-title">AWS Certified Cloud Practitioner</h2>
-            <h3 class="tile-sub-title blue-text">Amazon</h3>
-            <h4 class="cert-date">02/28/2023</h4>
+            <div class="flex-container">
+              <div class="cert-icon cert-flex-child">
+                <img src="awsccp.jpg" alt="AWS">
+              </div>
+              <div class="cert-description cert-flex-child">
+                <h2 class="tile-title">AWS Certified Cloud Practitioner</h2>
+                <h3 class="tile-sub-title blue-text">Amazon</h3>
+                <h4 class="cert-date">02/28/2023</h4>
+              </div>
+            </div>
           </div>
           <div class="cert">
             <h2 class="tile-title">AWS Certified Solutions Architect - Associate</h2>
