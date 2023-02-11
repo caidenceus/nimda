@@ -16,7 +16,7 @@
         <img src="profile_picture.jpg" alt="Caiden">
       </div>
       <div class="current-info">
-        <h1 id="current-title">Caiden Pyle - Vulnerability Analysis \ Quality Assurance.</h1>
+        <h1 id="current-title">Caiden Pyle, CISSP, AWS Solutions Architect - Software Developer II.</h1>
       </div>
     </div>
 
@@ -26,16 +26,15 @@
     ?>
 
     <div class="top-level-container">
-      <h1 class="title blue-text">Areas of Expertise</h1>
+      <h1 class="title blue-text">Highlights</h1>
       <div class="expertise-container">
       <?php
           $areas = array(
-              'Agile Software Development',
+              'AWS Certified Solutions Architect (Associate)',
+              'AWS Certified Developer',
+              'AWS Certified SysOps Administrator',
               'Scrum & Agile Methodologies',
-              'Consuming REST APIs',
               'Software Development Lifecycle',
-              'Web Application Design & Development',
-              'Software Testing',
               'Continuous Integration'
           );
           
@@ -48,11 +47,37 @@
     
     <div class="top-level-container work-experience">
       <h1 class="title blue-text">Work Experience</h1>
+      
+      <div class="job">
+        <h2 class="job-title">Software Developer II</h2>
+        <h3 class="company">Novacoast</h3>
+        <h4 class="work-dates">02/2023&nbsp;&ndash;&nbsp;present</h4>
+        <div class="technical-skills-container">
+        <?php
+            $skills = array(
+                'Python',
+                'Go',
+                'Scrum & Agile Methodologies',
+                'Docker',
+                'Kubernetes',
+                'Git',
+                'GitHub Actions',
+                'Continuous Integration'
+            );
+
+            foreach ($skills as $skill) {
+                echo '<div class="technical-skill blue-background"><p>' . $skill . '</p></div>';
+            }
+        ?>
+        </div>
+        <ul>
+        </ul>
+      </div>
 
       <div class="job">
         <h2 class="job-title">Vulnerability Analysis / Quality Assurance</h2>
         <h3 class="company">NetApp E-Series</h3>
-        <h4 class="work-dates">04/2020&nbsp;&ndash;&nbsp;present</h4>
+        <h4 class="work-dates">04/2020&nbsp;&ndash;&nbsp;02/2023</h4>
         <div class="technical-skills-container">
         <?php
             $skills = array(
@@ -191,6 +216,10 @@
           }
       ?>
       </div>
+    </div>
+    
+    <div class="top-level-container">
+      <h1 class="title blue-text">Certifications</h1>
     </div>
 
     <div class="top-level-container extra-experience">
