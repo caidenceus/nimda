@@ -1,6 +1,10 @@
-const Subject = ({ title, subtitle }) => {
+import { makeLink } from '../../common/utils.js';
+import { Link } from 'react-router-dom';
+
+const SubjectLink = ({ title, subtitle }) => {
   return (
-    <div
+    <Link
+      to={`/${makeLink(title)}`}
       style={{
         gridColumn: 'span 1',
         gridRow: 'span 1',
@@ -15,39 +19,13 @@ const Subject = ({ title, subtitle }) => {
     >
       <h2>{ title }</h2>
       <p>{ subtitle }</p>
-    </div>
+    </Link>
   );
 };
 
 
 const Dashboard = () => {
-  const subjects = [
-    {
-      id: 1,
-      title: 'Calculus I',
-      subtitle: 'Basic limits and derivatives'
-    },
-    {
-      id: 2,
-      title: 'Calculus II',
-      subtitle: 'Integrals and antiderivatives'
-    },
-    {
-      id: 3,
-      title: 'Calculus III',
-      subtitle: 'Calculus derivatives and integrals in 3D'
-    },
-    {
-      id: 4,
-      title: 'Number Theory',
-      subtitle: 'Theory of the integers'
-    },
-    {
-      id: 5,
-      title: 'Linear Algebra',
-      subtitle: 'Algebra of Matricies'
-    }
-  ];
+  const subjects = require('../../../data/subjects_table.json');
 
   return (
     <div
@@ -59,7 +37,7 @@ const Dashboard = () => {
       }}>
 
         {subjects.map((subject) => {
-          return <Subject title={subject.title} subtitle={subject.subtitle} key={subject.id} />
+          return <SubjectLink title={subject.title} subtitle={subject.subtitle} key={subject.id} />
         })}
 
     </div>

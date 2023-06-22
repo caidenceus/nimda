@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Calculus I",
+        "subtitle": "Basic limits and derivatives"
+    },
+    {
+        "id": 2,
+        "title": "Calculus II",
+        "subtitle": "Integrals and antiderivatives"
+    },
+    {
+        "id": 3,
+        "title": "Calculus III",
+        "subtitle": "Calculus derivatives and integrals in 3D"
+    },
+    {
+        "id": 4,
+        "title": "Number Theory",
+        "subtitle": "Theory of the integers"
+    },
+    {
+        "id": 5,
+        "title": "Linear Algebra",
+        "subtitle": "Algebra of Matricies"
+    }
+]
