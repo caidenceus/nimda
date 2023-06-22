@@ -2,11 +2,14 @@ import LeftSidebar from './components/common/LeftSidebar.js';
 
 import Dashboard from './components/pages/dashboard/Dashboard.js';
 import Subject from './components/pages/subject/Subject.js';
+import { toLinkText } from './components/common/utils.js';
 
 import { Routes, Route } from "react-router-dom";
 
 
 function App() {
+  const subjects = require('./data/subjects_table.json');
+
   return (
     <div id="app" style={{ display: 'flex', height: '100%' }}>
       <LeftSidebar />
@@ -14,11 +17,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
 
-          <Route path="/calculus-i" element={<Subject title="Calculus I" />} />
-          <Route path="/calculus-ii" element={<Subject title="Calculus II" />} />
-          <Route path="/calculus-iii" element={<Subject title="Calculus III" />} />
-          <Route path="/number-theory" element={<Subject title="Number Theory" />} />
-          <Route path="/linear-algebra" element={<Subject title="Linear Algebra" />} />
+          {/* Generate routes for all subjects in the Subjects Postgres table */}
+          {subjects.map((subject) => {
+            return (
+              <Route
+                path={`/${toLinkText(subject.title)}`}
+                element={<Subject title={subject.title} />}
+              />
+            );
+          })}
         </Routes>
       </main>
     </div>

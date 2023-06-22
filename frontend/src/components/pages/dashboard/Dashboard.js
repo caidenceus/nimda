@@ -1,10 +1,10 @@
-import { makeLink } from '../../common/utils.js';
+import { toLinkText } from '../../common/utils.js';
 import { Link } from 'react-router-dom';
 
 const SubjectLink = ({ title, subtitle }) => {
   return (
     <Link
-      to={`/${makeLink(title)}`}
+      to={`/${toLinkText(title)}`}
       style={{
         gridColumn: 'span 1',
         gridRow: 'span 1',

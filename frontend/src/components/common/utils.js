@@ -1,4 +1,3 @@
-// TODO: rename this "toLinkText"
-export const makeLink = (str) => {
+export const toLinkText = (str) => {
     return str.toLowerCase().split(' ').join('-');
 }
