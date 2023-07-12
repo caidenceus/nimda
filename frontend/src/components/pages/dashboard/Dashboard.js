@@ -23,7 +23,6 @@ const SubjectLink = ({ title, subtitle }) => {
   );
 };
 
-
 const Dashboard = () => {
   const subjects = require('../../../data/subjects_table.json');
 
