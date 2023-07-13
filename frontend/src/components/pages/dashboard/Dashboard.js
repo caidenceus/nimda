@@ -1,5 +1,6 @@
 import { toLinkText } from '../../common/utils.js';
 import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const SubjectLink = ({ title, subtitle }) => {
   return (
@@ -24,7 +25,19 @@ const SubjectLink = ({ title, subtitle }) => {
 };
 
 const Dashboard = () => {
-  const subjects = require('../../../data/subjects_table.json');
+  let [subjects, setSubjects] = useState([]);
+
+  useEffect(() => {
+    getSubjects();
+  }, []);
+
+  const getSubjects = async () => {
+    let resp = await fetch('http://127.0.0.1:8000/api/subjects/');
+    let data = await resp.json();
+    setSubjects(data);
+  }
+
+  // const subjects = require('../../../data/subjects_table.json');
 
   return (
     <div
