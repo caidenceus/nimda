@@ -1,6 +1,7 @@
 import { toLinkText } from '../../common/utils.js';
 import { Link } from 'react-router-dom';
 import TopBar from './TopBar.js';
+import { useState, useEffect } from 'react';
 
 const ChapterLink = ({ title, subject, subtitle }) => {
   return (
@@ -22,13 +23,18 @@ const ChapterLink = ({ title, subject, subtitle }) => {
   );
 };
 
-const Subject = ({ title }) => {
-  const unfilteredChapters = require('../../../data/chapters_table.json');
-  const chapters = unfilteredChapters.filter(filter);
+const Subject = ({ title, id }) => {
+  let [chapters, setChapterss] = useState([]);
 
-  function filter(chapter) {
-    return chapter.subject === title;
+  const getChapters = async () => {
+    let resp = await fetch(`http://127.0.0.1:8000/api/subjects/${id}/chapters`);
+    let data = await resp.json();
+    setChapterss(data);
   }
+
+  useEffect(() => {
+    getChapters();
+  }, []);
 
   return (
     <div>

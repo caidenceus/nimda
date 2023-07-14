@@ -37,8 +37,6 @@ const Dashboard = () => {
     setSubjects(data);
   }
 
-  // const subjects = require('../../../data/subjects_table.json');
-
   return (
     <div
       style={{

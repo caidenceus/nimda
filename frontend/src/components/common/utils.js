@@ -1,3 +1,3 @@
 export const toLinkText = (str) => {
-    return str.toLowerCase().split(' ').join('-');
+    return str.toString().toLowerCase().split(' ').join('-');
 }
